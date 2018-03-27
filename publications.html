@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Publications">
+    <meta name="author" content="WeiQM">
+    <link rel="icon" href="images/logo/RMX_16.ico">
+    <title>REMEX - Publications</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="style/jquery.bxslider.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">  
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="people.html">People</a></li>
+						<li><a href="research.html">Research</a></li>
+            <li class="active"><a href="publications.html">Publications</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+					<ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="publications.html">English</a></li>
+            <li><a href="html/cn/publications.html">中文</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html"><img src="images/logo/logo_w.png" alt="Logo" width="80px"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <header>
+      <!--
+      <a href="index.html"><img src="images/logo.png"  width="256px"></a>
+      -->
+    </header>
+
+    <!--
+    <section class="main-slider">
+      <ul class="bxslider">
+        <li><div class="slider-item"><img src="images/logo/logo_c.png" title="Logo" /><h2><a href="" title="Loge">New published !</a></h2></div></li>
+        <li><div class="slider-item"><img src="images/logo/logo_m.png" title="Logo" /><h2><a href="" title="Loge">New published !</a></h2></div></li>
+        <li><div class="slider-item"><img src="images/logo/logo_y.png" title="Logo" /><h2><a href="" title="Loge">New published !</a></h2></div></li>
+        <li><div class="slider-item"><img src="images/logo/logo_k.png" title="Logo" /><h3><a href="" title="Loge">New published !</a></h3></div></li>
+        <li><div class="slider-item"><img src="images/logo/logo_r.png" title="Logo" /><h3><a href="" title="Loge">New published !</a></h3></div></li>
+        <li><div class="slider-item"><img src="images/logo/logo_g.png" title="Logo" /><h3><a href="" title="Loge">New published !</a></h3></div></li>
+        <li><div class="slider-item"><img src="images/logo/logo_b.png" title="Logo" /><h3><a href="" title="Loge">New published !</a></h3></div></li>
+      </ul>
+    </section>
+    -->
+    
+    <section>
+      <div class="row">
+      <div class="col-md-12">
+      <article class="content-block">
+      <div class="block-body">
+      <div class="block-text">
+
+        
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <h3>2018</h3>
+        <table><tbody>
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_wei_sensors_18.jpg" alt="Results of article_wei_sensors_18" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Robust Spacecraft Component Detection in Point Clouds</b> <a href="http://www.mdpi.com/1424-8220/18/4/933" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  <b>Quanmao Wei</b>, Zhiguo Jiang and Haopeng Zhang
+                </i></font>
+                <br>
+                Sensors, 2018
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="https://mega.nz/#!GR9WWQwK!bqEZY1UB6pH7tM3AEYiiZUT60YSbuo8l7LmGSiDLURQ" target="_blank">PDF</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('weiSensors18Abs')">Abstract </a> &nbsp; 
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('weiSensors18Bib')">BibTeX</a> &nbsp;
+                <i class="fa fa-link"></i> <a href="https://mega.nz/#!Sd1kXIoY!9t0U0qCrGdcWORpwh1HXVP_0Ff1-SXIFp1nJ4NhLbUY" target="_blank">Supplementary</a> &nbsp;
+              </p>
+              <p id="weiSensors18Abs" class="abstract" style="display: none;">
+                Automatic component detection of spacecraft can assist in on-orbit operation and space situational awareness. Spacecraft are generally composed of solar panels and cuboidal or cylindrical modules. These components can be simply represented by geometric primitives like plane, cuboid and cylinder. Based on this prior, we propose a robust automatic detection scheme to automatically detect such basic components of spacecraft in three-dimensional (3D) point clouds. In the proposed scheme, cylinders are first detected in the iteration of the energy-based geometric model fitting and cylinder parameter estimation. Then, planes are detected by Hough transform and further described as bounded patches with their minimum bounding rectangles. Finally, the cuboids are detected with pair-wise geometry relations from the detected patches. After successive detection of cylinders, planar patches and cuboids, a mid-level geometry representation of the spacecraft can be delivered. We tested the proposed component detection scheme on spacecraft 3D point clouds synthesized by computer-aided design (CAD) models and those recovered by image-based reconstruction, respectively. Experimental results illustrate that the proposed scheme can detect the basic geometric components effectively and has fine robustness against noise and point distribution density.
+              </p>
+              <pre xml:space="preserve" id="weiSensors18Bib" class="bibtex" style="display: none;">
+@article{weiSensors18,
+  author  = {Quanmao Wei and Zhiguo Jiang and Haopeng Zhang},
+  title   = {Robust Spacecraft Component Detection in Point Clouds},
+  journal = {Sensors},
+  volume  = {18},
+  year    = {2018},
+  number  = {4},
+  article number = {933},
+  url     = {http://www.mdpi.com/1424-8220/18/4/933},
+  issn    = {1424-8220},
+  doi     = {10.3390/s18040933}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('weiSensors18Abs');
+                hideblock('weiSensors18Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_taes_18.jpg" alt="Results of article_zhang_taes_18" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Vision-based Pose Estimation for Textureless Space Objects by Contour Points Matching</b> <a href="http://ieeexplore.ieee.org/document/8315479/" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Xin Zhang, Zhiguo Jiang, Haopeng Zhang and <b>Quanmao Wei</b>
+                </i></font>
+                <br>
+                TAES, 2018
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8315479" target="_blank">Preprint</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhangTAES18Abs')">Abstract </a> &nbsp; 
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhangTAES18Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="zhangTAES18Abs" class="abstract" style="display: none;">
+                This paper presents a novel vision-based method to solve the 6-degree-of-freedom pose estimation problem of textureless space objects from a single monocular image. Our approach follows a coarse-to-fine procedure, utilizing only shape and contour information of the input image. To achieve invariance to initialization, we select a series of projection images which are similar to the input image and establish many-to-one 2D-3D correspondences by contour feature matching. Intensive attention is focused on outlier rejection and we introduce an innovative strategy to fully utilize geometric matching information to guide pose calculation. Experiments based on simulated images are carried out, and the results manifest that pose estimation error of our approach is about 1% even in situations with heavy outlier correspondences.
+              </p>
+              <pre xml:space="preserve" id="zhangTAES18Bib" class="bibtex" style="display: none;">
+@article{zhangTAES18,
+  author  = {Xin Zhang and Zhiguo Jiang and Haopeng Zhang and Quanmao Wei},
+  journal = {IEEE Transactions on Aerospace and Electronic Systems},
+  title   = {Vision-based Pose Estimation for Textureless Space Objects
+             by Contour Points Matching},
+  year    = {2018},
+  month   = {},
+  volume  = {PP},
+  number  = {99},
+  pages   = {1-1},
+  issn    = {0018-9251},
+  doi     = {10.1109/TAES.2018.2815879}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('zhangTAES18Abs');
+                hideblock('zhangTAES18Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+        </tbody></table>
+
+        <hr />
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <h3>2017</h3>
+        <table><tbody>
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_sensors_17.jpg" alt="Results of article_zhang_sensors_17" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>3D Reconstruction of Space Objects from Multi-Views by a Visible Sensor</b> <a href="http://www.mdpi.com/1424-8220/17/7/1689" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Haopeng Zhang, <b>Quanmao Wei</b> and Zhiguo Jiang
+                </i></font>
+                <br>
+                Sensors, 2017
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="https://mega.nz/#!eJk3UYwL!YlhM25VH5lbi-FAW-C0JR5JHi_N90vm499yNTgA6mwM" target="_blank">PDF</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhangSensors17Abs')">Abstract </a> &nbsp; 
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhangSensors17Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="zhangSensors17Abs" class="abstract" style="display: none;">
+                In this paper, a novel 3D reconstruction framework is proposed to recover the 3D structural model of a space object from its multi-view images captured by a visible sensor. Given an image sequence, this framework first estimates the relative camera poses and recovers the depths of the surface points by the structure from motion (SFM) method, then the patch-based multi-view stereo (PMVS) algorithm is utilized to generate a dense 3D point cloud. To resolve the wrong matches arising from the symmetric structure and repeated textures of space objects, a new strategy is introduced, in which images are added to SFM in imaging order. Meanwhile, a refining process exploiting the structural prior knowledge that most sub-components of artificial space objects are composed of basic geometric shapes is proposed and applied to the recovered point cloud. The proposed reconstruction framework is tested on both simulated image datasets and real image datasets. Experimental results illustrate that the recovered point cloud models of space objects are accurate and have a complete coverage of the surface. Moreover, outliers and points with severe noise are effectively filtered out by the refinement, resulting in an distinct improvement of the structure and visualization of the recovered points.
+              </p>
+              <pre xml:space="preserve" id="zhangSensors17Bib" class="bibtex" style="display: none;">
+@article{zhangSensors17,
+  author  = {Haopeng Zhang and Quanmao Wei and Zhiguo Jiang},
+  title   = {3D Reconstruction of Space Objects from Multi-Views by a Visible Sensor},
+  journal = {Sensors},
+  volume  = {17},
+  year    = {2017},
+  number  = {7},
+  article number = {1689},
+  url     = {http://www.mdpi.com/1424-8220/17/7/1689},
+  issn    = {1424-8220},
+  doi     = {10.3390/s17071689}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('zhangSensors17Abs');
+                hideblock('zhangSensors17Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_wei_igta_17.jpg" alt="Results of article_wei_igta_17" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Spacecraft component detection in point clouds</b> <a href="https://link.springer.com/chapter/10.1007/978-981-10-7389-2_21" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  <b>Quanmao Wei</b>, Zhiguo Jiang, Haopeng Zhang and Nie Shanlan
+                </i></font>
+                <br>
+                IGTA, 2017
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="https://mega.nz/#!eVMQiSSJ!T7EmdL08r12S5TsND8UtHZwrOk14HQzdndYmQN5AI_o" target="_blank">PDF</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('weiIGTA17Abs')">Abstract </a> &nbsp; 
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('weiIGTA17Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="weiIGTA17Abs" class="abstract" style="display: none;">
+                Component detection of spacecraft is significant for on-orbit operation and space situational awareness. Solar wings and main body are the major components of most spacecrafts, and can be described by geometric primitives like planes, cuboid or cylinder. Based on this prior, pipeline to automatically detect the basic components of spacecraft in 3D point clouds is presented, in which planes, cuboid and cylinder are successively detected. The planar patches are first detected as possible solar wings in point clouds of the recorded object. As for detection of the main body, inferring a cuboid main body from the detected patches is first attempted, and a further attempt to extract a cylinder main body is made if no cuboid exists. Dimensions are estimated for each component. Experiments on satellite point cloud data that are recovered by image-based reconstruction demonstrated effectiveness and accuracy of this pipeline.
+              </p>
+              <pre xml:space="preserve" id="weiIGTA17Bib" class="bibtex" style="display: none;">
+@inproceedings{weiIGTA17,
+  author    = {Quanmao Wei and Zhiguo Jiang and Haopeng Zhang and Shanlan Nie},
+  editor    = {Yongtian Wang and Shengjin Wang and Yue Liu and Jian Yang
+               and Xiaoru Yuan and Ran He and Henry Been-Lirn Duh},
+  title     = {Spacecraft Component Detection in Point Clouds},
+  booktitle = {Advances in Image and Graphics Technologies},
+  year      = {2017},
+  publisher = {Springer Singapore},
+  address   = {Singapore},
+  pages     = {210--218},
+  isbn      = {978-981-10-7389-2}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('weiIGTA17Abs');
+                hideblock('weiIGTA17Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+        </tbody></table>
+
+        <hr />
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <h3>2016</h3>
+        <table><tbody>
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_igta_16.jpg" alt="Results of article_zhang_igta_16" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Pose Estimation of Space Objects Based on Hybrid Feature Matching of Contour Points</b> <a href="https://link.springer.com/chapter/10.1007/978-981-10-2260-9_21" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Xin Zhang, Haopeng Zhang, <b>Quanmao Wei</b> and Zhiguo Jiang
+                </i></font>
+                <br>
+                IGTA, 2016
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="https://link.springer.com/content/pdf/10.1007%2F978-981-10-2260-9_21.pdf" target="_blank">PDF</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhangIGTA16Abs')">Abstract </a> &nbsp; 
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhangIGTA16Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="zhangIGTA16Abs" class="abstract" style="display: none;">
+                This paper presents an improved pose estimation algorithm for vision-based space objects. The major weakness of most existing methods is limited convergence radius. In most cases they ignore the influence of translation, only focusing on rotation parameters. To breakthrough these limits, we utilizes hybrid local image features to explicitly establish 2D-3D correspondences between the input image and 3D model of space objects, and then estimate rotation and translation parameters based on the correspondences. Experiments with simulated models are carried out, and the results show that our algorithm can successfully estimate the pose of space objects with large convergence radius and high accuracy.
+              </p>
+              <pre xml:space="preserve" id="zhangIGTA16Bib" class="bibtex" style="display: none;">
+@inproceedings{zhangIGTA16,
+  author    = {Xin Zhang and Haopeng Zhang and Quanmao Wei and Zhiguo Jiang},
+  editor    = {Tieniu Tan and Guoping Wang and Shengjin Wang and Yue Liu
+               and Xiaoru Yuan and Ran He and Sheng Li},
+  title     = {Pose Estimation of Space Objects Based on Hybrid Feature Matching
+               of Contour Points},
+  booktitle = {Advances in Image and Graphics Technologies},
+  year      = {2016},
+  publisher = {Springer Singapore},
+  address   = {Singapore},
+  pages     = {184--191},
+  isbn      = {978-981-10-2260-9}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('zhangIGTA16Abs');
+                hideblock('zhangIGTA16Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_jbuaa_16.jpg" alt="Results of article_zhang_jbuaa_16" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Sequential-image-based Space Object 3D Reconstruction</b> <a href="http://doi.cnki.net/Resolution/Handler?doi=10.13700/j.bh.1001-5965.2015.0117" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Haopeng Zhang, <b>Quanmao Wei</b>, Wei Zhang, Junfeng Wu and Zhiguo Jiang
+                </i></font>
+                <br>
+                JBUAA, 2016 <i>[In Chinese]</i>
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="https://mega.nz/#!zN0ACSCJ!R3Ut0R7x6dQrmXdqDSJirZ7mMk62qWnab7X86h93-Xs" target="_blank">PDF</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhangJBUAA16Abs')">Abstract </a> &nbsp; 
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhangJBUAA16Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="zhangJBUAA16Abs" class="abstract" style="display: none;">
+                Space object 3D reconstruction is of important significance for both space situational awareness and theoretical study. A new structure from motion method was proposed to avoid the reconstruction error caused by the symmetrical structure and similar texture of space targets. In this method, new images were added sequentially for reconstruction using the imaging time as a priori knowledge. In addition, image simulation of space target and ground imaging simulation experiment were carried out for the lack of space target image data. And experiments on the simulated space target images, in which the motion analysis results are accurate and robust to noise, and the recovery 3D point cloud can express the structural information of the target to a certain extent, have demonstrated the effectiveness of the approach proposed, and the boundary conditions of multi-frame-image for 3D reconstruction are acquired as well.
+              </p>
+              <pre xml:space="preserve" id="zhangJBUAA16Bib" class="bibtex" style="display: none;">
+@article{zhangJBUAA16,
+  language = {Chinse},
+  author   = {Haopeng Zhang and Quanmao Wei and Wei Zhang and Junfeng Wu and Zhiguo Jiang},
+  title    = {Sequential-image-based Space Object 3D Reconstruction},
+  journal  = {Journal of Beijing University of Aeronautics and Astronautics},
+  year     = {2016},
+  volume   = {42},
+  number   = {2},
+  pages    = {273--279},
+  issn     = {10015965},
+  URL      = {http://dx.doi.org/10.13700/j.bh.1001-5965.2015.0117}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('zhangJBUAA16Abs');
+                hideblock('zhangJBUAA16Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+        </tbody></table>
+
+        <hr />
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <h3>2015</h3>
+        <table><tbody>
+          
+        </tbody></table>
+
+        <hr />
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <h3>2014</h3>
+        <table><tbody>
+          
+        </tbody></table>
+
+        <hr />
+        <!-- -------------------------------------------- -->
+        <!-- -------------------------------------------- -->
+        <h3>2013</h3>
+        <table><tbody>
+          
+        </tbody></table>
+
+        <hr />
+        <h3>Before 2013</h3>
+        <table><tbody>
+          
+        </tbody></table>
+      </div>
+      </div>
+      </article>
+      </div>
+      </div>
+    </section>
+    </div><!-- /.container -->
+
+    <footer class="footer">
+      <div class="footer-bottom">  
+        <i class="fa fa-copyright"></i> Copyright 2018. All rights reserved.<br>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.bxslider.js"></script>
+    <script src="scripts/mooz.scripts.min.js"></script>
+    <script src="scripts/togglehide.js"></script>
+  </body>
+</html>
