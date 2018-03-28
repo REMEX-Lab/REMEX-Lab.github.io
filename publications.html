@@ -394,17 +394,17 @@
                   Deep convolutional neural network (CNN) achieves outstanding performance in the field of target detection. As one of the most typical targets in remote sensing images (RSIs), airport has attracted increasing attention in recent years. However, the essential challenge for using deep CNN to detect airport is the great imbalance between the number of airports and background examples in large-scale RSIs, which may lead to over-fitting. In this paper, we develop a hard example mining and weight-balanced strategy to construct a novel end-to-end convolutional neural network for airport detection. The initial motivation of the proposed method is that backgrounds contain an overwhelming number of easy examples and a few hard examples. Therefore, we design a hard example mining layer to automatically select hard examples by their losses, and implement a new weight-balanced loss function to optimize CNN. Meanwhile, the cascade design of proposal extraction and object detection in our network releases the constraint on input image size and reduces spurious false positives. Compared with geometric characteristics and low-level manually designed features, the hard example mining based network could extract high-level features, which is more robust for airport detection in complex environment. The proposed method is validated on a multi-scale dataset with complex background collected from Google Earth. The experimental results demonstrate that our proposed method is robust, and superior to the state-of-the-art airport detection models.
               </p>
               <pre xml:space="preserve" id="caiRS2017Bib" class="bibtex" style="display: none;">
-@Article{rs9111198,
-AUTHOR = {Cai, Bowen and Jiang, Zhiguo and Zhang, Haopeng and Zhao, Danpei and Yao, Yuan},
-TITLE = {Airport Detection Using End-to-End Convolutional Neural Network with Hard Example Mining},
-JOURNAL = {Remote Sensing},
-VOLUME = {9},
-YEAR = {2017},
-NUMBER = {11},
-ARTICLE NUMBER = {1198},
-URL = {http://www.mdpi.com/2072-4292/9/11/1198},
-ISSN = {2072-4292},
-DOI = {10.3390/rs9111198}
+@article{caiRS17,
+author = {Cai, Bowen and Jiang, Zhiguo and Zhang, Haopeng and Zhao, Danpei and Yao, Yuan},
+title = {Airport Detection Using End-to-End Convolutional Neural Network with Hard Example Mining},
+journal = {Remote Sensing},
+volume = {9},
+year = {2017},
+number = {11},
+article number = {1198},
+url = {http://www.mdpi.com/2072-4292/9/11/1198},
+issn = {2072-4292},
+doi = {10.3390/rs9111198}
 }
               </pre>
               <script language="javascript" type="text/javascript" xml:space="preserve">
@@ -435,7 +435,7 @@ DOI = {10.3390/rs9111198}
                   The geometrical characteristic and low-level manually designed features are usually used to detect airports in optical remote sensing images. But it is insufficient to describe airport in low resolution and illumination environment. This paper presents a hard example mining algorithm to train the end-to-end deep convolutional neural network for airport detection in complex situation. Compared with conventional airport detection methods which design specific low-level manually designed features for high-resolution remote sensing images, an end-to-end network can mine the general characteristic among the training samples and learn high-level features in multi-scale and multi-view remote sensing images. Meanwhile, an automatic hard example mining principle is introduced to make training more efficiently and accurately. The proposed method is validated on a multi-scale and multi-view dataset collected from Google Earth. The experimental results demonstrate that the proposed method is robust and efficient, and superior to the state-of-the-art airport detection models.
               </p>
               <pre xml:space="preserve" id="caiIGARSS2017Bib" class="bibtex" style="display: none;">
-@INPROCEEDINGS{8127089,
+@inproceedings{caiIGARSS17,
 author={B. Cai and Z. Jiang and H. Zhang and Y. Yao and J. Huang},
 booktitle={2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
 title={Training deep convolution neural network with hard example mining for airport detection},
@@ -444,7 +444,7 @@ volume={},
 number={},
 pages={862-865},
 doi={10.1109/IGARSS.2017.8127089},
-ISSN={},
+issn={},
 month={July},}
               </pre>
               <script language="javascript" type="text/javascript" xml:space="preserve">
@@ -540,6 +540,50 @@ month={July},}
               <script language="javascript" type="text/javascript" xml:space="preserve">
                 hideblock('zhangJBUAA16Abs');
                 hideblock('zhangJBUAA16Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_yao_igarss_2016.jpg" alt="Results of article_yao_igarss_2016" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>High-resolution optical satellite image simulation of ship target in large sea scenes</b> <a href="http://ieeexplore.ieee.org/document/7729314/" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Yuan Yao, Zhiguo Jiang, and Haopeng Zhang
+                </i></font>
+                <br>
+                IGRASS, 2016
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="source/pdf/article_yao_igarss_2016.pdf" target="_blank">PDF</a> &nbsp;
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('yaoigarss16Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('yaoigarss16Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="yaoigarss16Abs" class="abstract" style="display: none;">
+                Ship target detection in optical remote sensing images has attracted more and more attention in the field of remote sensing. The ship target detection technology of optical remote
+sensing images is vulnerable to many factors, while the real data are difficult to contain various elements. In order to obtain the various situations in the large sea scenes, we develop a simulation system for high-resolution optical remote
+sensing image of ship targets. The simulated images with different sea states, cloud conditions, target types and imaging conditions can support the evaluation and comparison of ship
+detection algorithms as well as other tasks in remote sensing image analysis.
+              </p>
+              <pre xml:space="preserve" id="yaoigarss16Bib" class="bibtex" style="display: none;">
+                @INPROCEEDINGS{7729314,
+                  author={Y. Yao and Z. Jiang and H. Zhang},
+                  booktitle={2016 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)},
+                  title={High-resolution optical satellite image simulation of ship target in large sea scenes},
+                  year={2016},
+                  volume={},
+                  number={},
+                  pages={1241-1244},
+                  keywords={geophysical image processing;object detection;remote sensing;cloud conditions;high-resolution optical satellite image simulation;imaging conditions;large sea scenes;optical remote sensing images;remote sensing image analysis;sea states;ship target detection technology;simulated images;target types;Adaptive optics;Clouds;Marine vehicles;Optical imaging;Optical sensors;Remote sensing;Satellites;Satellite image simulation;image analysis;remote sensing;ship detection},
+                  doi={10.1109/IGARSS.2016.7729314},
+                  ISSN={},
+                  month={July},}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('yaoigarss16Abs');
+                hideblock('yaoigarss16Bib');
               </script>
             </td>
           </tr> <!-- Paper End Here -->
