@@ -84,6 +84,52 @@
         <table><tbody>
           <tr> <!-- An Paper -->
             <td width="22%" valign="top"><p>
+              <img src="images/src/article_ma_jbhi_2016.jpg" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Generating Region Proposals for Histopathological Whole Slide Image Retrieval</b> <a href="http://www.sciencedirect.com/science/article/pii/S0169260717312154" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Yibing Ma, Zhiguo Jiang, Haopeng Zhang, Fengying Xie, Yushan Zheng, Huaqiang Shi, Yu Zhao and Jun Shi
+                </i></font>
+                <br>
+                  CMPB, 2018
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('maCMBP2018Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('maCMBP2018Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="maCMBP2018Abs" class="abstract" style="display: none;">
+                  <b>Background and objective</b>
+                  Content-based image retrieval is an effective method for histopathological image analysis. However, given a database of huge whole slide images (WSIs), acquiring appropriate region-of-interests (ROIs) for training is significant and difficult. Moreover, histopathological images can only be annotated by pathologists, resulting in the lack of labeling information. Therefore, it is an important and challenging task to generate ROIs from WSI and retrieve image with few labels.
+                  <b>Methods</b>
+                  This paper presents a novel unsupervised region proposing method for histopathological WSI based on Selective Search. Specifically, the WSI is over-segmented into regions which are hierarchically merged until the WSI becomes a single region. Nucleus-oriented similarity measures for region mergence and Nucleus–Cytoplasm color space for histopathological image are specially defined to generate accurate region proposals. Additionally, we propose a new semi-supervised hashing method for image retrieval. The semantic features of images are extracted with Latent Dirichlet Allocation and transformed into binary hashing codes with Supervised Hashing.
+                  <b>Results</b>
+                  The methods are tested on a large-scale multi-class database of breast histopathological WSIs. The results demonstrate that for one WSI, our region proposing method can generate 7.3 thousand contoured regions which fit well with 95.8% of the ROIs annotated by pathologists. The proposed hashing method can retrieve a query image among 136 thousand images in 0.29 s and reach precision of 91% with only 10% of images labeled.
+                  <b>Conclusions</b>
+                  The unsupervised region proposing method can generate regions as predictions of lesions in histopathological WSI. The region proposals can also serve as the training samples to train machine-learning models for image retrieval. The proposed hashing method can achieve fast and precise image retrieval with small amount of labels. Furthermore, the proposed methods can be potentially applied in online computer-aided-diagnosis systems.
+                </p>
+              <pre xml:space="preserve" id="maCMBP2018Bib" class="bibtex" style="display: none;">
+@article{maCMPB2018,
+  title   = {Generating region proposals for histopathological whole slide image retrieval},
+  author  = {Yibing Ma and Zhiguo Jiang and Haopeng Zhang and Fengying Xie 
+             and Yushan Zheng and Huaqiang Shi and Yu Zhao and Jun Shi},
+  journal = {Computer Methods and Programs in Biomedicine},
+  volume  = {159},
+  pages   = {1 - 10},
+  year    = {2018},
+  issn    = {0169-2607},
+  url     = {http://www.sciencedirect.com/science/article/pii/S0169260717312154},
+}      
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('maCMBP2018Abs');
+                hideblock('maCMBP2018Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
               <img src="../../images/src/article_zheng_tmi_2018.jpg" alt="Flowchart" width="200">
             </p></td>
             <td width="78%" valign="top">
@@ -506,6 +552,47 @@
         <table><tbody>
           <tr> <!-- An Paper -->
             <td width="22%" valign="top"><p>
+              <img src="images/src/article_ma_cmpb_2018.jpg" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Breast Histopathological Image Retrieval Based on Latent Dirichlet Allocation</b> <a href="http://ieeexplore.ieee.org/document/7572100/" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Yibing Ma, Zhiguo Jiang, Haopeng Zhang, Fengying Xie, Yushan Zheng, Huaqiang Shi and Yu Zhao
+                </i></font>
+                <br>
+                  JBHI, 2016
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('maJBHI2016Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('maCMBP2018Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="maJBHI2016Abs" class="abstract" style="display: none;">
+                  In the field of pathology, whole slide image (WSI) has become the major carrier of visual and diagnostic information. Content-based image retrieval among WSIs can aid the diagnosis of an unknown pathological image by finding its similar regions in WSIs with diagnostic information. However, the huge size and complex content of WSI pose several challenges for retrieval. In this paper, we propose an unsupervised, accurate, and fast retrieval method for a breast histopathological image. Specifically, the method presents a local statistical feature of nuclei for morphology and distribution of nuclei, and employs the Gabor feature to describe the texture information. The latent Dirichlet allocation model is utilized for high-level semantic mining. Locality-sensitive hashing is used to speed up the search. Experiments on a WSI database with more than 8000 images from 15 types of breast histopathology demonstrate that our method achieves about 0.9 retrieval precision as well as promising efficiency. Based on the proposed framework, we are developing a search engine for an online digital slide browsing and retrieval platform, which can be applied in computer-aided diagnosis, pathology education, and WSI archiving and management.
+                </p>
+              <pre xml:space="preserve" id="maCMBP2018Bib" class="bibtex" style="display: none;">
+@article{maJBHI2016, 
+  author  = {Yibing Ma and Zhiguo Jiang and Haopeng Zhang and Fengying Xie 
+              and Yushan Zheng and Huaqiang Shi and Yu Zhao and Jun Shi}, 
+  journal = {IEEE Journal of Biomedical and Health Informatics}, 
+  title   = {Breast Histopathological Image Retrieval Based on Latent Dirichlet Allocation}, 
+  year    = {2017}, 
+  volume  = {21}, 
+  number  = {4}, 
+  pages   = {1114-1123}, 
+  doi     = {10.1109/JBHI.2016.2611615}, 
+  ISSN    = {2168-2194}, 
+  month   = {July}
+}    
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('maJBHI2016Abs');
+                hideblock('maCMBP2018Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
               <img src="../../images/src/article_zhang_igta_2016.jpg" alt="Results of article_zhang_igta_16" width="200">
             </p></td>
             <td width="78%" valign="top">
@@ -644,82 +731,156 @@
         <!-- -------------------------------------------- -->
         <h3>2014</h3>
         <table><tbody>
-          <tr> <!-- An Paper -->
-            <td width="22%" valign="top"><p>
-              <img src="../../images/src/article_zheng_icip_2014.jpg" alt="Flowchart" width="200">
-            </p></td>
-            <td width="78%" valign="top">
-              <p>
-                <b>Retrieval of Pathology Image for Breast Cancer Using PLSA Model Based on Texture and Pahological Features</b> <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%280ffc62d136826578e27817d048608818%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fdx.doi.org%2F10.1109%2Ficip.2014.7025467&ie=utf-8&sc_us=1281695813514094042" target="_blank"><i class="fa fa-external-link"></i></a>
-                <br>
-                <font size="3pt" face="Georgia"><i>
-                  Yushan Zheng, Zhiguo Jiang, Jun Shi and Yibing Ma
-                </i></font>
-                <br>
-                ICIP, 2014
-                <br>
-                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_icip_2014.pdf" target="_blank">PDF</a> &nbsp;
-                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhengICIP2014Abs')">Abstract</a> &nbsp;
-                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhengICIP2014Bib')">BibTeX</a> &nbsp;
-              </p>
-              <p id="zhengICIP2014Abs" class="abstract" style="display: none;">
-                Content-based image retrieval (CBIR) for digital pathology slides is of clinical use for breast cancer aided diagnosis. One of the largest challenges in CBIR is feature extraction. In this paper, we propose a novel pathology image retrieval method for breast cancer, which aims to characterize the pathology image content through texture and pathological features and further discover the latent high-level semantics. Specifically, the proposed method utilizes block Gabor features to describe the texture structure, and simultaneously designs nucleus-based pathological features to describe morphological characteristics of nuclei. Based on these two kinds of local feature descriptors, two codebooks are built to learn the probabilistic latent semantic analysis (pLSA) models. Consequently, each image is represented by the topics of pLSA models which can reveal the semantic concepts. Experimental results on the digital pathology image database for breast cancer demonstrate the feasibility and effectiveness of our method.
-              </p>
-              <pre xml:space="preserve" id="zhengICIP2014Bib" class="bibtex" style="display: none;">
-@article{zhengICIP14,
-  title     = {Retrieval of Pathology Image for Breast Cancer Using PLSA Model
-               Based on Texture and Pahological Features},
-  author    = {Yushan Zheng and Zhiguo Jiang and Jun Shi and Yibing Ma},
-  booktitle = {2016 IEEE International Conference on Image Processing (ICIP)},
-  pages     = {2304--2308},
-  year      = {2014}
-}
-              </pre>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                hideblock('zhengICIP2014Abs');
-                hideblock('zhengICIP2014Bib');
-              </script>
-            </td>
-          </tr> <!-- Paper End Here -->
-          <tr> <!-- An Paper -->
-            <td width="22%" valign="top"><p>
-              <img src="../../images/src/article_zheng_igta_2014.jpg" alt="Flowchart" width="200">
-            </p></td>
-            <td width="78%" valign="top">
-              <p>
-                <b>Pathology Image Retrieval by Block LBP Based PLSA Model with Low-Rank and Sparse Matrix Decomposition</b> <a href="https://link.springer.com/chapter/10.1007/978-3-662-45498-5_36" target="_blank"><i class="fa fa-external-link"></i></a>
-                <br>
-                <font size="3pt" face="Georgia"><i>
-                  Yushan Zheng, Zhiguo Jiang, Jun Shi and Yibing Ma
-                </i></font>
-                <br>
-                IGTA, 2014
-                <br>
-                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_igta_2014.pdf" target="_blank">PDF</a> &nbsp;
-                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhengIGTA2014Abs')">Abstract</a> &nbsp;
-                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhengIGTA2014Bib')">BibTeX</a> &nbsp;
-              </p>
-              <p id="zhengIGTA2014Abs" class="abstract" style="display: none;">
-                Content-based image retrieval (CBIR) is widely used in Computer Aided Diagnosis (CAD) systems which can aid pathologist to make reasonable decision by querying the slides with diagnostic information from the digital pathology slide database. In this paper, we propose a novel pathology image retrieval method for breast cancer. It firstly applies block Local Binary Pattern (LBP) features to describe the spatial texture property of pathology image, and then use them to construct the probabilistic latent semantic analysis (pLSA) model which generally takes advantage of visual words to mine the topic-level representation of image and thus reveals the high-level semantics. Different from conventional pLSA model, we employ low-rank and sparse matrix composition for describing the correlated and specific characteristics of visual words. Therefore, the more discriminative topic-level representation corresponding to each pathology image can be obtained. Experimental results on the digital pathology image database for breast cancer demonstrate the feasibility and effectiveness of our method.
-              </p>
-              <pre xml:space="preserve" id="zhengIGTA2014Bib" class="bibtex" style="display: none;">
-@inproceedings{zhengIGTA14,
-  title     = {Pathology Image Retrieval by Block LBP Based PLSA Model
-               with Low-Rank and Sparse Matrix Decomposition},
-  author    = {Yushan Zheng and Zhiguo Jiang and Jun Shi and Yibing Ma},
-  booktitle = {Advances in Image and Graphics Technologies},
-  pages     = {327—-335},
-  year      = {2014}
-}
-              </pre>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                hideblock('zhengIGTA2014Abs');
-                hideblock('zhengIGTA2014Bib');
-              </script>
-            </td>
-          </tr> <!-- Paper End Here -->
-
-
+            <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                <img src="images/src/article_zheng_icip_2014.jpg" alt="Flowchart" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                <p>
+                  <b>Retrieval of Pathology Image for Breast Cancer Using PLSA Model Based on Texture and Pahological Features</b> <a href="http://xueshu.baidu.com/s?wd=paperuri%3A%280ffc62d136826578e27817d048608818%29&filter=sc_long_sign&tn=SE_xueshusource_2kduw22v&sc_vurl=http%3A%2F%2Fdx.doi.org%2F10.1109%2Ficip.2014.7025467&ie=utf-8&sc_us=1281695813514094042" target="_blank"><i class="fa fa-external-link"></i></a>
+                  <br>
+                  <font size="3pt" face="Georgia"><i>
+                    Yushan Zheng, Zhiguo Jiang, Jun Shi and Yibing Ma
+                  </i></font>
+                  <br>
+                  ICIP, 2014
+                  <br>
+                  <i class="fa fa-file-pdf-o"></i> <a href="source/pdf/article_zheng_icip_2014.pdf" target="_blank">PDF</a> &nbsp;
+                  <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhengICIP2014Abs')">Abstract</a> &nbsp;
+                  <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhengICIP2014Bib')">BibTeX</a> &nbsp;
+                </p>
+                <p id="zhengICIP2014Abs" class="abstract" style="display: none;">
+                  Content-based image retrieval (CBIR) for digital pathology slides is of clinical use for breast cancer aided diagnosis. One of the largest challenges in CBIR is feature extraction. In this paper, we propose a novel pathology image retrieval method for breast cancer, which aims to characterize the pathology image content through texture and pathological features and further discover the latent high-level semantics. Specifically, the proposed method utilizes block Gabor features to describe the texture structure, and simultaneously designs nucleus-based pathological features to describe morphological characteristics of nuclei. Based on these two kinds of local feature descriptors, two codebooks are built to learn the probabilistic latent semantic analysis (pLSA) models. Consequently, each image is represented by the topics of pLSA models which can reveal the semantic concepts. Experimental results on the digital pathology image database for breast cancer demonstrate the feasibility and effectiveness of our method.
+                </p>
+                <pre xml:space="preserve" id="zhengICIP2014Bib" class="bibtex" style="display: none;">
+  @article{zhengICIP14,
+    title     = {Retrieval of Pathology Image for Breast Cancer Using PLSA Model
+                 Based on Texture and Pathological Features},
+    author    = {Yushan Zheng and Zhiguo Jiang and Jun Shi and Yibing Ma},
+    booktitle = {2016 IEEE International Conference on Image Processing (ICIP)},
+    pages     = {2304--2308},
+    year      = {2014}
+  }
+                </pre>
+                <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('zhengICIP2014Abs');
+                  hideblock('zhengICIP2014Bib');
+                </script>
+              </td>
+            </tr> <!-- Paper End Here -->
+            <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                <img src="images/src/article_zheng_igta_2014.jpg" alt="Flowchart" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                <p>
+                  <b>Pathology Image Retrieval by Block LBP Based PLSA Model with Low-Rank and Sparse Matrix Decomposition</b> <a href="https://link.springer.com/chapter/10.1007/978-3-662-45498-5_36" target="_blank"><i class="fa fa-external-link"></i></a>
+                  <br>
+                  <font size="3pt" face="Georgia"><i>
+                    Yushan Zheng, Zhiguo Jiang, Jun Shi and Yibing Ma
+                  </i></font>
+                  <br>
+                  IGTA, 2014
+                  <br>
+                  <i class="fa fa-file-pdf-o"></i> <a href="source/pdf/article_zheng_igta_2014.pdf" target="_blank">PDF</a> &nbsp;
+                  <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhengIGTA2014Abs')">Abstract</a> &nbsp;
+                  <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhengIGTA2014Bib')">BibTeX</a> &nbsp;
+                </p>
+                <p id="zhengIGTA2014Abs" class="abstract" style="display: none;">
+                  Content-based image retrieval (CBIR) is widely used in Computer Aided Diagnosis (CAD) systems which can aid pathologist to make reasonable decision by querying the slides with diagnostic information from the digital pathology slide database. In this paper, we propose a novel pathology image retrieval method for breast cancer. It firstly applies block Local Binary Pattern (LBP) features to describe the spatial texture property of pathology image, and then use them to construct the probabilistic latent semantic analysis (pLSA) model which generally takes advantage of visual words to mine the topic-level representation of image and thus reveals the high-level semantics. Different from conventional pLSA model, we employ low-rank and sparse matrix composition for describing the correlated and specific characteristics of visual words. Therefore, the more discriminative topic-level representation corresponding to each pathology image can be obtained. Experimental results on the digital pathology image database for breast cancer demonstrate the feasibility and effectiveness of our method.
+                </p>
+                <pre xml:space="preserve" id="zhengIGTA2014Bib" class="bibtex" style="display: none;">
+  @inproceedings{zhengIGTA14,
+    title     = {Pathology Image Retrieval by Block LBP Based PLSA Model
+                 with Low-Rank and Sparse Matrix Decomposition},
+    author    = {Yushan Zheng and Zhiguo Jiang and Jun Shi and Yibing Ma},
+    booktitle = {Advances in Image and Graphics Technologies},
+    pages     = {327—-335},
+    year      = {2014}
+  }
+                </pre>
+                <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('zhengIGTA2014Abs');
+                  hideblock('zhengIGTA2014Bib');
+                </script>
+              </td>
+            </tr> <!-- Paper End Here -->
+            <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                <img src="i" alt="Image" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                <p>
+                  <b>Regularized least square discriminant projection and feature selection</b> <a href="https://www.spiedigitallibrary.org/journals/Journal-of-Electronic-Imaging/volume-23/issue-01/013003/Regularized-least-square-discriminant-projection-and-feature-selection/10.1117/1.JEI.23.1.013003.full" target="_blank"><i class="fa fa-external-link"></i></a>
+                  <br>
+                  <font size="3pt" face="Georgia"><i>
+                    Jun Shi, Zhiguo Jiang, Danpei Zhao, Hao Feng, Chao Gao
+                  </i></font>
+                  <br>
+                  JEI, 2014
+                  <br>
+                  <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('shiJEI2014Abs')">Abstract</a> &nbsp;
+                  <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('shiJEI2014Bib')">BibTeX</a> &nbsp;
+                </p>
+                <p id="shiJEI2014Abs" class="abstract" style="display: none;">
+                    Conventional graph embedding framework uses the Euclidean distance to determine the similarities of neighbor samples, which causes the graph structure to be sensitive to outliers and lack physical interpretation. Moreover, the graph construction suffers from the difficulty of neighbor parameter selection. Although sparse representation (SR) based graph embedding methods can automatically select the neighbor parameter, the computational cost of SR is expensive. On the other hand, most discriminant projection methods fail to perform feature selection. In this paper, we present a novel joint discriminant analysis and feature selection method that employs regularized least square for graph construction and l 2; 1-norm minimization on projection matrix for feature selection. Specifically, our method first uses the regularized least square coefficients to measure the intraclass and interclass similarities from the viewpoint of reconstruction. Based on this graph structure, we formulate an object function with scatter difference criterion for learning the discriminant projections, which can avoid the small sample size problem. Simultaneously, the l2; 1-norm minimization on projection matrix is applied to gain row-sparsity for selecting useful features. Experiments on two face databases (ORL and AR) and COIL-20 object database demonstrate that our method not only achieves better classification performance, but also has lower computational cost than SR. (C) 2014 SPIE and IS&T
+                  </p>
+                <pre xml:space="preserve" id="shiJEI2014Bib" class="bibtex" style="display: none;">
+  @article{shiJEI2014,
+    author  = {Jun Shi and Zhiguo Jiang and Danpei Zhao and Hao Feng and Chao Gao},
+    title   = {Regularized least square discriminant projection and feature selection},
+    journal = {Journal of Electronic Imaging},
+    volume  = {23},
+    pages   = {23 - 23 - 15},
+    year    = {2014},
+    doi     = {10.1117/1.JEI.23.1.013003},
+    URL     = {https://doi.org/10.1117/1.JEI.23.1.013003},
+  }             
+                </pre>
+                <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('shiJEI2014Abs');
+                  hideblock('shiJEI2014Bib');
+                </script>
+              </td>
+            </tr> <!-- Paper End Here -->
+            <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                <img src="i" alt="Image" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                <p>
+                  <b>Adaptive Graph Embedding Discriminant Projections</b> <a href="https://link.springer.com/article/10.1007%2Fs11063-013-9323-8" target="_blank"><i class="fa fa-external-link"></i></a>
+                  <br>
+                  <font size="3pt" face="Georgia"><i>
+                    Jun Shi, Zhiguo Jiang and Hao Feng
+                  </i></font>
+                  <br>
+                  NPL, 2014
+                  <br>
+                  <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('shiNPL2014Abs')">Abstract</a> &nbsp;
+                  <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('shiNPL2014Bib')">BibTeX</a> &nbsp;
+                </p>
+                <p id="shiNPL2014Abs" class="abstract" style="display: none;">
+                    Graph embedding based learning method plays an increasingly significant role on dimensionality reduction (DR). However, the selection to neighbor parameters of graph is intractable. In this paper, we present a novel DR method called adaptive graph embedding discriminant projections (AGEDP). Compared with most existing DR methods based on graph embedding, such as marginal Fisher analysis which usually predefines the intraclass and interclass neighbor parameters, AGEDP applies all the homogeneous samples for constructing the intrinsic graph, and simultaneously selects heterogeneous samples within the neighborhood generated by the farthest homogeneous sample for constructing the penalty graph. Therefore, AGEDP not only greatly enhances the intraclass compactness and interclass separability, but also adaptively performs neighbor parameter selection which considers the fact that local manifold structure of each sample is generally different. Experiments on AR and COIL-20 datasets demonstrate the effectiveness of the proposed method for face recognition and object categorization, and especially under the interference of occlusion, noise and poses, it is superior to other graph embedding based methods with three different classifiers: nearest neighbor classifier, sparse representation classifier and linear regression classifier.
+                  </p>
+                <pre xml:space="preserve" id="shiNPL2014Bib" class="bibtex" style="display: none;">
+  @Article{ShiNPL2014,
+    author  = {Jun Shi and Zhiguo Jiang and Hao Feng},
+    title   = {Adaptive Graph Embedding Discriminant Projections},
+    journal = {Neural Processing Letters},
+    year    = {2014},
+    volume  = {40},
+    number  = {3},
+    pages   = {211--226},
+    doi     = {10.1007/s11063-013-9323-8},
+  }     
+                </pre>
+                <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('shiNPL2014Abs');
+                  hideblock('shiNPL2014Bib');
+                </script>
+              </td>
+            </tr> <!-- Paper End Here -->
         </tbody></table>
 
         <hr />
@@ -727,13 +888,201 @@
         <!-- -------------------------------------------- -->
         <h3>2013</h3>
         <table><tbody>
-
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="i" alt="Image" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Unsupervised texture segmentation based on latent topic assignment</b> <a href="https://www.spiedigitallibrary.org/journals/Journal-of-Electronic-Imaging/volume-22/issue-01/013026/Unsupervised-texture-segmentation-based-on-latent-topic-assignment/10.1117/1.JEI.22.1.013026.full?SSO=1" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Hao Feng, Zhiguo Jiang and Jun Shi
+                </i></font>
+                <br>
+                JEI, 2013
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('fengJEI2013Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('fengJEI2013Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="fengJEI2013Abs" class="abstract" style="display: none;">
+                We present an effective solution for unsupervised texture segmentation by taking advantage of the latent Dirichlet allocation (LDA) model. LDA is a generative topic model that is capable of hierarchically organizing discrete data including texts and images. We propose a new texture model by connecting texture primitives to the topic of LDA. The model is able to extract the characteristic features of a texture primitive and group them into a topic based on their frequencies of co-occurrence. Here, the feature descriptor is the connection of Haar-like features of multiple sizes. The segments of an image are finally obtained by identifying the homogeneous regions in the corresponding topic assignment map. The evaluation results for synthetic texture mosaics, remote sensing images, and natural scene images are illustrated.
+              </p>
+              <pre xml:space="preserve" id="fengJEI2013Bib" class="bibtex" style="display: none;">
+@article{fengJEI2013,
+  author  = {Hao  Feng and Zhiguo Jiang and Jun  Shi},
+  title   = {Unsupervised texture segmentation based on latent topic assignment},
+  journal = {Journal of Electronic Imaging},
+  volume  = {22},
+  number  = {1},
+  pages   = {13-26},
+  year    = {2013},
+  doi     = {10.1117/1.JEI.22.1.013026},
+  URL     = {https://doi.org/10.1117/1.JEI.22.1.013026},
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('fengJEI2013Abs');
+                hideblock('fengJEI2013Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="i" alt="Image" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Pathological Image Retrieval for Breast Cancer with pLSA Model</b> <a href="http://ieeexplore.ieee.org/document/6643748/" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Jun Shi, Yibing Ma, Zhiguo Jiang, Hao Feng, Jin Chen and Yu Zhao
+                </i></font>
+                <br>
+                ICIG, 2013
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('shiICIG2013Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('shiICIG2013Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="shiICIG2013Abs" class="abstract" style="display: none;">
+                Pathological image retrieval contributes to computer-aided diagnosis for breast cancer due to the fact that the retrieval results generally contain detailed diagnostic information (e.g. abnormal regions and diagnostic opinion from other doctors) which can offer some reference and assistance to the doctor during diagnosis process. In this paper, we present a novel pathological image retrieval approach based on probabilistic latent semantic analysis (pLSA) model. The method respectively utilizes SIFT features after visual saliency detection, and block Gabor features for the construction of two semantic codebooks, which not only can characterize the salient local invariant features and texture information under different scales and orientations in the pathological images, but also consider the high-level semantic features. Furthermore, we apply pLSA model to discover the latent topics in each codebook. Finally each pathological image is represented by the combination of topics from these two codebooks. The proposed method is evaluated on the pathological image database for breast cancer, which includes 5 categories (mucinous cystadenocarcinoma, invasive lobular carcinoma, basal-like carcinoma, invasive breast cancer and low-grade adenosquamous carcinoma) and 110 cases for each category. Experimental results demonstrate the feasibility and effectiveness of our method.
+              </p>
+              <pre xml:space="preserve" id="shiICIG2013Bib" class="bibtex" style="display: none;">
+@inproceedings{shiICIG2013, 
+  author    = {Jun Shi and Yibing Ma and Zhiguo Jiang and Hao Feng and Jin Chen and Yu Zhao}, 
+  booktitle = {2013 Seventh International Conference on Image and Graphics}, 
+  title     = {Pathological Image Retrieval for Breast Cancer with pLSA Model}, 
+  year      = {2013}, 
+  pages     = {634-638}, 
+  doi       = {10.1109/ICIG.2013.131},
+  month     = {July}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('shiICIG2013Abs');
+                hideblock('shiICIG2013Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="i" alt="Image" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>PLSA-based pathological image retrieval for breast cancer with color deconvolution</b> <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8920/1/PLSA-based-pathological-image-retrieval-for-breast-cancer-with-color/10.1117/12.2032054.full" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Yibing Ma, Jun Shi, Zhiguo Jiang and Hao Feng
+                </i></font>
+                <br>
+                ICIG, 2013
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('maMIPPR2013Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('maMIPPR2013Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="maMIPPR2013Abs" class="abstract" style="display: none;">
+                Digital pathological image retrieval plays an important role in computer-aided diagnosis for breast cancer. The retrieval results of an unknown pathological image, which are generally previous cases with diagnostic information, can provide doctors with assistance and reference. In this paper, we develop a novel pathological image retrieval method for breast cancer, which is based on stain component and probabilistic latent semantic analysis (pLSA) model. Specifically, the method firstly utilizes color deconvolution to gain the representation of different stain components for cell nuclei and cytoplasm, and then block Gabor features are conducted on cell nuclei, which is used to construct the codebook. Furthermore, the connection between the words of the codebook and the latent topics among images are modeled by pLSA. Therefore, each image can be represented by the topics and also the high-level semantic concepts of image can be described. Experiments on the pathological image database for breast cancer demonstrate the effectiveness of our method.
+              </p>
+              <pre xml:space="preserve" id="maMIPPR2013Bib" class="bibtex" style="display: none;">
+@proceeding{maMIPPR2013,
+  author  = {Yibing Ma and Jun Shi and Zhiguo Jiang and Hao Feng},
+  title   = {PLSA-based pathological image retrieval for breast cancer with color deconvolution},
+  journal = {Proc.SPIE},
+  volume  = {8920},
+  pages   = {8920-7},
+  year    = {2013},
+  doi     = {10.1117/12.2032054},
+  URL     = {https://doi.org/10.1117/12.2032054},
+}          
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('maMIPPR2013Abs');
+                hideblock('maMIPPR2013Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="i" alt="Image" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>Sparse coding-based topic model for remote sensing image segmentation</b> <a href="http://ieeexplore.ieee.org/document/6723740/" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Jun Shi, Zhiguo Jiang, Hao Feng and Yibing Ma
+                </i></font>
+                <br>
+                IGARSS, 2013
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('shiIGARSS2013Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('shiIGARSS2013Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="shiIGARSS2013Abs" class="abstract" style="display: none;">
+                Land cover segmentation can be viewed as topic assignment that the pixels are grouped into homogeneous regions according to different semantic topics in topic model. In this paper, we propose a novel topic model based on sparse coding for segmenting different kinds of land covers. Different from conventional topic models which generally assume each local feature descriptor is related to only one visual word of the codebook, our method utilizes sparse coding to characterize the potential correlation between the descriptor and multiple words. Therefore each descriptor can be represented by a small set of words. Furthermore, in this paper probabilistic Latent Semantic Analysis (pLSA) is applied to learn the latent relation among word, topic and document due to its simplicity and low computational cost. Experimental results on remote sensing image segmentation demonstrate the excellent superiority of our method over k-means clustering and conventional pLSA model.
+              </p>
+              <pre xml:space="preserve" id="shiIGARSS2013Bib" class="bibtex" style="display: none;">
+@inproceedings{shiIGARSS2013, 
+  author    = {Jun Shi and Zhiguo Jiang and Hao Feng and Yibing Ma}, 
+  booktitle = {2013 IEEE International Geoscience and Remote Sensing Symposium - IGARSS}, 
+  title     = {Sparse coding-based topic model for remote sensing image segmentation}, 
+  year      = {2013}, 
+  pages     = {4122-4125}, 
+  doi       = {10.1109/IGARSS.2013.6723740}, 
+  ISSN      = {2153-6996}, 
+  month     = {July}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('shiIGARSS2013Abs');
+                hideblock('shiIGARSS2013Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
         </tbody></table>
 
         <hr />
         <h3>2013之前</h3>
         <table><tbody>
-
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="i" alt="Image" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+              <p>
+                <b>SIFT-based Elastic sparse coding for image retrieval</b> <a href="http://ieeexplore.ieee.org/document/6467390" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                  Jun Shi, Zhiguo Jiang, Hao Feng and Liguo Zhang
+                </i></font>
+                <br>
+                ICIP, 2012
+                <br>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('shiICIP2012Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('shiICIP2012Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="shiICIP2012Abs" class="abstract" style="display: none;">
+                Bag-of-features (BoF) model based on SIFT generally assumes each descriptor is related to only one visual word of the codebook. Therefore, the potential correlation between the descriptor and other visual words is ignored. On the other hand, sparse coding through l1-norm regularization fails to generate optimal sparse representations since l1-norm regularization randomly selected one variable from a group of highly correlated variables. In this study we propose a novel bag-of-features model for image retrieval called SIFT-based Elastic sparse coding. The method utilizes a large number of SIFT descriptors to construct the codebook. The Elastic Net regression framework, which combines both l1-norm and l2-norm penalties, is then used to obtain the sparse-coefficient vector corresponding to the SIFT descriptor. Finally each image can be represented by a unified sparse-coefficient vector. Experimental results on Coil20 dataset demonstrate the consistent superiority of the proposed method over the state-of-the-art algorithms including original SIFT matching, conventional BoF strategy and BoF model based on l1-norm sparse coding.
+              </p>
+              <pre xml:space="preserve" id="shiICIP2012Bib" class="bibtex" style="display: none;">
+@inproceedings{shi2012ICIP, 
+  author    = {Jun Shi and Zhiguo Jiang and Hao Feng and Liguo Zhang}, 
+  booktitle = {2012 19th IEEE International Conference on Image Processing}, 
+  title     = {SIFT-based Elastic sparse coding for image retrieval}, 
+  year      = {2012},
+  pages     = {2437-2440}, 
+  doi       = {10.1109/ICIP.2012.6467390}, 
+  ISSN      = {1522-4880}, 
+  month     = {Sep}
+}
+              </pre>
+              <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('shiICIP2012Abs');
+                hideblock('shiICIP2012Bib');
+              </script>
+            </td>
+          </tr> <!-- Paper End Here -->
         </tbody></table>
       </div>
       </div>

@@ -87,7 +87,48 @@
               <h3 align="left">Recently Published</h3><br />
               <div class="block-text">
               <table><tbody>
-                
+                <tr><td valign="top"><!-- An Paper -->
+                    <p>
+                      <strong style="color:red">[New]</strong>
+                      <b>Generating Region Proposals for Histopathological Whole Slide Image Retrieval</b> <a href="http://www.sciencedirect.com/science/article/pii/S0169260717312154" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Yibing Ma, Zhiguo Jiang, Haopeng Zhang, Fengying Xie, Yushan Zheng, Huaqiang Shi, Yu Zhao and Jun Shi
+                      </i></font>
+                      <br>
+                        CMPB, 2018
+                      <br>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('maCMBP2018Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('maCMBP2018Bib')">BibTeX</a> &nbsp;
+                    </p>
+                    <p id="maCMBP2018Abs" class="abstract" style="display: none;">
+                        <b>Background and objective</b>
+                        Content-based image retrieval is an effective method for histopathological image analysis. However, given a database of huge whole slide images (WSIs), acquiring appropriate region-of-interests (ROIs) for training is significant and difficult. Moreover, histopathological images can only be annotated by pathologists, resulting in the lack of labeling information. Therefore, it is an important and challenging task to generate ROIs from WSI and retrieve image with few labels.
+                        <b>Methods</b>
+                        This paper presents a novel unsupervised region proposing method for histopathological WSI based on Selective Search. Specifically, the WSI is over-segmented into regions which are hierarchically merged until the WSI becomes a single region. Nucleus-oriented similarity measures for region mergence and Nucleus–Cytoplasm color space for histopathological image are specially defined to generate accurate region proposals. Additionally, we propose a new semi-supervised hashing method for image retrieval. The semantic features of images are extracted with Latent Dirichlet Allocation and transformed into binary hashing codes with Supervised Hashing.
+                        <b>Results</b>
+                        The methods are tested on a large-scale multi-class database of breast histopathological WSIs. The results demonstrate that for one WSI, our region proposing method can generate 7.3 thousand contoured regions which fit well with 95.8% of the ROIs annotated by pathologists. The proposed hashing method can retrieve a query image among 136 thousand images in 0.29 s and reach precision of 91% with only 10% of images labeled.
+                        <b>Conclusions</b>
+                        The unsupervised region proposing method can generate regions as predictions of lesions in histopathological WSI. The region proposals can also serve as the training samples to train machine-learning models for image retrieval. The proposed hashing method can achieve fast and precise image retrieval with small amount of labels. Furthermore, the proposed methods can be potentially applied in online computer-aided-diagnosis systems.
+                      </p>
+                    <pre xml:space="preserve" id="maCMBP2018Bib" class="bibtex" style="display: none;">
+@article{maCMPB2018,
+  title   = {Generating region proposals for histopathological whole slide image retrieval},
+  author  = {Yibing Ma and Zhiguo Jiang and Haopeng Zhang and Fengying Xie and Yushan Zheng and Huaqiang Shi and Yu Zhao and Jun Shi},
+  journal = {Computer Methods and Programs in Biomedicine},
+  volume  = {159},
+  pages   = {1 - 10},
+  year    = {2018},
+  issn    = {0169-2607},
+  url     = {http://www.sciencedirect.com/science/article/pii/S0169260717312154},
+}      
+                    </pre>
+                    <script language="javascript" type="text/javascript" xml:space="preserve">
+                      hideblock('maCMBP2018Abs');
+                      hideblock('maCMBP2018Bib');
+                    </script>
+                  </td>
+                </tr> <!-- Paper End Here -->
                 <tr><td valign="top"><!-- An Paper -->
                   <p>
                     <strong style="color:red">[New]</strong>
