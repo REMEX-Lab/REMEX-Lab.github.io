@@ -76,7 +76,403 @@
       <article class="content-block">
       <div class="block-body">
       <div class="block-text">
+          <!-- -------------------------------------------- -->
+          <h3>2022</h3>
+          <table><tbody>
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_zheng_mia_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Encoding Histopathology Whole Slide Images with Location-aware Graphs for Diagnostically Relevant Regions Retrieval</b> <a href="https://doi.org/10.1016/j.media.2021.102308" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Yushan Zheng, Zhiguo Jiang*, Jun Shi, Fengying Xie, Haopeng Zhang, Wei Luo, Dingyi Hu, Shujiao Sun, Zhongmin Jiang, and Chenghai Xue
+                      </i></font>
+                      <br>
+                      Medical Image Analysis, 2022
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_mia_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengMIA2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengMIA2021Bib')">BibTeX</a> &nbsp;
+                      <i class="fa fa-github"></i> <a href="https://github.com/Zhengyushan/lagenet" target="_blank">Code</a>
+                  </p>
+                  <p id="ZhengMIA2021Abs" class="abstract" style="display: none;">
+                      Content-based histopathological image retrieval (CBHIR) has become popular in recent years in histopathological image analysis. CBHIR systems provide auxiliary diagnosis information for pathologists by searching for and returning regions that are contently similar to the region of interest (ROI) from a pre-established database. It is challenging and yet significant in clinical applications to retrieve diagnostically relevant regions from a database consisting of histopathological whole slide images (WSIs). In this paper, we propose a novel framework for regions retrieval from WSI database based on location-aware graphs and deep hash techniques. Compared to the present CBHIR framework, both structural information and global location information of ROIs in the WSI are preserved by graph convolution and self-attention operations, which makes the retrieval framework more sensitive to regions that are similar in tissue distribution. Moreover, benefited from the graph structure, the proposed framework has good scalability for both the size and shape variation of ROIs. It allows the pathologist to define query regions using free curves according to the appearance of tissue. Thirdly, the retrieval is achieved based on the hash technique, which ensures the framework is efficient and adequate for practical large-scale WSI database. The proposed method was evaluated on an in-house endometrium dataset with 2650 WSIs and the public ACDC-LungHP dataset. The experimental results have demonstrated that the proposed method achieved a mean average precision above 0.667 on the  endometrium dataset and above 0.869 on the ACDC-LungHP dataset in the task of irregular region retrieval, which are superior to the state-of-the-art methods. The average retrieval time from a database containing 1855 WSIs is 0.752 ms.
+                  </p>
+                  <pre xml:space="preserve" id="ZhengMIA2021Bib" class="bibtex" style="display: none;">
+@Article{zheng2022encoding,
+  author  = {Zheng, Yushan and Jiang, Zhiguo and Shi, Jun and Xie, Fengying and Zhang, Haopeng and
+              Luo, Wei and Hu, Dingyi and Sun, Shujiao and Jiang, Zhongmin and Xue, Chenghai},
+  title   = {Encoding histopathology whole slide images with location-aware graphs for diagnostically relevant regions retrieval},
+  journal = {Medical Image Analysis},
+  year    = {2022},
+  volumn  = {76},
+  pages   = {102308},
+  doi     = {https://doi.org/10.1016/j.media.2021.102308},
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('ZhengMIA2021Abs');
+                hideblock('ZhengMIA2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
 
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_li_spiemi_2022.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Weakly Supervised Histopathological Image Representation Learning based on Contrastive Dynamic Clustering</b> <!--a href="https://doi.org/10.1016/j.media.2021.102308" target="_blank"><i class="fa fa-external-link"></i></a-->
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Jun Li, Zhiguo Jiang, Yushan Zheng*, Haopeng Zhang, Jun Shi, Dingyi Hu,  Wei Luo, Zhongmin Jiang, and Chenghai Xue
+                      </i></font>
+                      <br>
+                      SPIE Medical Imaging, 2022
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_li_spiemi_2022.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('LiSPIEMI2022Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('LiSPIEMI2022Bib')">BibTeX</a> &nbsp;
+                      <i class="fa fa-github"></i> <a href="https://github.com/junl21/cdc" target="_blank">Code</a>
+                  </p>
+                  <p id="LiSPIEMI2022Abs" class="abstract" style="display: none;">
+                      Feature representations of histopathology whole slide images (WSIs) are crucial to the downstream applications
+                      for computer-aided cancer diagnosis, including whole slide image classification, region of interest detection, hash
+                      retrieval, prognosis analysis, and other high-level inference tasks. State-of-the-art methods for whole slide image
+                      feature extraction generally rely on supervised learning algorithms based on fine-grained manual annotations,
+                      unsupervised learning algorithms without annotation, or directly use pre-trained features. At present, there is
+                      a lack of research on weakly supervised feature learning methods that only utilize WSI-level labeling. In this
+                      paper, we propose a weakly supervised framework that learns the feature representations of various lesion areas
+                      from histopathology whole slide images. The proposed framework consists of a contrastive learning network as
+                      the backbone and a designed contrastive dynamic clustering (CDC) module to embedding the lesion information
+                      into the feature representations. The proposed method was evaluated on a large scale endometrial whole slide
+                      image dataset. The experimental results have demonstrated that our method can learn discriminative feature
+                      representations for histopathology image classification and the quantitative performance of our method is close
+                      to the fully-supervision learning methods
+                  </p>
+                  <pre xml:space="preserve" id="LiSPIEMI2022Bib" class="bibtex" style="display: none;">
+@inproceedings{li2021weakly,
+  author    = {Jun Li, Zhiguo Jiang, Yushan Zheng, Haopeng Zhang, Jun Shi, Dingyi Hu,
+               Wei Luo, Zhongmin Jiang, and Chenghai Xue},
+  title     = {Weakly Supervised Histopathological Image Representation Learning based on Contrastive Dynamic Clustering},
+  booktitle = {SPEI Medical Imaging 2022},
+  year      = {2022},
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('LiSPIEMI2022Abs');
+                hideblock('LiSPIEMI2022Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          </tbody></table>
+
+          <hr />
+          <!-- -------------------------------------------- -->
+          <!-- -------------------------------------------- -->
+          <h3>2021</h3>
+          <table><tbody>
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_ma_spie_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Hyperspectral image classification using spectral-spatial hypergraph convolution neural network</b> <a href="https://doi.org/10.1117/12.2599787" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Zhongtian Ma, Zhiguo Jiang, Haopeng Zhang
+                      </i></font>
+                      <br>
+                      SPIE Remote Sensing, 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_ma_spie_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('MaSPIE2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('MaSPIE2021Bib')">BibTeX</a> &nbsp;
+                  </p>
+                  <p id="MaSPIE2021Abs" class="abstract" style="display: none;">
+                      Deep learning methods, especially convolutional neural networks(CNN), have been widely used in hyperspectral image(HSI) classification. Recently, graph convolutional networks (GCN) have shown great potential in HSI classification problem. However, the existing GCN-based methods have several problems. First, the existing methods rely too much on the adjacency matrix, which cannot be changed during training. Furthermore, most of them can only use a single kind of feature, and fail to extract the spectral-spatial information from the HSI. Finally, for the existing GCN-based methods, it is difficult to achieve the same accuracy as the mature CNN methods. In this paper, we propose a spectral-spatial hypergraph convolutional neural network (S2HCN) for HSI classification. Compared with the existing GCN-based methods, S2HCN has the following advantages. Different from the adjacency matrix that is fixed during training of GCN, S2HCN can dynamically update the weight of the hyperedge during training, which reduces the reliance on prior information to a certain extent. In addition, S2HCN generates hyperedges from the spectral and spatial features independently, and adopts the incidence matrix composed of all hyperedges to replace the adjacency matrix in GCN. In this way, the spectral and spatial features can be better integrated. Finally, compared to a simple graph structure, the hypergraph structure can express the high-dimensional relationships in the data, which is beneficial to classification problems. Sufficient experiments on two popular HSI datasets have proved the effectiveness of S2HCN.
+                  </p>
+                  <pre xml:space="preserve" id="MaSPIE2021Bib" class="bibtex" style="display: none;">
+@inproceedings{10.1117/12.2599787,
+author = {Zhongtian Ma and Zhiguo Jiang and Haopeng Zhang},
+title = {{Hyperspectral image classification using spectral-spatial hypergraph convolution neural network}},
+volume = {11862},
+booktitle = {Image and Signal Processing for Remote Sensing XXVII},
+editor = {Lorenzo Bruzzone and Francesca Bovolo},
+organization = {International Society for Optics and Photonics},
+publisher = {SPIE},
+pages = {133 -- 140},
+keywords = {graph convolution networks, hypergraph learning, hyperspectral image classification, feature fusion, deep learning},
+year = {2021},
+doi = {10.1117/12.2599787},
+URL = {https://doi.org/10.1117/12.2599787}
+}
+
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('MaSPIE2021Abs');
+                hideblock('MaSPIE2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_ma_tgrs_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Hyperspectral Image Classification using Feature Fusion Hypergraph Convolution Neural Network</b> <a href="https://doi.org/10.1109/TGRS.2021.3123423" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Zhongtian Ma, Zhiguo Jiang, Haopeng Zhang
+                      </i></font>
+                      <br>
+                      IEEE Transactions on Geoscience and Remote Sensing, 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_ma_tgrs_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('MaTGRS2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('MaTGRS2021Bib')">BibTeX</a> &nbsp;
+                  </p>
+                  <p id="MaTGRS2021Abs" class="abstract" style="display: none;">
+                      Convolutional neural networks (CNN) and graph representation learning are two common methods for hyperspectral image (HSI) classification. Recently, graph convolutional neural networks (GCN), a combination of CNN and graph representation learning, have shown great potential in HSI classification problem. However, the existing GCN-based methods have many problems, such as over dependence on the adjacency matrix, usage of a single modal feature, and lower accuracy than the mature CNN method. In this paper, we propose a feature fusion hypergraph convolutional neural network (F2HNN) for HSI classification. F2HNN first generates hyperedges from features of different modalities to construct a hypergraph representing multi-modal features in HSI. Then, the HSI and the extracted hypergraph are input into the hypergraph convolutional neural network for learning. In addition, we proposes three feature fusion strategies. The first strategy is the most basic spatial and spectral feature fusion. The second strategy fuses the spectral features extracted by a pre-trained multilayer perceptron (MLP) with the spatial features to reduce the redundant information of the original spectral features. The third strategy uses the fusion of CNN features, spectral features and spatial features to explore the capabilities of F2HNN. Sufficient experiments on four datasets have proved the effectiveness of F2HNN.
+                  </p>
+                  <pre xml:space="preserve" id="MaTGRS2021Bib" class="bibtex" style="display: none;">
+@ARTICLE{9590574,
+  author={Ma, Zhongtian and Jiang, Zhiguo and Zhang, Haopeng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Hyperspectral Image Classification using Feature Fusion Hypergraph Convolution Neural Network},
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TGRS.2021.3123423}
+}
+
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('MaTGRS2021Abs');
+                hideblock('MaTGRS2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_mei_igarss_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Self-Attention Fusion Module for Single Remote Sensing Image Super-Resolution</b> <a href="https://doi.org/10.1109/IGARSS47720.2021.9553766" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Han Mei, Haopeng Zhang, Zhiguo Jiang
+                      </i></font>
+                      <br>
+                      IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_mei_igarss_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('MeiIGARSS2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('MeiIGARSS2021Bib')">BibTeX</a> &nbsp;
+                  </p>
+                  <p id="MeiIGARSS2021Abs" class="abstract" style="display: none;">
+                      Single image super-resolution (SISR) is an important procedure to improve many remote sensing applications. Global features play an important role in pixel generation of SISR. In this paper, we proposed a self-attention fusion module named as SAF module which combines spatial attention and channel attention in parallel to handle this problem. Our self-attention fusion module can be flexibly added to many popular deep-learning-based SISR models to further improve their representation ability and learn global features. Experiments on UC Merced dataset indicate that SAF module can improve the performance of classic SISR models and achieve state-of-the-art super-resolution results.
+                  </p>
+                  <pre xml:space="preserve" id="MeiIGARSS2021Bib" class="bibtex" style="display: none;">
+@INPROCEEDINGS{9553766,
+  author={Mei, Han and Zhang, Haopeng and Jiang, Zhiguo},
+  booktitle={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS},
+  title={Self-Attention Fusion Module for Single Remote Sensing Image Super-Resolution},
+  year={2021},
+  volume={},
+  number={},
+  pages={2883-2886},
+  doi={10.1109/IGARSS47720.2021.9553766}}
+
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('MeiIGARSS2021Abs');
+                hideblock('MeiIGARSS2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_zhangxy_spiers_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Few shot object detection in remote sensing images</b> <a href="https://doi.org/10.1117/12.2598444" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Xingyu Zhang, Haopeng Zhang, Zhiguo Jiang
+                      </i></font>
+                      <br>
+                      SPIE Remote Sensing, 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zhangxy_spiers_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangSPIERS2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangSPIERS2021Bib')">BibTeX</a> &nbsp;
+                  </p>
+                  <p id="ZhangSPIERS2021Abs" class="abstract" style="display: none;">
+                      Object detection in remote sensing images has far-reaching significance. However, compared with object detection tasks in the field of natural images, there are still some challenge problems that need to be improved in remote sensing, due to the similarity and unbalanced scale between objects in remote sensing images. Currently, object detection algorithms based on deep learning, i.e. Faster-RCNN, YOLO, SSD, etc., have reached an incredible grade with the concerted efforts of researchers, and have been used in various aspects such as remote sensing, face recognition, pedestrian detection and so on. However, these methods always need a lot of labeled data, while collecting a dataset is labor intensive and time consuming. In order to overcome these difficulties, we introduce a few shot learning algorithm with attention mechanism for object detection in remote sensing images, aiming to detect objects of unknown classes with only a few labeled remote sensing images. We use the structure of Siamese-network to extract the features of the target from support images and query images, and then use the features of support images as a kernel to do a depth-wise convolution on the feature map of query image. By this way, we can enhance the characteristics of the target category and weaken the characteristics of other categories and the background. For unbalanced scale problem, our method takes care of various objects of different scales in the process of extracting features. We integrate the information of multi-layer feature maps and make predictions on three feature maps of different scales. Experiments on HRSC-2016 dataset validate the effectiveness of our method.
+                  </p>
+                  <pre xml:space="preserve" id="ZhangSPIERS2021Bib" class="bibtex" style="display: none;">
+@inproceedings{10.1117/12.2598444,
+author = {Xingyu Zhang and Haopeng Zhang and Zhiguo Jiang},
+title = {{Few shot object detection in remote sensing images}},
+volume = {11862},
+booktitle = {Image and Signal Processing for Remote Sensing XXVII},
+editor = {Lorenzo Bruzzone and Francesca Bovolo},
+organization = {International Society for Optics and Photonics},
+publisher = {SPIE},
+pages = {76 -- 81},
+keywords = {Few shot learning, Object detection, Remote sensing, Deep learning},
+year = {2021},
+doi = {10.1117/12.2598444},
+URL = {https://doi.org/10.1117/12.2598444}
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('ZhangSPIERS2021Abs');
+                hideblock('ZhangSPIERS2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_luo_icig_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Frequency-based convolutional neural network for efficient segmentation of histopathology whole slide images</b> <a href="https://link.springer.com/chapter/10.1007/978-3-030-87358-5_47" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Wei Luo, Yushan Zheng, Dingyi Hu, Jun Li, Chenghai Xue, and Zhiguo Jiang
+                      </i></font>
+                      <br>
+                      International Conference on Image and Graphics (ICIG) 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_luo_icig_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('LuoICIG2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('LuoICIG2021Bib')">BibTeX</a> &nbsp;
+                  </p>
+                  <p id="LuoICIG2021Abs" class="abstract" style="display: none;">
+                      CNN-based methods for WSI segmentation are time-consuming under the limits of communication bandwidth and memory usage, due to the high pixel resolution of WSIs. In this paper, we propose a novel framework for accelerating the segmentation of digital histopathology WSIs in the frequency domain. Based on the characteristics of the JPEG format in data storage and transmission on the existing digital histopathological diagnosis cloud platform, we extract DCT coefficients from the JEPG decoding and compress them into the DCT feature cubes by a frequency selection block. Based on the DCT feature cubes, we propose an extremely light-weighted model named Efficient DCT-Network (EDCT-Net). The size of the input data, as well as the bandwidth requirement for CPU-GPU transmitting, for EDCT-net reduces by 96% compared to the common CNN-based methods. And, the number of model parameters and the floating-point operations (FLOPs) for EDCT-Net decreases by 98% and 94% compared to the baseline method. The experimental results have demonstrated that our method achieves a Dice score of 0.811 with only 8 frequency channels in the task of endometrial histopathology WSI segmentation, which is comparable with state-of-the-art methods.
+                  </p>
+                  <pre xml:space="preserve" id="LuoICIG2021Bib" class="bibtex" style="display: none;">
+@inproceedings{luo2021frequency,
+  title      = "Frequency-Based Convolutional Neural Network for Efficient Segmentation of Histopathology Whole Slide Images.",
+  author     = "Wei {Luo} and Yushan {Zheng} and Dingyi {Hu} and Jun {Li} and Chenghai {Xue} and Zhiguo {Jiang}",
+  booktitle  = "International Conference on Image and Graphics",
+  pages      = "584--596",
+  year       = "2021"
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('LuoICIG2021Abs');
+                hideblock('LuoICIG2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_zheng_tmi_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Diagnostic Regions Attention Network (DRA-Net) for Histopathology WSI Recommendation and Retrieval</b> <a href="https://doi.org/10.1109/TMI.2020.3046636" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Yushan Zheng, Zhiguo Jiang*, Jun Shi, Fengying Xie, Haopeng Zhang, Huai Jianguo, Cao Ming, and Yang Xiaomiao
+                      </i></font>
+                      <br>
+                      IEEE Transactions on Medical Imaging, 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_tmi_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengTMI2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengTMI2021Bib')">BibTeX</a> &nbsp;
+                      <i class="fa fa-github"></i> <a href="https://github.com/Zhengyushan/dpathnet" target="_blank">Code</a>
+                  </p>
+                  <p id="ZhengTMI2021Abs" class="abstract" style="display: none;">
+                      The development of whole slide imaging techniques and online digital pathology platforms have accelerated the popularization of telepathology for remote tumor diagnoses. During a diagnosis, the behavior information of the pathologist can be recorded by the platform and then archived with the digital case. The browsing path of the pathologist on the WSI is one of the valuable information in the digital database because the image content within the path is expected to be highly correlated with the diagnosis report of the pathologist. In this paper, we proposed a novel approach for computer-assisted cancer diagnosis named session-based histopathology image recommendation (SHIR) based on the browsing paths on WSIs. To achieve the SHIR, we developed a novel diagnostic regions attention network (DRA-Net) to learn the pathology knowledge from the image content associated with the browsing paths. The DRA-Net does not rely on the pixel-level or region-level annotations of pathologists. All the data for training can be automatically collected by the digital pathology platform without interrupting the pathologists' diagnoses. The proposed approaches were evaluated on a gastric dataset containing 983 cases within 5 categories of gastric lesions. The quantitative and qualitative assessments on the dataset have demonstrated the proposed SHIR framework with the novel DRA-Net is effective in recommending diagnostically relevant cases for auxiliary diagnosis. The MRR and MAP for the recommendation are respectively 0.816 and 0.836 on the gastric dataset.
+                  </p>
+                  <pre xml:space="preserve" id="ZhengTMI2021Bib" class="bibtex" style="display: none;">
+@Article{zheng2020diagnostic,
+  author  = {Zheng, Yushan and Jiang, Zhiguo and Shi, Jun and Xie, Fengying and
+             Zhang, Haopeng and Huai, Jianguo and Cao, Ming and Yang, Xiaomiao},
+  title   = {Diagnostic Regions Attention Network (DRA-Net) for Histopathology
+             WSI Recommendation and Retrieval},
+  journal = {IEEE Transactions on Medical Imaging},
+  volume  = {40},
+  number  = {3},
+  pages   = {1090--1103}
+  year    = {2021},
+  doi     = {10.1109/TMI.2020.3046636},
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('ZhengTMI2021Abs');
+                hideblock('ZhengTMI2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="../../images/src/article_zheng_jbhi_2021.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b>Stain standardization capsule for application-driven histopathological image normalization</b> <a href="https://ieeexplore.ieee.org/document/9050897/" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Yushan Zheng, Zhiguo Jiang*, Haopeng Zhang, Fengying Xie, Dingyi Hu, Shujiao Sun, Jun Shi, and Chenghai Xue
+                      </i></font>
+                      <br>
+                      IEEE Journal of Biomedical and Health Informatics, 2021
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_jbhi_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengJBHI2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengJBHI2021Bib')">BibTeX</a> &nbsp;
+                      <i class="fa fa-github"></i> <a href="https://github.com/Zhengyushan/ssc" target="_blank">Code</a>
+                  </p>
+                  <p id="ZhengJBHI2021Abs" class="abstract" style="display: none;">
+                      Color consistency is crucial to developing robust deep learning methods for histopathological image analysis. With the increasing application of digital histopathological slides, the deep learning methods are probably developed based on the data from multiple medical centers. This requirement makes it a challenging task to normalize the color variance of histopathological images from different medical centers. In this paper, we propose a novel color standardization module named stain standardization capsule based on the capsule network and the corresponding dynamic routing algorithm. The proposed module can learn and generate uniform stain separation outputs for histopathological images in various color appearance without the reference to manually selected template images. The proposed module is light and can be jointly trained with the application-driven CNN model. The proposed method was validated on three histopathology datasets and a cytology dataset, and was compared with state-of-the-art methods. The experimental results have demonstrated that the SSC module is effective in improving the performance of histopathological image analysis and has achieved the best performance in the compared methods.
+                  </p>
+                  <pre xml:space="preserve" id="ZhengJBHI2021Bib" class="bibtex" style="display: none;">
+@article{zheng2020stain,
+  author    = {Zheng, Yushan and Jiang, Zhiguo and Zhang, Haopeng and Xie, Fengying and Hu, Dingyi
+               and Sun, Shujiao and Shi, Jun and Xue, Chenghai},
+  title     = {Stain standardization capsule for application-driven histopathological image normalization},
+  journal   = {IEEE Journal of Biomedical and Health Informatics},
+  volume    = {25},
+  number    = {2},
+  pages     = {337--347}
+  year      = {2021},
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('ZhengJBHI2021Abs');
+                hideblock('ZhengJBHI2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          </tbody></table>
+
+          <hr />
+          <!-- -------------------------------------------- -->
+          <!-- -------------------------------------------- -->
         <h3>2020</h3>
         <table><tbody>
           
