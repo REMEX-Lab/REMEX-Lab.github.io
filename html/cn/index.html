@@ -76,7 +76,7 @@
             <div class="block-body">
               <img src="../../images/logo.png" alt="Logo" width="512px">
               <p><br>
-                <b>REMEX</b> (<b>Re</b>mote sensing and <b>Me</b>dical imaging with <b>X</b>-features) 实验室由姜志国教授负责。实验室主要研究方向包括遥感图像处理和分析（remote sensing image processing and analysis）、医学成像分析（medical imaging and analysis）、空间目标图像处理（space object image processing）、计算机视觉（computer vision）、模式识别（pattern recognition）、深度学习（deep learning）等。
+                <b>REMEX</b> (<b>Re</b>mote sensing and <b>Me</b>dical imaging with <b>X</b>-features) 实验室由姜志国教授负责。实验室主要研究方向包括图像处理、模式识别、深度学习等，及其在航天遥感、医学图像等领域的应用。具体研究方向包括：遥感图像处理和分析（remote sensing image processing and analysis）、空间目标图像处理（space object image processing）、医学成像分析（medical imaging and analysis）等。
               </p>
               
               <div class="block-image">
@@ -88,292 +88,159 @@
               <div class="block-text">
               <table><tbody>
                 
-                               <tr> <!-- An Paper -->
-            <td width="22%" valign="top"><p>
-              <img src="../../images/src/ZhangIVC2020.jpg" alt="Flowchart" width="200">
-            </p></td>
-            <td width="78%" valign="top">
-              <p>
-                <b>Out-of-Region Keypoint Localization for 6D Pose Estimation</b> 
-                <br>
-                <font size="3pt" face="Georgia"><i>
-         Xin Zhang, Zhiguo Jiang, and <a href="https://zhengyushan.github.io/" target="_blank"> Haopeng Zhang*   </a>
-                 
-                </i></font>
-                <br>
-                  Image and Vision Computing, 2020
-                <br>
-                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/ZhangIVC2020preprint.pdf" target="_blank">PDF</a> &nbsp;
-                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangIVC2020_Abs')">Abstract</a> &nbsp;
-                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangIVC2020_Bib')">BibTeX</a> &nbsp;
-              </p>
-              <p id="ZhangIVC2020_Abs" class="abstract" style="display: none;">
-            This paper addresses the problem of instance level 6D pose estimation from a single RGB image. Our approach simultaneously detects objects and recovers poses by predicting the 2D image locations of the object's 3D bounding box vertices. Specifically, we focus on the challenge of locating virtual keypoints outside the object region proposals, and propose a boundary-based keypoint representation which incorporates classification and regression schemes to reduce output space. Moreover, our method predicts localization confidences and alleviates the influence of difficult keypoints by a voting process. We implement the proposed method based on 2D detection pipeline, meanwhile bridge the feature gap between detection and pose estimation. Our network has real-time processing capability, which runs 30 fps on a GTX 1080Ti GPU. For single object and multiple objects pose estimation on two benchmark datasets, our approach achieves competitive or superior performance compared with state-of-the-art RGB based pose estimation methods.  
-              <pre xml:space="preserve" id="ZhangIVC2020_Bib" class="bibtex" style="display: none;">       
-            
-@Article{ZhangIVC2020,
-AUTHOR = {Xin Zhang and Zhiguo Jiang and Haopeng Zhang},
-TITLE = {Out-of-Region Keypoint Localization for 6D Pose Estimation},
-JOURNAL = {Image and Vision Computing},
-VOLUME = {93},
-YEAR = {2020},
-NUMBER = {C},
-PAGES = {103854},
-ISSN = {0262-8856},
-DOI = {10.1016/j.imavis.2019.103854}
-}   
-                  </pre>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('ZhangIVC2020_Abs');
-                      hideblock('ZhangIVC2020_Bib');
-              </script>
-            </td>
-        </tr> <!-- Paper End Here -->    
-              
-              
-              
-             <tr> <!-- An Paper -->
-            <td width="22%" valign="top"><p>
-              <img src="../../images/src/article_zheng_tmi_2020.png" alt="Flowchart" width="200">
-            </p></td>
-            <td width="78%" valign="top">
-              <p>
-                <b>Diagnostic Regions Attention Network (DRA-Net) for Histopathology WSI Recommendation and Retrieval</b> 
-                <br>
-                <font size="3pt" face="Georgia"><i>
-                  <a href="https://zhengyushan.github.io/" target="_blank">Yushan Zheng</a>, Zhiguo Jiang*, Jun Shi, Fengying Xie, Haopeng Zhang, Huai Jianguo, Cao Ming, and Yang Xiaomiao
-                  <!-- Yushan Zheng, Zhiguo Jiang*, Jun Shi, Fengying Xie, Haopeng Zhang, Huai Jianguo, Cao Ming, and Yang Xiaomiao-->
-                </i></font>
-                <br>
-                  IEEE Transactions on Medical Imaging, 2020
-                <br>
-                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_tmi_2020.pdf" target="_blank">PDF</a> &nbsp;
-                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengTMI2020_Abs')">Abstract</a> &nbsp;
-                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengTMI2020_Bib')">BibTeX</a> &nbsp;
-              </p>
-              <p id="ZhengTMI2020_Abs" class="abstract" style="display: none;">
-            The development of whole slide imaging techniques and online digital pathology platforms have accelerated the popularization of telepathology for remote tumor diagnoses. During a diagnosis, the behavior information of the pathologist can be recorded by the platform and then archived with the digital case. The browsing path of the pathologist on the WSI is one of the valuable information in the digital database because the image content within the path is expected to be highly correlated with the diagnosis report of the pathologist. In this paper, we proposed a novel approach for computer-assisted cancer diagnosis named session-based histopathology image recommendation (SHIR) based on the browsing paths on WSIs. To achieve the SHIR, we developed a novel diagnostic regions attention network (DRA-Net) to learn the pathology knowledge from the image content associated with the browsing paths. The DRA-Net does not rely on the pixel-level or region-level annotations of pathologists. All the data for training can be automatically collected by the digital pathology platform without interrupting the pathologists' diagnoses. The proposed approaches were evaluated on a gastric dataset containing 983 cases within 5 categories of gastric lesions. The quantitative and qualitative assessments on the dataset have demonstrated the proposed SHIR framework with the novel DRA-Net is effective in recommending diagnostically relevant cases for auxiliary diagnosis. The MRR and MAP for the recommendation are respectively 0.816 and 0.836 on the gastric dataset.              
-              <pre xml:space="preserve" id="ZhengTMI2020_Bib" class="bibtex" style="display: none;">       
-            
-@Article{zheng2020diagnostic,
-  author  = {Zheng, Yushan and Jiang, Zhiguo and Shi, Jun and Xie, Fengying and
-             Zhang, Haopeng and Huai, Jianguo and Cao, Ming and Yang, Xiaomiao},
-  title   = {Diagnostic Regions Attention Network (DRA-Net) for Histopathology 
-             WSI Recommendation and Retrieval},
-  journal = {IEEE Transactions on Medical Imaging},
-  year    = {2020},
-  doi     = {10.1109/TMI.2020.3046636},
-}          
-                  </pre>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('ZhengTMI2020_Abs');
-                      hideblock('ZhengTMI2020_Bib');
-              </script>
-            </td>
-        </tr> <!-- Paper End Here -->    
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-           <tr> <!-- An Paper -->
-            <td width="22%" valign="top"><p>
-              <img src="../../images/src/WangIEEETransaction2020.PNG" alt="Flowchart" width="200">
-            </p></td>
-            <td width="78%" valign="top">
-              <p>
-                <b>Non-pairwise-trained Cycle Convolutional Neural Network for Single Remote Sensing Image Super-Resolution</b> 
-                <br>
-                <font size="3pt" face="Georgia"><i>
-                  <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Pengrui Wang and Zhiguo Jiang
-                </i></font>
-                <br>
-                IEEE Transactions on Geoscience and Remote Sensing, 2020
-                <br>
-                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/WangIEEETransaction2020.pdf" target="_blank">PDF</a> &nbsp;
-                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('WangIEEETransaction2020_Abs')">Abstract</a> &nbsp;
-                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('WangIEEETransaction2020_Bib')">BibTeX</a> &nbsp;
-              </p>
-              <p id="WangIEEETransaction2020_Abs" class="abstract" style="display: none;">
-                Single image super-resolution (SISR) is to recover the high spatial resolution image from a single low spatial resolution one, which is a useful procedure for many remote sensing applications. Most previous convolutional neural network (CNN)-based methods adopt supervised learning. However, paired highresolution and low-resolution remote sensing images are actually hard to acquire for supervised learning SR methods. To handle this problem, we propose a novel cycle convolutional neural network (Cycle-CNN). Our network consists of two generative CNNs for down-sampling and SR separately and can be trained with unpaired data. We perform comprehensive experiments on panchromatic and multispectral images of the GaoFen-2 satellite and the UC Merced land use data set. Experimental results indicate that our method achieves state-of-the-art CNN-based SR results and is robust against noise and blur in remote sensing images. Comprehensively considering super-resolved image quality and time costs, our proposed method outperforms the compared learning-based SISR approaches.</p>
-              <pre xml:space="preserve" id="WangIEEETransaction2020_Bib" class="bibtex" style="display: none;">       
-            
-@ARTICLE{9151194,
-  author    = {H. {Zhang} and P. {Wang} and Z. {Jiang}},
-  journal   = {IEEE Transactions on Geoscience and Remote Sensing}, 
-  title     = {Nonpairwise-Trained Cycle Convolutional Neural Network for 
-              Single Remote Sensing Image Super-Resolution}, 
-  year      = {2020},
-  volume    = {},
-  number    = {},
-  pages     = {1-12},
-  }           
-  
-                  </pre>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('WangIEEETransaction2020_Abs');
-                      hideblock('WangIEEETransaction2020_Bib');
-              </script>
-            </td>
-        </tr> <!-- Paper End Here -->       
-             
-                
-                
-          <tr> <!-- An Paper -->
-            <td width="22%" valign="top"><p>
-              <img src="../../images/src/article_zheng_miccai_2020.png" alt="Flowchart" width="200">
-            </p></td>
-            <td width="78%" valign="top">
-              <p>
-                <b>Tracing Diagnosis Paths on Histopathology WSIs for Diagnostically Relevant Case Recommendation</b> 
-                <br>
-                <font size="3pt" face="Georgia"><i>
-                  Zhiguo Jiang, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Fengying Xie, <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng</a>, and Jun Shi
-                </i></font>
-                <br>
-                Medical Image Computing and Computer Assisted Interventions (MICCAI), 2020
-                <br>
-                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_miccai_2020.pdf" target="_blank">PDF</a> &nbsp;
-                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhengMICCAI2020_Abs')">Abstract</a> &nbsp;
-                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhengMICCAI2020_Bib')">BibTeX</a> &nbsp;
-              </p>
-              <p id="zhengMICCAI2020_Abs" class="abstract" style="display: none;">
-                Telepathology has enabled the remote cancer diagnosis based on digital pathological whole slide images (WSIs). During the diagnosis, the behavior information of the pathologist can be recorded by the platform and then archived with the digital cases. The diagnosis path of the pathologist on a WSI is valuable information since the image content within the path is highly correlated with the diagnosis report of the pathologist. In this paper, we proposed a novel diagnosis path network (DPathNet). DPathNet utilizes the diagnosis paths of pathologists on the WSIs as the supervision to learn the pathology knowledge from the image content. Based on the DPathNet, we develop a novel approach for computer-aided cancer diagnosis named session-based histopathology image recommendation (SHIR). SHIR summaries the information of a WSI while the pathologist browsing the WSI and actively recommends the relevant cases within similar image content from the database. The proposed approaches are evaluated on a gastric dataset containing 983 cases within 5 categories of gastric lesions. The experimental results have demonstrated the effectiveness of the DPathNet to the SHIR task and the supervision of the diagnosis path is sufficient to train the DPathNet. The MRR and MAP of the proposed SHIR framework are respectively 0.741 and 0.777 on the gastric dataset.</p>
-              <pre xml:space="preserve" id="zhengMICCAI2020_Bib" class="bibtex" style="display: none;">       
-            
-  @inproceedings{zheng2020tracing,
-  author    = {Zheng, Yushan and Jiang, Zhiguo and Zhang, 
-                Haopeng and Xie, Fengying and Shi, Jun},
-  title     = {Tracing Diagnosis Paths on Histopathology WSIs for 
-               Diagnostically Relevant Case Recommendation},
-  booktitle = {Medical Image Computing and Computer Assisted Intervention 
-               -- MICCAI 2020},
-  year      = {2020},
-}              
-                  </pre>
-              <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('zhengMICCAI2020_Abs');
-                      hideblock('zhengMICCAI2020_Bib');
-              </script>
-            </td>
-        </tr> <!-- Paper End Here -->
-            <tr> <!-- An Paper -->
-              <td width="22%" valign="top"><p>
-                  <img src="../../images/src/article_zheng_jbhi_2020.png" alt="Flowchart" width="200">
-              <td width="78%" valign="top">
+                <tr> <!-- An Paper -->
                   <p>
-                      <b>Stain standardization capsule for application-driven histopathological image normalization</b> 
-                      <a href="https://ieeexplore.ieee.org/document/9050897/" target="_blank"><i class="fa fa-external-link"></i></a>
-                  <br>
-                  <font size="3pt" face="Georgia"><i>
-                     <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng</a>, Zhiguo Jiang*, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Fengying Xie, Dingyi Hu, Shujiao Sun, Jun Shi, and Chenghai Xue
-                  </i></font>
-                  <br>
-                      IEEE Journal of Biomedical and Health Informatics, 2020
-                  <br>
-                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_jbhi_2020.pdf" target="_blank">PDF</a> &nbsp;
-                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('zhengJBHI2020_Abs')">Abstract</a> &nbsp;
-                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('zhengJBHI2020_Bib')">BibTeX</a> &nbsp;
+                      <b>Encoding Histopathology Whole Slide Images with Location-aware Graphs for Diagnostically Relevant Regions Retrieval</b> <a href="https://doi.org/10.1016/j.media.2021.102308" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng</a>, Zhiguo Jiang*, Jun Shi, Fengying Xie, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Wei Luo, Dingyi Hu, Shujiao Sun, Zhongmin Jiang, and Chenghai Xue
+                      </i></font>
+                      <br>
+                      Medical Image Analysis, 2022
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_zheng_mia_2021.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengMIA2021Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengMIA2021Bib')">BibTeX</a> &nbsp;
+                      <i class="fa fa-github"></i> <a href="https://github.com/Zhengyushan/lagenet" target="_blank">Code</a>
                   </p>
-                  <p id="zhengJBHI2020_Abs" class="abstract" style="display: none;">
-                    Color consistency is crucial to developing robust deep learning methods for histopathological image analysis. With the increasing application of digital histopathological slides, the deep learning methods are probably developed based on the data from multiple medical centers. This requirement makes it a challenging task to normalize the color variance of histopathological images from different medical centers. In this paper, we propose a novel color standardization module named stain standardization capsule based on the capsule network and the corresponding dynamic routing algorithm. The proposed module can learn and generate uniform stain separation outputs for histopathological images in various color appearance without the reference to manually selected template images. The proposed module is light and can be jointly trained with the application-driven CNN model. The proposed method was validated on three histopathology datasets and a cytology dataset, and was compared with state-of-the-art methods. The experimental results have demonstrated that the SSC module is effective in improving the performance of histopathological image analysis and has achieved the best performance in the compared methods.
+                  <p id="ZhengMIA2021Abs" class="abstract" style="display: none;">
+                      Content-based histopathological image retrieval (CBHIR) has become popular in recent years in histopathological image analysis. CBHIR systems provide auxiliary diagnosis information for pathologists by searching for and returning regions that are contently similar to the region of interest (ROI) from a pre-established database. It is challenging and yet significant in clinical applications to retrieve diagnostically relevant regions from a database consisting of histopathological whole slide images (WSIs). In this paper, we propose a novel framework for regions retrieval from WSI database based on location-aware graphs and deep hash techniques. Compared to the present CBHIR framework, both structural information and global location information of ROIs in the WSI are preserved by graph convolution and self-attention operations, which makes the retrieval framework more sensitive to regions that are similar in tissue distribution. Moreover, benefited from the graph structure, the proposed framework has good scalability for both the size and shape variation of ROIs. It allows the pathologist to define query regions using free curves according to the appearance of tissue. Thirdly, the retrieval is achieved based on the hash technique, which ensures the framework is efficient and adequate for practical large-scale WSI database. The proposed method was evaluated on an in-house endometrium dataset with 2650 WSIs and the public ACDC-LungHP dataset. The experimental results have demonstrated that the proposed method achieved a mean average precision above 0.667 on the  endometrium dataset and above 0.869 on the ACDC-LungHP dataset in the task of irregular region retrieval, which are superior to the state-of-the-art methods. The average retrieval time from a database containing 1855 WSIs is 0.752 ms.
                   </p>
-                  <pre xml:space="preserve" id="zhengJBHI2020_Bib" class="bibtex" style="display: none;">
-@article{zheng2020stain,
-  author    = {Zheng, Yushan and Jiang, Zhiguo and Zhang, Haopeng and Xie, Fengying and Hu, Dingyi 
-               and Sun, Shujiao and Shi, Jun and Xue, Chenghai},
-  title     = {Stain standardization capsule for application-driven 
-               histopathological image normalization},
-  journal   = {IEEE Journal of Biomedical and Health Informatics},
-  year      = {2020},
-}              
+                  <pre xml:space="preserve" id="ZhengMIA2021Bib" class="bibtex" style="display: none;">
+    @Article{zheng2022encoding,
+      author  = {Zheng, Yushan and Jiang, Zhiguo and Shi, Jun and Xie, Fengying and Zhang, Haopeng and
+                  Luo, Wei and Hu, Dingyi and Sun, Shujiao and Jiang, Zhongmin and Xue, Chenghai},
+      title   = {Encoding histopathology whole slide images with location-aware graphs for diagnostically relevant regions retrieval},
+      journal = {Medical Image Analysis},
+      year    = {2022},
+      volumn  = {76},
+      pages   = {102308},
+      doi     = {https://doi.org/10.1016/j.media.2021.102308},
+    }
                   </pre>
-                  <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('zhengJBHI2020_Abs');
-                      hideblock('zhengJBHI2020_Bib');
+                      <script language="javascript" type="text/javascript" xml:space="preserve">
+                    hideblock('ZhengMIA2021Abs');
+                    hideblock('ZhengMIA2021Bib');
                   </script>
-              </td>
-            </tr> <!-- Paper End Here -->
+                  </td>
+              </tr> <!-- Paper End Here -->   
               <tr> <!-- An Paper -->
-              <td width="22%" valign="top"><p>
-                  <img src="../../images/src/article_hu_isbi_2020.png" alt="Flowchart" width="200">
-              <td width="78%" valign="top">
-                  <p>
-                      <b>Informative retrieval framework for histopathology whole slides images based on deep hashing network</b> 
-                      <a href="https://ieeexplore.ieee.org/document/9098680" target="_blank"><i class="fa fa-external-link"></i></a>
-                  <br>
-                  <font size="3pt" face="Georgia"><i>
-                      Dingyi Hu, <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng*</a>, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Jun Shi, Fengying Xie, and Zhiguo Jiang
-                  </i></font>
-                  <br>
-                      IEEE 17th International Symposium on Biomedical Imaging (ISBI), 2020
-                  <br>
-                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_hu_isbi_2020.pdf" target="_blank">PDF</a> &nbsp;
-                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('huISBI2020_Abs')">Abstract</a> &nbsp;
-                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('huISBI2020_Bib')">BibTeX</a> &nbsp;
-                  </p>
-                  <p id="huISBI2020_Abs" class="abstract" style="display: none;">
-                      Histopathology image retrieval is an emerging application for Computer-aided cancer diagnosis. However, most of current retrieval methods have ignored the characteristic of histopathology images. It causes repeated results within similar image content from the same slide. Meanwhile, the data sets cannot be sufficiently utilized. To solve these issues, we proposed an informative retrieval framework based on deep hashing network. Specifically, a novel loss function for the hashing network and a retrieval strategy are designed, which contributes to more informative retrieval results without reducing the retrieval precision. The proposed method was verified on the ACDC-LungHP dataset and compared with the state-of-the-art method. The experimental results have demonstrated the effectiveness of our method in the retrieval of large-scale database containing histopathology while slide images.
-                  </p>
-                  <pre xml:space="preserve" id="huISBI2020_Bib" class="bibtex" style="display: none;">
-@inproceedings{hu2020informative,
-  author    = {Hu, Dingyi and Zheng, Yushan and Zhang, Haopeng and Shi, Jun and
-               Xie, Fengying and Jiang, Zhiguo},
-  title     = {Informative retrieval framework for histopathology 
-               whole slides images based on deep hashing network},
-  booktitle = {IEEE 17th International Symposium on Biomedical Imaging (ISBI)},
-  year      = {2020},
-}              
-                  </pre>
-                  <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('huISBI2020_Abs');
-                      hideblock('huISBI2020_Bib');
-                  </script>
-              </td>
-            </tr> <!-- Paper End Here -->
-              <tr> <!-- An Paper -->
-              <td width="22%" valign="top"><p>
-                  <img src="../../images/src/article_sun_isbi_2020.png" alt="Flowchart" width="200">
-              <td width="78%" valign="top">
-                  <p>
-                      <b>Cancer Sensitive Cascaded Networks (CSC-Net) for Efficient Histopathology Whole Slide Image Segmentation</b> 
-                      <a href="https://ieeexplore.ieee.org/document/9098695/" target="_blank"><i class="fa fa-external-link"></i></a>
-                  <br>
-                  <font size="3pt" face="Georgia"><i>
-                      Shujiao Sun, Huining Yuan, <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng*</a>, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Dingyi Hu, and Zhiguo Jiang
-                  </i></font>
-                  <br>
-                      IEEE 17th International Symposium on Biomedical Imaging (ISBI), 2020
-                  <br>
-                      <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_sun_isbi_2020.pdf" target="_blank">PDF</a> &nbsp;
-                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('sunISBI2020_Abs')">Abstract</a> &nbsp;
-                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('sunISBI2020_Bib')">BibTeX</a> &nbsp;
-                  </p>
-                  <p id="sunISBI2020_Abs" class="abstract" style="display: none;">
-                    Automatic segmentation of histopathological whole slide images (WSIs) is challenging due to the high resolution and large scale. In this paper, we proposed a cascade strategy for fast segmentation of WSIs based on convolutional neural networks. Our segmentation framework consists of two U-Net structures which are trained with samples from different magnifications. Meanwhile, we designed a novel cancer sensitive loss (CSL), which is effective in improving the sensitivity of cancer segmentation of the first network and reducing the false positive rate of the second network. We conducted experiments on ACDC-LungHP dataset and compared our method with 2 state-of-the-art segmentation methods. The experimental results have demonstrated that the proposed method can improve the segmentation accuracy and meanwhile reduce the amount of computation. The dice score coefficient and precision of lung cancer segmentation are 0.694 and 0.947, respectively, which are superior to the compared methods.
-                  </p>
-                  <pre xml:space="preserve" id="sunISBI2020_Bib" class="bibtex" style="display: none;">
-@inproceedings{sun2020cancer,
-  author    = {Sun, Shujiao and Yuan, Huining and Zheng, Yushan and Zhang, Haopeng
-               and Dingyi Hu and Jiang, Zhiguo},
-  title     = {Cancer sensitive cascaded networks (CSC-Net) for efficient histopathology 
-               whole slide image segmentation},
-  booktitle = {IEEE 17th International Symposium on Biomedical Imaging (ISBI)},
-  year      = {2020},
-}              
-                  </pre>
-                  <script language="javascript" type="text/javascript" xml:space="preserve">
-                      hideblock('sunISBI2020_Abs');
-                      hideblock('sunISBI2020_Bib');
-                  </script>
-              </td>
+                <p>
+                    <b>Weakly Supervised Histopathological Image Representation Learning based on Contrastive Dynamic Clustering</b> <!--a href="https://doi.org/10.1016/j.media.2021.102308" target="_blank"><i class="fa fa-external-link"></i></a-->
+                    <br>
+                    <font size="3pt" face="Georgia"><i>
+                        Jun Li, Zhiguo Jiang, <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng*</a>, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Jun Shi, Dingyi Hu,  Wei Luo, Zhongmin Jiang, and Chenghai Xue
+                    </i></font>
+                    <br>
+                    SPIE Medical Imaging, 2022
+                    <br>
+                    <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_li_spiemi_2022.pdf" target="_blank">PDF</a>
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('LiSPIEMI2022Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('LiSPIEMI2022Bib')">BibTeX</a> &nbsp;
+                    <i class="fa fa-github"></i> <a href="https://github.com/junl21/cdc" target="_blank">Code</a>
+                </p>
+                <p id="LiSPIEMI2022Abs" class="abstract" style="display: none;">
+                    Feature representations of histopathology whole slide images (WSIs) are crucial to the downstream applications
+                    for computer-aided cancer diagnosis, including whole slide image classification, region of interest detection, hash
+                    retrieval, prognosis analysis, and other high-level inference tasks. State-of-the-art methods for whole slide image
+                    feature extraction generally rely on supervised learning algorithms based on fine-grained manual annotations,
+                    unsupervised learning algorithms without annotation, or directly use pre-trained features. At present, there is
+                    a lack of research on weakly supervised feature learning methods that only utilize WSI-level labeling. In this
+                    paper, we propose a weakly supervised framework that learns the feature representations of various lesion areas
+                    from histopathology whole slide images. The proposed framework consists of a contrastive learning network as
+                    the backbone and a designed contrastive dynamic clustering (CDC) module to embedding the lesion information
+                    into the feature representations. The proposed method was evaluated on a large scale endometrial whole slide
+                    image dataset. The experimental results have demonstrated that our method can learn discriminative feature
+                    representations for histopathology image classification and the quantitative performance of our method is close
+                    to the fully-supervision learning methods
+                </p>
+                <pre xml:space="preserve" id="LiSPIEMI2022Bib" class="bibtex" style="display: none;">
+  @inproceedings{li2021weakly,
+    author    = {Jun Li, Zhiguo Jiang, Yushan Zheng, Haopeng Zhang, Jun Shi, Dingyi Hu,
+                 Wei Luo, Zhongmin Jiang, and Chenghai Xue},
+    title     = {Weakly Supervised Histopathological Image Representation Learning based on Contrastive Dynamic Clustering},
+    booktitle = {SPEI Medical Imaging 2022},
+    year      = {2022},
+  }
+                </pre>
+                    <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('LiSPIEMI2022Abs');
+                  hideblock('LiSPIEMI2022Bib');
+                </script>
+                </td>
             </tr> <!-- Paper End Here -->
 
+            <tr> <!-- An Paper -->
+              <p>
+                  <b>Hyperspectral Image Classification using Feature Fusion Hypergraph Convolution Neural Network</b> <a href="https://doi.org/10.1109/TGRS.2021.3123423" target="_blank"><i class="fa fa-external-link"></i></a>
+                  <br>
+                  <font size="3pt" face="Georgia"><i>
+                      Zhongtian Ma, Zhiguo Jiang, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>
+                  </i></font>
+                  <br>
+                  IEEE Transactions on Geoscience and Remote Sensing, 2021
+                  <br>
+                  <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_ma_tgrs_2021.pdf" target="_blank">PDF</a>
+                  <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('MaTGRS2021Abs')">Abstract</a> &nbsp;
+                  <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('MaTGRS2021Bib')">BibTeX</a> &nbsp;
+              </p>
+              <p id="MaTGRS2021Abs" class="abstract" style="display: none;">
+                  Convolutional neural networks (CNN) and graph representation learning are two common methods for hyperspectral image (HSI) classification. Recently, graph convolutional neural networks (GCN), a combination of CNN and graph representation learning, have shown great potential in HSI classification problem. However, the existing GCN-based methods have many problems, such as over dependence on the adjacency matrix, usage of a single modal feature, and lower accuracy than the mature CNN method. In this paper, we propose a feature fusion hypergraph convolutional neural network (F2HNN) for HSI classification. F2HNN first generates hyperedges from features of different modalities to construct a hypergraph representing multi-modal features in HSI. Then, the HSI and the extracted hypergraph are input into the hypergraph convolutional neural network for learning. In addition, we proposes three feature fusion strategies. The first strategy is the most basic spatial and spectral feature fusion. The second strategy fuses the spectral features extracted by a pre-trained multilayer perceptron (MLP) with the spatial features to reduce the redundant information of the original spectral features. The third strategy uses the fusion of CNN features, spectral features and spatial features to explore the capabilities of F2HNN. Sufficient experiments on four datasets have proved the effectiveness of F2HNN.
+              </p>
+              <pre xml:space="preserve" id="MaTGRS2021Bib" class="bibtex" style="display: none;">
+@ARTICLE{9590574,
+  author={Ma, Zhongtian and Jiang, Zhiguo and Zhang, Haopeng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Hyperspectral Image Classification using Feature Fusion Hypergraph Convolution Neural Network},
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TGRS.2021.3123423}
+}
+
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('MaTGRS2021Abs');
+                hideblock('MaTGRS2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <p>
+                <b>Self-Attention Fusion Module for Single Remote Sensing Image Super-Resolution</b> <a href="https://doi.org/10.1109/IGARSS47720.2021.9553766" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Han Mei, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Zhiguo Jiang
+                </i></font>
+                <br>
+                IEEE International Geoscience and Remote Sensing Symposium IGARSS, 2021
+                <br>
+                <i class="fa fa-file-pdf-o"></i> <a href="../../source/pdf/article_mei_igarss_2021.pdf" target="_blank">PDF</a>
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('MeiIGARSS2021Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('MeiIGARSS2021Bib')">BibTeX</a> &nbsp;
+            </p>
+            <p id="MeiIGARSS2021Abs" class="abstract" style="display: none;">
+                Single image super-resolution (SISR) is an important procedure to improve many remote sensing applications. Global features play an important role in pixel generation of SISR. In this paper, we proposed a self-attention fusion module named as SAF module which combines spatial attention and channel attention in parallel to handle this problem. Our self-attention fusion module can be flexibly added to many popular deep-learning-based SISR models to further improve their representation ability and learn global features. Experiments on UC Merced dataset indicate that SAF module can improve the performance of classic SISR models and achieve state-of-the-art super-resolution results.
+            </p>
+            <pre xml:space="preserve" id="MeiIGARSS2021Bib" class="bibtex" style="display: none;">
+@INPROCEEDINGS{9553766,
+  author={Mei, Han and Zhang, Haopeng and Jiang, Zhiguo},
+  booktitle={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS},
+  title={Self-Attention Fusion Module for Single Remote Sensing Image Super-Resolution},
+  year={2021},
+  volume={},
+  number={},
+  pages={2883-2886},
+  doi={10.1109/IGARSS47720.2021.9553766}}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('MeiIGARSS2021Abs');
+                hideblock('MeiIGARSS2021Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
 
                 </tbody></table>
               </div>
@@ -406,31 +273,11 @@ DOI = {10.1016/j.imavis.2019.103854}
             <h3 class="sidebar-title">团队成员</h3>
             <div class="widget-container">
               <article class="widget-block">
-                <div class="block-image"> <img src="../../images/photo/XieFY.jpg" alt="XieFY's photo"> </div>
-                <div class="block-body">
-                  <h2><a href="http://xfy.buaa.edu.cn" target="_blank">谢凤英 <i class="fa fa-external-link"></i></a></h2>
-                  <div class="icon-meta">
-                    <span><i class="fa fa-graduation-cap"></i> 教授</span> <span><i class="fa fa-clock-o"></i> 2011.01 ~ Now</span>
-                    <br><span><i class="fa fa-envelope-o"></i> <a href="mailto:xfy_73@buaa.edu.cn">xfy_73@buaa.edu.cn</a></span>
-                  </div>
-                </div>
-              </article>
-              <article class="widget-block">
-                <div class="block-image"> <img src="../../images/photo/ZhaoDP.jpg" alt="ZhaoDP's photo"> </div>
-                <div class="block-body">
-                  <h2>赵丹培</h2>
-                  <div class="icon-meta">
-                    <span><i class="fa fa-graduation-cap"></i>副教授</span> <span><i class="fa fa-clock-o"></i> 2011.01 ~ Now</span>
-                    <br><span><i class="fa fa-envelope-o"></i> <a href="mailto:zhaodanpei@buaa.edu.cn">zhaodanpei@buaa.edu.cn</a></span>
-                  </div>
-                </div>
-              </article>
-              <article class="widget-block">
                 <div class="block-image"> <img src="../../images/photo/ZhangHP.jpg" alt="ZhangHP's photo"> </div>
                 <div class="block-body">
                   <h2><a href="http://teacher.buaa.edu.cn/zhanghaopeng/" target="_blank">张浩鹏 <i class="fa fa-external-link"></i></a></h2>
                   <div class="icon-meta">
-                    <span><i class="fa fa-graduation-cap"></i>讲师</span> <span><i class="fa fa-clock-o"></i> 2014.07 ~ Now</span>
+                    <span><i class="fa fa-graduation-cap"></i>副教授</span> <span><i class="fa fa-clock-o"></i> 2014.07 ~ Now</span>
                     <br><span><i class="fa fa-envelope-o"></i> <a href="mailto:zhanghaopeng@buaa.edu.cn">zhanghaopeng@buaa.edu.cn</a></span>
                   </div>
                 </div>
@@ -440,7 +287,7 @@ DOI = {10.1016/j.imavis.2019.103854}
                 <div class="block-body">
                   <h2><a href="https://zhengyushan.github.io" target="_blank">郑钰山 <i class="fa fa-external-link"></i></a></h2>
                   <div class="icon-meta">
-                    <span><i class="fa fa-graduation-cap"></i>博士后</span> <span><i class="fa fa-clock-o"></i> 2019.01 ~ Now</span>
+                    <span><i class="fa fa-graduation-cap"></i>准聘副教授</span> <span><i class="fa fa-clock-o"></i> 2019.01 ~ Now</span>
                     <br><span><i class="fa fa-envelope-o"></i> <a href="mailto:yszheng@buaa.edu.cn">yszheng@buaa.edu.cn</a></span>
                   </div>
                 </div>
@@ -468,7 +315,7 @@ DOI = {10.1016/j.imavis.2019.103854}
     <footer class="footer">
       <div class="footer-bottom">  
         <i class="fa fa-copyright"></i> Copyright 2018. All rights reserved.<br>
-        <i class="fa fa-anchor"></i> <a href="index_x.html"><b>X！</b><i class="fa fa-sign-in"></i></a>
+        <!-- <i class="fa fa-anchor"></i> <a href="index_x.html"><b>X！</b><i class="fa fa-sign-in"></i></a> -->
       </div>
       
     </footer>
