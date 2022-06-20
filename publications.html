@@ -119,7 +119,7 @@ year      = {2022}
 
         <tr> <!-- An Paper -->
           <td width="22%" valign="top"><p>
-            <img src="" alt="Result" width="200">
+            <img src="images/src/article_li_miccai_2022.png" alt="Result" width="200">
           </p></td>
           <td width="78%" valign="top">
             <p>
@@ -137,7 +137,7 @@ year      = {2022}
                 <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
             </p>
             <p id="LiMICCAI2022Abs" class="abstract" style="display: none;">
-
+                Local representation learning has been a key challenge to promote the performance of the histopathological whole slide images analysis. The previous representation learning methods almost follow the supervised learning paradigm. However, manual annotation for large-scale WSIs is time-consuming and labor-intensive. Hence, the self-supervised contrastive learning has recently attracted intensive attention. Contrastive learning on the design of informative of the positive and negative pairs, but common contrastive learning methods treat each sample as a single class, which leads to the class collision problems, especially in the domain of histopathology image analysis. In this paper, we proposed a novel contrastive representation learning framework called Lesion-Aware Contrastive Learning (LACL) for histopathology whole slide image analysis. We built a module called lesion queue based on the memory bank structure to store the representations of different classes of WSIs, which allowed the model to selectively sample the negative pairs during the training. Moreover, We designed a queue refinement strategy to purify the representations stored in the lesion queue. The experimental results demonstrate that LACL achieves the best performance in histopathology image representation learning on different datasets, and outperforms state-of-the-art methods under different WSI classification benchmarks.
             </p>
             <pre xml:space="preserve" id="LiMICCAI2022Bib" class="bibtex" style="display: none;">
 @inproceedings{li2022lesion,
@@ -157,7 +157,7 @@ year      = {2022}
 
         <tr> <!-- An Paper -->
           <td width="22%" valign="top"><p>
-            <img src="" alt="Result" width="200">
+            <img src="images/src/article_gongzhe_icassp_2022.png" alt="Result" width="200">
           </p></td>
           <td width="78%" valign="top">
             <p>
@@ -196,7 +196,7 @@ year      = {2022}
 
         <tr> <!-- An Paper -->
           <td width="22%" valign="top"><p>
-            <img src="" alt="Result" width="200">
+            <img src="images/src/article_gongzhe_pbvs_2022.png" alt="Result" width="200">
           </p></td>
           <td width="78%" valign="top">
             <p>
@@ -242,7 +242,7 @@ year      = {2022}
 
         <tr> <!-- An Paper -->
           <td width="22%" valign="top"><p>
-            <img src="" alt="Result" width="200">
+            <img src="images/src/article_zhang_remotesensing_2022.png" alt="Result" width="200">
           </p></td>
           <td width="78%" valign="top">
             <p>
@@ -254,7 +254,7 @@ year      = {2022}
                 <br>
                   Remote Sensing, 2022
                 <br>
-                <!-- <i class="fa fa-file-pdf-o"></i> <a href="https://doi.org/10.3390/rs14122790" target="_blank">PDF</a> -->
+                <i class="fa fa-file-pdf-o"></i> <a href="./source/pdf/article_zhang_remotesensing_2022.pdf" target="_blank">PDF</a>
                 <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangRS2022Abs')">Abstract</a> &nbsp;
                 <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangRS2022Bib')">BibTeX</a> &nbsp;
                 <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
@@ -282,6 +282,7 @@ DOI = {10.3390/rs14122790}
             </script>
             </td>
         </tr> <!-- Paper End Here -->
+
           <tr> <!-- An Paper -->
               <td width="22%" valign="top"><p>
                   <img src="images/src/article_zheng_mia_2021.png" alt="Result" width="200">
@@ -373,6 +374,69 @@ DOI = {10.3390/rs14122790}
               </td>
           </tr> <!-- Paper End Here -->
 
+
+          <tr> <!-- An Paper -->
+              <td width="22%" valign="top"><p>
+                  <img src="images/src/article_shi_isbi_2022.png" alt="Result" width="200">
+              </p></td>
+              <td width="78%" valign="top">
+                  <p>
+                      <b> Global-local attention network for weakly supervised cervical cytology ROI analysis</b> <a href="" target="_blank"><i class="fa fa-external-link"></i></a>
+                      <br>
+                      <font size="3pt" face="Georgia"><i>
+                          Jun Shi*, Kun Wu, <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng*</a>, Yuxin He, Jun Li, Zhiguo Jiang and Lanlan Yu
+                      </i></font>
+                      <br>
+                      IEEE 19th International Symposium on Biomedical Imaging, 2022
+                      <br>
+                      <i class="fa fa-file-pdf-o"></i> <a href="./source/pdf/article_shi_isbi_2022.pdf" target="_blank">PDF</a>
+                      <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ShiISBI2022Abs')">Abstract</a> &nbsp;
+                      <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ShiISBI2022Bib')">BibTeX</a> &nbsp;
+                      <!--                      <i class="fa fa-github"></i> <a href="https://github.com/Zhengyushan/lagenet" target="_blank">Code</a>-->
+                  </p>
+                  <p id="ShiISBI2022Abs" class="abstract" style="display: none;">
+                      Existing supervised Convolutional Neural Network (CNN)
+                      approaches for cervical cytology image analysis generally
+                      rely on the heavy manual annotation for each cell or cell
+                      mass and thus lead to extensive time and effort. In this paper,
+                      we propose a global-local network for weakly supervised
+                      cervical cytology region of interest (ROI) analysis. It aims
+                      to perform the classification for ROIs and further classify
+                      the cells only with the ROI labels. Specifically, the proposed
+                      method firstly detects the cells within ROI and extracts the
+                      CNN features of cells. Then attention-based bidirectional
+                      LSTM (Att-BLSTM) is applied to explore the global
+                      contextual information within ROI. On the other hand, the
+                      Vision Transformer (ViT) is used to exploit the local
+                      attentive representations of the cells in ROIs. The cross
+                      attention (CA) is applied to incorporate the global
+                      contextual features and local patterns and thus generates
+                      more discriminative feature representation of ROI. More
+                      importantly, the CA score is used as the pseudo label to
+                      select top and least attentive cells. Therefore, the in-theclass and out-of-the-class CA branches are trained to
+                      achieve the cell classification. Experimental results
+                      demonstrate the effectiveness of our method for cervical
+                      cytology ROI and cell classification, and the weak
+                      supervision of the image-level label has great potential to
+                      promote the automatic whole slide cervical image analysis
+                      and alleviate the workload of cytologists.
+                  </p>
+                  <pre xml:space="preserve" id="ShiISBI2022Bib" class="bibtex" style="display: none;">
+@Article{shi2022global,
+  author  = {Jun Shi*, Kun Wu, Yushan Zheng*, Yuxin He, Jun Li, Zhiguo Jiang and Lanlan Yu},
+  title   = {Global-local attention network for weakly supervised cervical cytology ROI analysis},
+  booktitle = {IEEE 19th International Symposium on Biomedical Imaging},
+  year    = {2022}
+}
+              </pre>
+                  <script language="javascript" type="text/javascript" xml:space="preserve">
+                hideblock('ShiISBI2022Abs');
+                hideblock('ShiISBI2022Bib');
+              </script>
+              </td>
+          </tr> <!-- Paper End Here -->
+
+
           </tbody></table>
 
           <hr />
@@ -442,6 +506,7 @@ URL = {https://doi.org/10.1117/12.2599787}
                       <i class="fa fa-file-pdf-o"></i> <a href="./source/pdf/article_ma_tgrs_2021.pdf" target="_blank">PDF</a>
                       <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('MaTGRS2021Abs')">Abstract</a> &nbsp;
                       <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('MaTGRS2021Bib')">BibTeX</a> &nbsp;
+                      <i class="fa fa-github"></i> <a href="https://github.com/mztmzt/F2HNN" target="_blank">Code</a>
                   </p>
                   <p id="MaTGRS2021Abs" class="abstract" style="display: none;">
                       Convolutional neural networks (CNN) and graph representation learning are two common methods for hyperspectral image (HSI) classification. Recently, graph convolutional neural networks (GCN), a combination of CNN and graph representation learning, have shown great potential in HSI classification problem. However, the existing GCN-based methods have many problems, such as over dependence on the adjacency matrix, usage of a single modal feature, and lower accuracy than the mature CNN method. In this paper, we propose a feature fusion hypergraph convolutional neural network (F2HNN) for HSI classification. F2HNN first generates hyperedges from features of different modalities to construct a hypergraph representing multi-modal features in HSI. Then, the HSI and the extracted hypergraph are input into the hypergraph convolutional neural network for learning. In addition, we proposes three feature fusion strategies. The first strategy is the most basic spatial and spectral feature fusion. The second strategy fuses the spectral features extracted by a pre-trained multilayer perceptron (MLP) with the spatial features to reduce the redundant information of the original spectral features. The third strategy uses the fusion of CNN features, spectral features and spatial features to explore the capabilities of F2HNN. Sufficient experiments on four datasets have proved the effectiveness of F2HNN.
