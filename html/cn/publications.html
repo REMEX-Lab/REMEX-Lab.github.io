@@ -77,6 +77,824 @@
       <div class="block-body">
       <div class="block-text">
           <!-- -------------------------------------------- -->
+          <h3>2024</h3>
+          <table><tbody>
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_jstars_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Addressing Sample Inconsistency for Semisupervised Object Detection in Remote Sensing Images</b> <a href="https://ieeexplore.ieee.org/document/10463140" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Yuhao Wang, Lifan Yao, Gang Meng, Xinyue Zhang, Jiayun Song, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>
+                </i></font>
+                <br>
+                 IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangJSTARS2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangJSTARS2024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangJSTARS2024Abs" class="abstract" style="display: none;">
+          The emergence of semisupervised object detection (SSOD) techniques has greatly enhanced object detection performance. SSOD leverages a limited amount of labeled data along with a large quantity of unlabeled data. However, there exists a problem of sample inconsistency in remote sensing images, which manifests in two ways. First, remote sensing images are diverse and complex. Conventional random initialization methods for labeled data are insufficient for training teacher networks to generate high-quality pseudolabels. Finally, remote sensing images typically exhibit a long-tailed distribution, where some categories have a significant number of instances, while others have very few. This distribution poses significant challenges during model training. In this article, we propose the utilization of SSOD networks for remote sensing images characterized by a long-tailed distribution. To address the issue of sample inconsistency between labeled and unlabeled data, we employ a labeled data iterative selection strategy based on the active learning approach. We iteratively filter out high-value samples through the designed selection criteria. The selected samples are labeled and used as data for supervised training. This method filters out valuable labeled data, thereby improving the quality of pseudolabels. Inspired by transfer learning, we decouple the model training into the training of the backbone and the detector. We tackle the problem of sample inconsistency in long-tail distribution data by training the detector using balanced data across categories. Our approach exhibits an approximate 1% improvement over the current state-of-the-art models on both the DOTAv1.0 and DIOR datasets.
+            </p>
+            <pre xml:space="preserve" id="ZhangJSTARS2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10463140,
+  author={Wang, Yuhao and Yao, Lifan and Meng, Gang and Zhang, Xinye and Song, Jiayun and Zhang, Haopeng},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  title={Addressing Sample Inconsistency for Semisupervised Object Detection in Remote Sensing Images},
+  year={2024},
+  volume={17},
+  number={},
+  pages={6933-6944},
+  keywords={Training;Remote sensing;Object detection;Measurement;Detectors;Tail;Labeling;Active learning;long-tailed distribution;remote sensing;semisupervised object detection (SSOD)},
+  doi={10.1109/JSTARS.2024.3374820}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangJSTARS2024Abs');
+              hideblock('ZhangJSTARS2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_tgrs_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>High-Resolution Feature Generator for Small-Ship Detection in Optical Remote Sensing Images</b> <a href="https://ieeexplore.ieee.org/document/10473137" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Sizhe Wen, Zhaoxiang Wei, Zhuoyi Chen
+                </i></font>
+                <br>
+                 IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangTGRS2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangTGRS2024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangTGRS2024Abs" class="abstract" style="display: none;">
+          Ship detection in optical remote sensing (RS) images remains a persistent challenge in current research. While prevailing methods achieve satisfactory outcomes in detecting large ship objects within RS images, the identification of small-ship objects poses greater difficulty due to their limited pixel information. To address this challenge, the utilization of generative adversarial network-based (GAN-based) super-resolution (SR) techniques proves effective. Therefore, in this article, we present a high-resolution feature generator (HRFG) specifically tailored for small-ship detection. Different from previous GAN-based methods that rely on image-level SR or feature sharing between SR and detection, we design a new architecture that uses an additional network branch, that is, high-resolution feature extractor (HRFE), to extract real high-resolution (HR) feature as a feature-level supervisory signal. The intuition is that real HR features may guide the generator network to extract HR features from low-resolution (LR) images directly. Consequently, the feature for detection is extracted and enhanced at the same time so that a large amount of calculation brought by image-level SR is avoided. Additionally, we introduce a background degradation strategy within the HRFE to improve the performance of small object recognition. Extensive experiments on a self-assembled ship dataset and two other public datasets show the superiority of the proposed method in small-ship detection tasks.
+            </p>
+            <pre xml:space="preserve" id="ZhangTGRS2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10473137,
+  author={Zhang, Haopeng and Wen, Sizhe and Wei, Zhaoxiang and Chen, Zhuoyi},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={High-Resolution Feature Generator for Small-Ship Detection in Optical Remote Sensing Images},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-11},
+  keywords={Feature extraction;Marine vehicles;Detectors;Superresolution;Optical imaging;Remote sensing;Generators;Generative adversarial network (GAN);optical image;remote sensing (RS);ship detection},
+  doi={10.1109/TGRS.2024.3377999}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangTGRS2024Abs');
+              hideblock('ZhangTGRS2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhao_grsl_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>YOLO-Parallel: Positive Gradient Modeling for Long-Tail Remote Sensing Object Detection</b> <a href="https://ieeexplore.ieee.org/document/10521660" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Xiangyi Gao, <a href="https://zhaodanpei.github.io/" target="_blank">Danpei Zhao*</a>, Zhichao Yuan
+                </i></font>
+                <br>
+                 IEEE Geoscience and Remote Sensing Letters (GRSL), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhaoGRSL2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhaoGRSL2024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhaoGRSL2024Abs" class="abstract" style="display: none;">
+          The long-tail distribution problem is widely prevalent in remote sensing images (RSIs), posing significant challenges to object detection tasks. Most existing methods for long-tail detection are designed for two-stage models. Such approaches of suppressing negative gradients tend to increase false alarms in one-stage detectors, resulting in a decline in overall performance and an increase in post-processing time. This paper presents a novel long-tail loss with broad applicability in diverse You Only Look Once (YOLO) networks. We present a novel Positive Gradient Loss (PGLoss) that effectively enhances the accuracy of tail categories while preserving the accuracy of head categories. Furthermore, to address the performance degradation caused by the pseudo-residual structure, we create Parallel Block with efficient computation and superior feature extraction abilities. We designed and trained the network named YOLO-Parallel to verify the effectiveness of PGLoss and Parallel Block. Extensive experiments were conducted on two large-scale optical remote sensing datasets, DIOR and DOTA, which are severely affected by the long-tail problem. The results powerfully demonstrate the superiority of our algorithm. YOLO-Parallel, with only 33.3% of the parameters of YOLOX, achieved a comparable detection performance of 96.9% on DIOR. On DOTA dataset, PGLoss achieved mean Average Precision (mAP) improvements of around 1.5% for YOLO-Parallel, YOLOv5n, and YOLOv7-tiny without increasing NMS processing time.
+            </p>
+            <pre xml:space="preserve" id="ZhaoGRSL2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10521660,
+  author={Gao, Xiangyi and Zhao, Danpei and Yuan, Zhichao},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  title={YOLO-Parallel: Positive Gradient Modeling for Long-Tail Remote Sensing Object Detection},
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Tail;Head;Feature extraction;YOLO;Training;Testing;Remote sensing;Object detection;remote sensing images;long-tail loss;one-stage detectors},
+  doi={10.1109/LGRS.2024.3397885}}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhaoGRSL2024Abs');
+              hideblock('ZhaoGRSL2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhao_tgrs_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Panoptic Perception: A Novel Task and Fine-Grained Dataset for Universal Remote Sensing Image Interpretation</b> <a href="https://ieeexplore.ieee.org/document/10507007" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    <a href="https://zhaodanpei.github.io/" target="_blank">Danpei Zhao*</a>, Bo Yuan, Ziqiang Chen, Tian Li， Zhuoran Liu， Wentao Li， Yue Gao
+                </i></font>
+                <br>
+                 IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhaoTGRS2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhaoTGRS2024Bib')">BibTeX</a> &nbsp;
+                <i class="fa fa-github"></i> <a href="https://ybio.github.io/FineGrip" target="_blank">Code</a>
+            </p>
+            <p id="ZhaoTGRS2024Abs" class="abstract" style="display: none;">
+          Current remote-sensing interpretation models often focus on a single task, such as detection, segmentation, or caption. However, the task-specific designed models are unattainable to achieve the comprehensive multilevel interpretation of images. The field also lacks support for multitask joint interpretation datasets. In this article, we propose panoptic perception: a novel task and a new fine-grained panoptic perception (FineGrip) dataset to achieve a more thorough and universal interpretation for remote sensing images (RSIs). The new task: 1) integrates pixel-level, instance-level, and image-level information for universal image perception; 2) captures image information from coarse-to-fine granularity, achieving deeper scene understanding and description; and 3) enables various independent tasks to complement and enhance each other through multitask learning. By emphasizing multitask interactions and the consistency of perception results, this task enables the simultaneous processing of fine-grained foreground instance segmentation, background semantic segmentation, and global fine-grained image captioning. Concretely, the FineGrip dataset includes 2649 RSIs, 12054 fine-grained instance segmentation masks belonging to 20 foreground things categories, and 7599 background semantic masks for five stuff classes. Furthermore, we propose a joint optimization-based panoptic perception model. Experimental results on FineGrip demonstrate the feasibility of the panoptic perception task and the beneficial effect of multitask joint optimization on individual tasks. The project page is at: https://ybio.github.io/FineGrip .
+            </p>
+            <pre xml:space="preserve" id="ZhaoTGRS2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10507007,
+  author={Zhao, Danpei and Yuan, Bo and Chen, Ziqiang and Li, Tian and Liu, Zhuoran and Li, Wentao and Gao, Yue},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Panoptic Perception: A Novel Task and Fine-Grained Dataset for Universal Remote Sensing Image Interpretation},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-14},
+  keywords={Task analysis;Annotations;Instance segmentation;Semantic segmentation;Remote sensing;Semantics;Multitasking;Benchmark dataset;fine-grained interpretation;multitask learning;panoptic perception;remote sensing images (RSIs)},
+  doi={10.1109/TGRS.2024.3392778}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhaoTGRS2024Abs');
+              hideblock('ZhaoTGRS2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhao_tpami_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Learning At a Glance: Towards Interpretable Data-Limited Continual Semantic Segmentation Via Semantic-Invariance Modelling</b> <a href="https://ieeexplore.ieee.org/document/10520832" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Bo Yuan, <a href="https://zhaodanpei.github.io/" target="_blank">Danpei Zhao*</a>, Zhenwei Shi
+                </i></font>
+                <br>
+                 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhaoTPAMI2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhaoTPAMI2024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhaoTPAMI2024Abs" class="abstract" style="display: none;">
+          Continual semantic segmentation (CSS) based on incremental learning (IL) is a great endeavour in developing human- like segmentation models. However, current CSS approaches encounter challenges in the trade-off between preserving old knowledge and learning new ones, where they still need large-scale annotated data for incremental training and lack interpretability. In this paper, we present Learning at a Glance (LAG), an efficient, robust, human- like and interpretable approach for CSS. Specifically, LAG is a simple and model-agnostic architecture, yet it achieves competitive CSS efficiency with limited incremental data. Inspired by human- like recognition patterns, we propose a semantic-invariance modelling approach via semantic features decoupling that simultaneously reconciles solid knowledge inheritance and new-term learning. Concretely, the proposed decoupling manner includes two ways, i.e., channel- wise decoupling and spatial-level neuron-relevant semantic consistency. Our approach preserves semantic-invariant knowledge as solid prototypes to alleviate catastrophic forgetting, while also constraining sample-specific contents through an asymmetric contrastive learning method to enhance model robustness during IL steps. Experimental results in multiple datasets validate the effectiveness of the proposed method. Furthermore, we introduce a novel CSS protocol that better reflects realistic data-limited CSS settings, and LAG achieves superior performance under multiple data-limited conditions.
+            </p>
+            <pre xml:space="preserve" id="ZhaoTPAMI2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10520832,
+  author={Yuan, Bo and Zhao, Danpei and Shi, Zhenwei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title={Learning At a Glance: Towards Interpretable Data-Limited Continual Semantic Segmentation Via Semantic-Invariance Modelling},
+  year={2024},
+  volume={},
+  number={},
+  pages={1-16},
+  keywords={Semantics;Data models;Task analysis;Training;Semantic segmentation;Computational modeling;Solids;Continual semantic segmentation;disentangled distillation;incremental learning;interpretability;limited data},
+  doi={10.1109/TPAMI.2024.3396809}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhaoTPAMI2024Abs');
+              hideblock('ZhaoTPAMI2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_tgrs_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Infrared Small Target Detection Based on Monogenic Signal Decomposition</b> <a href="https://ieeexplore.ieee.org/document/10530891" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Chang Liu, <a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>, Linwei Qiu, Haolin Ji, Zhenwei Shi
+                </i></font>
+                <br>
+                 IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieTGRS2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieTGRS2024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieTGRS2024Abs" class="abstract" style="display: none;">
+          Robust detection of infrared small target under complex background is of great significance for infrared search and tracking applications. However, the inherent problem of limited prior features for infrared small target has always made its detection task a challenging research topic. In order to solve the problem, we propose a novel infrared small target detection method based on monogenic signal decomposition and feature expansion, which can effectively enrich and extract the potential features of the target. First, a series of local information of the original image is obtained through the monogenic signal constructed by Riesz transform. Then, various features of the small target are extracted from different local signals, including the direction feature, edge feature, and local saliency feature. Finally, the fusion of target features is completed through signal reconstruction, thereby achieving target detection. This method not only pays attention to the local salient characteristic of the target, but also supplements the consideration of other characteristics of the target, providing a new idea for small target detection. The experimental results on real infrared images show that the proposed method framework is reasonable and effective, and possesses better detection performance and good generalization compared to other state-of-the-art methods.
+            </p>
+            <pre xml:space="preserve" id="XieTGRS2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10530891,
+  author={Liu, Chang and Xie, Fengying and Qiu, Linwei and Ji, Haolin and Shi, Zhenwei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Infrared Small Target Detection Based on Monogenic Signal Decomposition},
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Feature extraction;Transforms;Object detection;Signal resolution;Image edge detection;Task analysis;Clutter;Infrared small target detection;monogenic signal;Riesz transform;feature expansion;local information},
+  doi={10.1109/TGRS.2024.3401181}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieTGRS2024Abs');
+              hideblock('XieTGRS2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_grsl_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Thick Cloud Removal in Multitemporal Remote Sensing Images Using a Coarse-to-Fine Framework</b> <a href="https://ieeexplore.ieee.org/abstract/document/10473766" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Yue Zi, Xuedong Song, <a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>, Zhiguo Jiang
+                </i></font>
+                <br>
+                 IEEE Geoscience and Remote Sensing Letters (GRSL), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieGRSL2024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieGRSL2024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieGRSL2024Abs" class="abstract" style="display: none;">
+          Remote sensing (RS) images are widely used for Earth observation. However, cloud contamination greatly degrades the quality of RS images and limits their applications. In this letter, we propose a coarse-to-fine thick cloud removal method for a single pair of multitemporal RS images. First, we perform a global color transformation on a cloud-free reference image using linear regression coefficients between the pixels in the cloudy target image and the reference image in the same cloud-free regions and obtain a coarse result. Then, a convolutional neural network (CNN) based on internal constraint is used to refine the coarse result, which does not require any construction of additional external training dataset in advance. We further design a multiscale feature extraction and fusion module and an auxiliary loss involving cloud regions to improve the performance of the CNN. Finally, Poisson image fusion is used to generate a seamless cloud-free result. On a simulated test set containing 500 pairs of multitemporal RS images, the proposed method achieves satisfactory results with 25.1277 dB in peak signal-to-noise ratio (PSNR), 0.9077 in structural similarity (SSIM), and 0.9342 in correlation coefficient (CC). Qualitative and quantitative comparisons of our proposed against several state-of-the-art methods on the simulated and real cloudy images demonstrate the superiority of the proposed method.
+            </p>
+            <pre xml:space="preserve" id="XieGRSL2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10473766,
+  author={Zi, Yue and Song, Xuedong and Xie, Fengying and Jiang, Zhiguo},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  title={Thick Cloud Removal in Multitemporal Remote Sensing Images Using a Coarse-to-Fine Framework},
+  year={2024},
+  volume={21},
+  number={},
+  pages={1-5},
+  keywords={Clouds;Image color analysis;Feature extraction;Convolution;Convolutional neural networks;Image restoration;Image fusion;Convolutional neural network (CNN);internal constraint;multitemporal remote sensing (RS) images;thick cloud removal},
+  doi={10.1109/LGRS.2024.3378691}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieGRSL2024Abs');
+              hideblock('XieGRSL2024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_tgrs2_2024.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Robust Haze and Thin Cloud Removal via Conditional Variational Autoencoders</b> <a href="https://ieeexplore.ieee.org/document/10401022" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Haidong Ding, <a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>, Linwei Qiu, Xiaozhe Zhang, Zhenwei Shi
+                </i></font>
+                <br>
+                IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieTGRS22024Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieTGRS22024Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieTGRS22024Abs" class="abstract" style="display: none;">
+          Existing methods for remote-sensing image dehazing and thin cloud removal treat this image restoration task as a clear pixel estimation problem, yielding a single prediction result through a deterministic pipeline. However, image restoration is a highly ill-posed problem, as the sharp pixel value corresponding to the input cannot be uniquely determined solely from the degraded image. In this article, we present a novel algorithm for haze and thin cloud removal using conditional variational autoencoders (CVAEs) to generate multiple realistic restored images for each input. By sampling from the latent space to capture the pixel diversity, the proposed method mitigates the limitations arising from inaccuracies in a single estimation. In this uncertainty pipeline, we can generate a more accurate restored image based on these multiple predictions. Furthermore, we have developed a dynamic fusion network (DFN) for combining multiple plausible outcomes to obtain a more accurate result. DFN dynamically predicts the kernels used for restored result generation conditioned on inputs, improving haze and thin cloud thanks to its adaptive nature. Quantitative and qualitative experiments demonstrate that the proposed method outperforms existing state-of-the-art techniques by a significant margin on dehazing and thin cloud removal benchmarks.
+            </p>
+            <pre xml:space="preserve" id="XieTGRS22024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10401022,
+  author={Ding, Haidong and Xie, Fengying and Qiu, Linwei and Zhang, Xiaozhe and Shi, Zhenwei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={Robust Haze and Thin Cloud Removal via Conditional Variational Autoencoders},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-16},
+  keywords={Clouds;Image restoration;Atmospheric modeling;Uncertainty;Remote sensing;Neural networks;Training;Conditional variational autoencoders (CVAEs);remote-sensing image dehazing;thin cloud removal},
+  doi={10.1109/TGRS.2024.3349779}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieTGRS22024Abs');
+              hideblock('XieTGRS22024Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          </tbody></table>
+
+          <hr />
+          <!-- -------------------------------------------- -->
+          <h3>2023</h3>
+          <table><tbody>
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_rs_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>A Closed-Loop Network for Single Infrared Remote Sensing Image Super-Resolution in Real World</b> <a href="https://www.mdpi.com/2072-4292/15/4/882" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Cong Zhang, Fengying Xie, Zhiguo Jiang
+                </i></font>
+                <br>
+                 Remote Sensing, 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangRS2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangRS2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangRS2023Abs" class="abstract" style="display: none;">
+              Single image super-resolution (SISR) is to reconstruct a high-resolution (HR) image from a corresponding low-resolution (LR) input. It is an effective way to solve the problem that infrared remote sensing images are usually suffering low resolution due to hardware limitations. Most previous learning-based SISR methods just use synthetic HR-LR image pairs (obtained by bicubic kernels) to learn the mapping from LR images to HR images. However, the underlying degradation in the real world is often different from the synthetic method, i.e., the real LR images are obtained through a more complex degradation kernel, which leads to the adaptation problem and poor SR performance. To handle this problem, we propose a novel closed-loop framework that can not only make full use of the learning ability of the channel attention module but also introduce the information of real images as much as possible through a closed-loop structure. Our network includes two independent generative networks for down-sampling and super-resolution, respectively, and they are connected to each other to get more information from real images. We make a comprehensive analysis of the training data, resolution level and imaging spectrum to validate the performance of our network for infrared remote sensing image super-resolution. Experiments on real infrared remote sensing images show that our method achieves superior performance in various training strategies of supervised learning, weakly supervised learning and unsupervised learning. Especially, our peak signal-to-noise ratio (PSNR) is 0.9 dB better than the second-best unsupervised super-resolution model on PROBA-V dataset.
+            </p>
+            <pre xml:space="preserve" id="ZhangRS2023Bib" class="bibtex" style="display: none;">
+@Article{rs15040882,
+AUTHOR = {Zhang, Haopeng and Zhang, Cong and Xie, Fengying and Jiang, Zhiguo},
+TITLE = {A Closed-Loop Network for Single Infrared Remote Sensing Image Super-Resolution in Real World},
+JOURNAL = {Remote Sensing},
+VOLUME = {15},
+YEAR = {2023},
+NUMBER = {4},
+ARTICLE-NUMBER = {882},
+URL = {https://www.mdpi.com/2072-4292/15/4/882},
+ISSN = {2072-4292},
+DOI = {10.3390/rs15040882}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangRS2023Abs');
+              hideblock('ZhangRS2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_tgrs_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>WSODet: A Weakly Supervised Oriented Detector for Aerial Object Detection</b> <a href="https://ieeexplore.ieee.org/document/10049586" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Zhiwen Tan, Zhiguo Jiang, Chen Guo, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>
+                </i></font>
+                <br>
+                 IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangTGRS2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangTGRS2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangTGRS2023Abs" class="abstract" style="display: none;">
+              In contrast to natural objects, aerial targets are usually non-axis aligned with arbitrary orientations. However, mainstream weakly supervised object detection (WSOD) methods can only predict horizontal bounding boxes (HBBs) from existing proposals generated by offline algorithms. To predict oriented bounding boxes (OBBs) for aerial targets while testing images end-to-end without proposals, WSODet is designed leveraging on layerwise relevance propagation (LRP) and point set representation (RepPoints). To be specific, based on the mainstream WSOD framework, LRP on multiple instance learning branch (MIL-LRP) is conducted to decrease the uncertainty and ambiguity of feature map. Then, a pseudo oriented label generation algorithm is designed to obtain OBB pseudolabels, which serve as supervision to train an oriented RepPoint Net under the guidance of improved oriented loss function (IOLF). During the test, input images are sent to oriented RepPoint branch (ORB) to obtain OBB predictions without proposals. Extensive experiments on the detection in optical remote sensing images (DIOR), Northwestern Polytechnical University (NWPU) VHR-10.v2, and HRSC2016 datasets demonstrate the effectiveness of our method to predict precise oriented aerial objects, achieving 22.2%, 46.5%, and 43.3% mAP, respectively. Moreover, training jointly with ORB boosts the results of the original WSOD framework compared with the existing WSOD methods even if there is no specific design for the original structure.
+            </p>
+            <pre xml:space="preserve" id="ZhangTGRS2023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10049586,
+  author={Tan, Zhiwen and Jiang, Zhiguo and Guo, Chen and Zhang, Haopeng},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={WSODet: A Weakly Supervised Oriented Detector for Aerial Object Detection},
+  year={2023},
+  volume={61},
+  number={},
+  pages={1-12},
+  keywords={Proposals;Object detection;Uncertainty;Detectors;Prediction algorithms;Feature extraction;Convolutional neural networks;Deep learning;layerwise relevance propagation (LRP);oriented object detection;point set representation (RepPoints);weakly supervised object detection (WSOD)},
+  doi={10.1109/TGRS.2023.3247578}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangTGRS2023Abs');
+              hideblock('ZhangTGRS2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_taes_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Deep-Learning-Based Direct Attitude Estimation for Uncooperative Known Space Objects</b> <a href="https://ieeexplore.ieee.org/abstract/document/10288068" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Sijia Qiao, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Fengying Xie, Zhiguo Jiang
+                </i></font>
+                <br>
+                 IEEE Transactions on Aerospace and Electronic Systems (TAES), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangTAES2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangTAES2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangTAES2023Abs" class="abstract" style="display: none;">
+              Attitude estimation for uncooperative known space objects plays a critical role in intelligent space technology. In recent years, deep-learning-based methods for estimating the attitude of space objects have made significant progress, particularly through indirect methods based on key point detection. While highly accurate, the indirect method requires high texture detail and is time-consuming, which limits its application in CNN-based methods. Therefore, we investigate a direct attitude estimation method that is faster, more generalized, and better suited for space applications. We propose a fast and accurate network called DSOAE-Net for estimating the attitude of space objects using monocular images. We introduce a pose representation method that is particularly suitable for space object attitude estimation, which enhances the performance of attitude estimation. We also propose a general pipeline for directly estimating attitude and explore and experiment with each stage of the pipeline. Through detailed experiments, we validate that our proposed method achieves optimal results within this framework. The proposed method demonstrates a balance between speed and accuracy, with the best accuracy results achieved among compared methods on a weakly textured dataset.
+            </p>
+            <pre xml:space="preserve" id="ZhangTAES2023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10288068,
+  author={Qiao, Sijia and Zhang, Haopeng and Xie, Fengying and Jiang, Zhiguo},
+  journal={IEEE Transactions on Aerospace and Electronic Systems},
+  title={Deep-Learning-Based Direct Attitude Estimation for Uncooperative Known Space Objects},
+  year={2023},
+  volume={},
+  number={},
+  pages={1-18},
+  keywords={Estimation;Feature extraction;Space vehicles;Task analysis;Deep learning;Cameras;Three-dimensional displays;Attitude estimation;deep learning;uncooperative known space object},
+  doi={10.1109/TAES.2023.3325801}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangTAES2023Abs');
+              hideblock('ZhangTAES2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_igta_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Infrared Small Target Detection Based on Prior Weighed Sparse Decomposition</b> <a href="https://link.springer.com/chapter/10.1007/978-981-99-7549-5_11" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Dongning Yang, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Fengying Xie, Zhiguo Jiang
+                </i></font>
+                <br>
+                 Image and Graphics Technologies and Applications (IGTAS), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangIGTA2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangIGTA2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangIGTA2023Abs" class="abstract" style="display: none;">
+         Infrared small target detection is a critical topic and research focus in target detection. Compared to visible light and radar detection, infrared imaging-based detection can effectively avoid illumination limitations and potential exposure risks. However, detecting small infrared targets with complex backgrounds and significant noise is challenging, and existing algorithms often have low detection rates, high false alarm rates, long calculation times, and unsatisfactory performance. To address these issues, we proposes an infrared small target detection algorithm based on sparse representation. The algorithm enhances target sparsity through multi-scale contrast saliency mapping and global gray value fusion, leveraging the low rank of the background. We evaluate the proposed method on SIRST dataset and compare its performance with traditional and recent algorithms. The results demonstrate the superiority of our algorithm in terms of detection rate, false alarm rate, and calculation time.
+            </p>
+            <pre xml:space="preserve" id="ZhangIGTA2023Bib" class="bibtex" style="display: none;">
+@InProceedings{10.1007/978-981-99-7549-5_11,
+author="Yang, Dongning
+and Zhang, Haopeng
+and Xie, Fengying
+and Jiang, Zhiguo",
+editor="Yongtian, Wang
+and Lifang, Wu",
+title="Infrared Small Target Detection Based on Prior Weighed Sparse Decomposition",
+booktitle="Image and Graphics Technologies and Applications",
+year="2023",
+publisher="Springer Nature Singapore",
+address="Singapore",
+pages="141--153",
+isbn="978-981-99-7549-5"
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangIGTA2023Abs');
+              hideblock('ZhangIGTA2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhang_igarss_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Unsupervised Multi-Spectral Image Super-Resolution Based on Conditional Variational Autoencoder</b> <a href="https://ieeexplore.ieee.org/document/10282224" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Zhexin Han, Ning Zhao, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Zhiguo Jiang
+                </i></font>
+                <br>
+                 IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangIGARSS2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangIGARSS2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhangIGARSS2023Abs" class="abstract" style="display: none;">
+              Unsupervised super-resolution aims to enhance the quality of images without high-resolution (HR) labels during the training stage, making it applicable to real-world scenarios. However, unsupervised super-resolution methods face the challenge of effectively learning the internal structure of images due to the absence of high-quality HR images as references. Moreover, multi-spectral remote sensing images often contain stochastic features caused by cloud and fog occlusions. These occlusions make it difficult to achieve accurate reconstruction of occluded areas through direct modeling of deep features in multi-spectral images. In this paper, we propose a method inspired by conditional variational autoencoders to address the issue of stochastic features in unsupervised multi-spectral super-resolution. Additionally, we introduce a channel attention feature fusion module to combine two types of features. We evaluated our unsupervised multi-spectral image super-resolution method using a real satellite remote sensing dataset. Experimental results demonstrate the qualitative and quantitative effectiveness of our approach.
+            </p>
+            <pre xml:space="preserve" id="ZhangIGARSS2023Bib" class="bibtex" style="display: none;">
+@INPROCEEDINGS{10282224,
+  author={Han, Zhexin and Zhao, Ning and Zhang, Haopeng and Jiang, Zhiguo},
+  booktitle={IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium},
+  title={Unsupervised Multi-Spectral Image Super-Resolution Based on Conditional Variational Autoencoder},
+  year={2023},
+  volume={},
+  number={},
+  pages={5127-5130},
+  keywords={Training;Adaptation models;Satellites;Fuses;Superresolution;Stochastic processes;Sensors;image super-resolution;unsupervised learning;condition variational autoencoder;remote sensing},
+  doi={10.1109/IGARSS52108.2023.10282224}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhangIGARSS2023Abs');
+              hideblock('ZhangIGARSS2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhao_tgrs_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>PETDet: Proposal Enhancement for Two-Stage Fine-Grained Object Detection</b> <a href="https://ieeexplore.ieee.org/document/10360855" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Wentao Li, <a href="https://zhaodanpei.github.io/" target="_blank">Danpei Zhao*</a>, Bo Yuan, Yue Gao, Zhenwei Shi
+                </i></font>
+                <br>
+                 IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhaoTGRS2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhaoTGRS2023Bib')">BibTeX</a> &nbsp;
+                <i class="fa fa-github"></i> <a href="https://github.com/canoe-Z/PETDet" target="_blank">Code</a>
+            </p>
+            <p id="ZhaoTGRS2023Abs" class="abstract" style="display: none;">
+              Fine-grained object detection (FGOD) extends object detection with the capability of fine-grained recognition. In recent two-stage FGOD methods, the region proposal serves as a crucial link between detection and fine-grained recognition. However, current methods overlook that some proposal-related procedures inherited from general detection are not equally suitable for FGOD, limiting the multitask learning from generation, representation, to utilization. In this article, we present a proposal enhancement for two-stage FGOD (PETDet) to better handle the subtasks in two-stage FGOD methods. First, an anchor-free quality-oriented proposal network (QOPN) is proposed with dynamic label assignment and attention-based decomposition to generate high-quality-oriented proposals. In addition, we present a bilinear channel fusion network (BCFN) to extract independent and discriminative features of the proposals. Furthermore, we designed a novel adaptive recognition loss (ARL) that offers guidance for the region-based convolutional neural networks (R-CNNs) head to focus on high-quality proposals. Extensive experiments validate the effectiveness of PETDet. Quantitative analysis reveals that PETDet with ResNet50 reaches state-of-the-art performance on various FGOD datasets, including FAIR1M-v1.0 (42.96 AP), FAIR1M-v2.0 (48.81 AP), MAR20 (85.91 AP), and ShipRSImageNet (74.90 AP). The proposed method also achieves superior compatibility between accuracy and inference speed. Our code and models will be released at https://github.com/canoe-Z/PETDet .
+            </p>
+            <pre xml:space="preserve" id="ZhaoTGRS2023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10360855,
+  author={Li, Wentao and Zhao, Danpei and Yuan, Bo and Gao, Yue and Shi, Zhenwei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={PETDet: Proposal Enhancement for Two-Stage Fine-Grained Object Detection},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-14},
+  keywords={Proposals;Object detection;Detectors;Feature extraction;Task analysis;Pipelines;Multitasking;Aerial images;fine-grained object detection (FGOD);oriented object detection;two-stage detector},
+  doi={10.1109/TGRS.2023.3343453}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhaoTGRS2023Abs');
+              hideblock('ZhaoTGRS2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhao_tpami_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Inherit With Distillation and Evolve With Contrast: Exploring Class Incremental Semantic Segmentation Without Exemplar Memory</b> <a href="https://ieeexplore.ieee.org/document/10120962" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    <a href="https://zhaodanpei.github.io/" target="_blank">Danpei Zhao*</a>, Bo Yuan, Zhenwei Shi
+                </i></font>
+                <br>
+                 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhaoTPAMI2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhaoTPAMI2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhaoTPAMI2023Abs" class="abstract" style="display: none;">
+           As a front-burner problem in incremental learning, class incremental semantic segmentation (CISS) is plagued by catastrophic forgetting and semantic drift. Although recent methods have utilized knowledge distillation to transfer knowledge from the old model, they are still unable to avoid pixel confusion, which results in severe misclassification after incremental steps due to the lack of annotations for past and future classes. Meanwhile data-replay-based approaches suffer from storage burdens and privacy concerns. In this paper, we propose to address CISS without exemplar memory and resolve catastrophic forgetting as well as semantic drift synchronously. We present Inherit with Distillation and Evolve with Contrast (IDEC), which consists of a Dense Knowledge Distillation on all Aspects (DADA) manner and an Asymmetric Region-wise Contrastive Learning (ARCL) module. Driven by the devised dynamic class-specific pseudo-labelling strategy, DADA distils intermediate-layer features and output-logits collaboratively with more emphasis on semantic-invariant knowledge inheritance. ARCL implements region-wise contrastive learning in the latent space to resolve semantic drift among known classes, current classes, and unknown classes. We demonstrate the effectiveness of our method on multiple CISS tasks by state-of-the-art performance, including Pascal VOC 2012, ADE20K and ISPRS datasets. Our method also shows superior anti-forgetting ability, particularly in multi-step CISS tasks.
+            </p>
+            <pre xml:space="preserve" id="ZhaoTPAMI2023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10120962,
+  author={Zhao, Danpei and Yuan, Bo and Shi, Zhenwei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title={Inherit With Distillation and Evolve With Contrast: Exploring Class Incremental Semantic Segmentation Without Exemplar Memory},
+  year={2023},
+  volume={45},
+  number={10},
+  pages={11932-11947},
+  keywords={Task analysis;Semantics;Training;Semantic segmentation;Data models;Visualization;Computational modeling;Class incremental learning;contrastive learning;knowledge distillation;semantic segmentation},
+  doi={10.1109/TPAMI.2023.3273574}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhaoTPAMI2023Abs');
+              hideblock('ZhaoTPAMI2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_zhao_tgrs2_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>A Hierarchical Decoder Architecture for Multilevel Fine-Grained Disaster Detection</b> <a href="https://ieeexplore.ieee.org/abstract/document/10092830" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Chenxu Wang, <a href="https://zhaodanpei.github.io/" target="_blank">Danpei Zhao*</a>, Xinhu Qi, Zhuoran Liu, Zhenwei Shi
+                </i></font>
+                <br>
+                 IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhaoTGRS22023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhaoTGRS22023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="ZhaoTGRS22023Abs" class="abstract" style="display: none;">
+           As a cutting-edge challenge in the field of disaster evaluation, the detection of disasters in remote sensing images is crucial. However, most existing approaches to disaster detection simply solve the problem as a naive multiclass change detection (CD), lacking accurate damage-level classification. In this article, we propose a new approach to disaster detection called multilevel disaster detection (MLDD) that focuses on fine-grained damage-level classification. Our proposed approach tackles MLDD through hierarchical correlation modeling and presents a universal disaster detection architecture. Specifically, we summarize two existing applicative methods, one-step training and pretraining, which are compatible with our proposed architecture. In addition, we propose two novel hierarchical approaches, namely the multitask (MT)-based and graph-encoding (GE)-based approaches. The MT approach resolves MLDD through layerwise learning in a progressive manner, building explicit multistage and implicit joint models to probe into the coarse-to-fine correlation for damage-level evaluation. The GE approach enhances hierarchical relationships by encoding multifold messaging directions and probabilities using a graph neural network. Furthermore, all four hierarchical paradigms can be embedded in our hierarchical MLDD architecture, which outperforms the state-of-the-art methods on the xBD dataset, particularly in fine-grained damage-level classification. Overall, our proposed approach represents a significant improvement over existing disaster detection methods and has the potential to advance the field of disaster evaluation.
+            </p>
+            <pre xml:space="preserve" id="ZhaoTGRS22023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10092830,
+  author={Wang, Chenxu and Zhao, Danpei and Qi, Xinhu and Liu, Zhuoran and Shi, Zhenwei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  title={A Hierarchical Decoder Architecture for Multilevel Fine-Grained Disaster Detection},
+  year={2023},
+  volume={61},
+  number={},
+  pages={1-14},
+  keywords={Task analysis;Feature extraction;Buildings;Multitasking;Location awareness;Deep learning;Computational modeling;Disaster detection;hierarchical learning;multitemporal;remote sensing images (RSIs)},
+  doi={10.1109/TGRS.2023.3264811}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('ZhaoTGRS22023Abs');
+              hideblock('ZhaoTGRS22023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_grsl_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Feedback Network for Compact Thin Cloud Removal</b> <a href="https://ieeexplore.ieee.org/document/10068195" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Haidong Ding, <a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>, Yue Zi, Wei Liao, Xuedong Song
+                </i></font>
+                <br>
+                 IEEE Geoscience and Remote Sensing Letters (GRSL), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieGRSL2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieGRSL2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieGRSL2023Abs" class="abstract" style="display: none;">
+           The thin cloud removal (CR) technique has great practical value for the application of remote-sensing images. Existing deep-learning-based methods have attained remarkable achievements. However, most of them neglect the inherent feature correlations in deeper layers due to learning successively. In this letter, we propose a compact thin CR network based on the feedback (FB) mechanism, called CRFB-Net, which leverages the high-level features as FB information to modulate shallow representations. CRFB-Net employs the recurrent architecture to achieve such an FB scheme. Specifically, the restoration process does not terminate after obtaining an output. In this case, the output of intermediate iterations will flow into the next iteration as FB. For better utilization of FB, a multiscale feature fusion block (MFFB) is designed to refine the low-level representations from three scales. Furthermore, we introduce a curriculum learning (CL) strategy to train the CRFB-Net by gradually increasing the complexity of restoration, through which a sharper result is produced step by step. Extensive experiments demonstrate the superiority of our CRFB-Net, outperforming state-of-the-art (SOTA).
+            </p>
+            <pre xml:space="preserve" id="XieGRSL2023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10068195,
+  author={Ding, Haidong and Xie, Fengying and Zi, Yue and Liao, Wei and Song, Xuedong},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  title={Feedback Network for Compact Thin Cloud Removal},
+  year={2023},
+  volume={20},
+  number={},
+  pages={1-5},
+  keywords={Clouds;Image restoration;Feature extraction;Remote sensing;Convolution;Training;Scattering;Curriculum learning (CL);feedback (FB) scheme;recurrent architecture;remote sensing;thin cloud removal (CR)},
+  doi={10.1109/LGRS.2023.3256416}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieGRSL2023Abs');
+              hideblock('XieGRSL2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_ipt_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Infrared small target detection based on multi-perception of target features</b> <a href="https://www.sciencedirect.com/science/article/pii/S1350449523003857" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Chang Liu, <a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>, Haopeng Zhang, Zhiguo Jiang, Yushan Zheng
+                </i></font>
+                <br>
+                 Infrared Physics & Technology (IPT), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieIPT2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieIPT2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieIPT2023Abs" class="abstract" style="display: none;">
+           The rapid and efficient detection of infrared dim and small targets in complex backgrounds is a critical area of research in infrared image processing. When confronted with limited target features, it becomes vital to mine and construct additional features in order to accurately differentiate the target from the surrounding background and noise. This paper presents a novel small infrared target detection method based on multi-perception of target features which involves four main stages. First, two new target features are constructed to reduce the similarity between the target and noise and smooth the background. Second, two designed filters are applied to enhance the significance of the target and achieve preliminary detection. Third, structure tensor analysis is used to remove the significant background edge regions and perceive targets with strong corner characteristics. Finally, pseudo targets are eliminated by utilizing target candidate areas to achieve the final detection. Experimental results demonstrate that this method is faster and more robust compared to existing detection algorithms, with superior adaptability and detection performance.
+            </p>
+            <pre xml:space="preserve" id="XieIPT2023Bib" class="bibtex" style="display: none;">
+@article{LIU2023104927,
+title = {Infrared small target detection based on multi-perception of target features},
+journal = {Infrared Physics & Technology},
+volume = {135},
+pages = {104927},
+year = {2023},
+issn = {1350-4495},
+doi = {https://doi.org/10.1016/j.infrared.2023.104927},
+url = {https://www.sciencedirect.com/science/article/pii/S1350449523003857},
+author = {Chang Liu and Fengying Xie and Haopeng Zhang and Zhiguo Jiang and Yushan Zheng},
+keywords = {Infrared image, Small target detection, Multi-perception, Pseudo target elimination, Target enhancement, Background suppression},
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieIPT2023Abs');
+              hideblock('XieIPT2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_rs_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>Wavelet Integrated Convolutional Neural Network for Thin Cloud Removal in Remote Sensing Images</b> <a href="https://www.mdpi.com/2072-4292/15/3/781" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Yue Zi, Haidong Ding, <a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>, Zhiguo Jiang, Xuedong Song
+                </i></font>
+                <br>
+                 Remote Sensing (RS), 2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieRS2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieRS2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieRS2023Abs" class="abstract" style="display: none;">
+           Cloud occlusion phenomena are widespread in optical remote sensing (RS) images, leading to information loss and image degradation and causing difficulties in subsequent applications such as land surface classification, object detection, and land change monitoring. Therefore, thin cloud removal is a key preprocessing procedure for optical RS images, and has great practical value. Recent deep learning-based thin cloud removal methods have achieved excellent results. However, these methods have a common problem in that they cannot obtain large receptive fields while preserving image detail. In this paper, we propose a novel wavelet-integrated convolutional neural network for thin cloud removal (WaveCNN-CR) in RS images that can obtain larger receptive fields without any information loss. WaveCNN-CR generates cloud-free images in an end-to-end manner based on an encoder–decoder-like architecture. In the encoding stage, WaveCNN-CR first extracts multi-scale and multi-frequency components via wavelet transform, then further performs feature extraction for each high-frequency component at different scales by multiple enhanced feature extraction modules (EFEM) separately. In the decoding stage, WaveCNN-CR recursively concatenates the processed low-frequency and high-frequency components at each scale, feeds them into EFEMs for feature extraction, then reconstructs the high-resolution low-frequency component by inverse wavelet transform. In addition, the designed EFEM consisting of an attentive residual block (ARB) and gated residual block (GRB) is used to emphasize the more informative features. ARB and GRB enhance features from the perspective of global and local context, respectively. Extensive experiments on the T-CLOUD, RICE1, and WHUS2-CR datasets demonstrate that our WaveCNN-CR significantly outperforms existing state-of-the-art methods.
+            </p>
+            <pre xml:space="preserve" id="XieRS2023Bib" class="bibtex" style="display: none;">
+@Article{rs15030781,
+AUTHOR = {Zi, Yue and Ding, Haidong and Xie, Fengying and Jiang, Zhiguo and Song, Xuedong},
+TITLE = {Wavelet Integrated Convolutional Neural Network for Thin Cloud Removal in Remote Sensing Images},
+JOURNAL = {Remote Sensing},
+VOLUME = {15},
+YEAR = {2023},
+NUMBER = {3},
+ARTICLE-NUMBER = {781},
+URL = {https://www.mdpi.com/2072-4292/15/3/781},
+ISSN = {2072-4292},
+DOI = {10.3390/rs15030781}
+}
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieRS2023Abs');
+              hideblock('XieRS2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          </tbody></table>
+
+          <hr />
+          <!-- -------------------------------------------- -->
+          <!-- -------------------------------------------- -->
           <h3>2022</h3>
           <table><tbody>
             <tr> <!-- An Paper -->
