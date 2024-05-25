@@ -455,7 +455,7 @@ ARTICLE-NUMBER = {882},
 URL = {https://www.mdpi.com/2072-4292/15/4/882},
 ISSN = {2072-4292},
 DOI = {10.3390/rs15040882}
-              </pre>
+            </pre>
             <script language="javascript" type="text/javascript" xml:space="preserve">
               hideblock('XieMICCAI2023Abs');
               hideblock('XieMICCAI2023Bib');
@@ -507,6 +507,50 @@ pages="244--254",
 abstract="Skin image datasets often suffer from imbalanced data distribution, exacerbating the difficulty of computer-aided skin disease diagnosis. Some recent works exploit supervised contrastive learning (SCL) for this long-tailed challenge. Despite achieving significant performance, these SCL-based methods focus more on head classes, yet ignoring the utilization of information in tail classes. In this paper, we propose class-Enhancement Contrastive Learning (ECL), which enriches the information of minority classes and treats different classes equally. For information enhancement, we design a hybrid-proxy model to generate class-dependent proxies and propose a cycle update strategy for parameters optimization. A balanced-hybrid-proxy loss is designed to exploit relations between samples and proxies with different classes treated equally. Taking both ``imbalanced data'' and ``imbalanced diagnosis difficulty'' into account, we further present a balanced-weighted cross-entropy loss following curriculum learning schedule. Experimental results on the classification of imbalanced skin lesion data have demonstrated the superiority and effectiveness of our method. The codes can be publicly available from https://github.com/zylbuaa/ECL.git.",
 isbn="978-3-031-43895-0"
 }
+            </pre>
+            <script language="javascript" type="text/javascript" xml:space="preserve">
+              hideblock('XieCBM2023Abs');
+              hideblock('XieCBM2023Bib');
+            </script>
+            </td>
+        </tr> <!-- Paper End Here -->
+
+          <tr> <!-- An Paper -->
+            <td width="22%" valign="top"><p>
+              <img src="images/src/article_xie_cbm_2023.png" alt="Result" width="200">
+            </p></td>
+            <td width="78%" valign="top">
+            <p>
+                <b>TFormer: A throughout fusion transformer for multi-modal skin lesion diagnosis</b> <a href="https://www.sciencedirect.com/science/article/pii/S0010482523001774" target="_blank"><i class="fa fa-external-link"></i></a>
+                <br>
+                <font size="3pt" face="Georgia"><i>
+                    Yilan Zhang，<a href="http://www.sa.buaa.edu.cn/info/1014/4773.htm" target="_blank">Fengying Xie*</a>，Jianqi Chen
+                </i></font>
+                <br>
+                 Computers in Biology and Medicine，2023
+                <br>
+                <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
+                <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('XieCBM2023Abs')">Abstract</a> &nbsp;
+                <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('XieCBM2023Bib')">BibTeX</a> &nbsp;
+                <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
+            </p>
+            <p id="XieCBM2023Abs" class="abstract" style="display: none;">
+              Multi-modal skin lesion diagnosis (MSLD) has achieved remarkable success by modern computer-aided diagnosis (CAD) technology based on deep convolutions. However, the information aggregation across modalities in MSLD remains challenging due to severity unaligned spatial resolution (e.g., dermoscopic image and clinical image) and heterogeneous data (e.g., dermoscopic image and patients’ meta-data). Limited by the intrinsic local attention, most recent MSLD pipelines using pure convolutions struggle to capture representative features in shallow layers, thus the fusion across different modalities is usually done at the end of the pipelines, even at the last layer, leading to an insufficient information aggregation. To tackle the issue, we introduce a pure transformer-based method, which we refer to as “Throughout Fusion Transformer (TFormer)”, for sufficient information integration in MSLD. Different from the existing approaches with convolutions, the proposed network leverages transformer as feature extraction backbone, bringing more representative shallow features. We then carefully design a stack of dual-branch hierarchical multi-modal transformer (HMT) blocks to fuse information across different image modalities in a stage-by-stage way. With the aggregated information of image modalities, a multi-modal transformer post-fusion (MTP) block is designed to integrate features across image and non-image data. Such a strategy that information of the image modalities is firstly fused then the heterogeneous ones enables us to better divide and conquer the two major challenges while ensuring inter-modality dynamics are effectively modeled. Experiments conducted on the public Derm7pt dataset validate the superiority of the proposed method. Our TFormer achieves an average accuracy of 77.99% and diagnostic accuracy of 80.03% , which outperforms other state-of-the-art methods. Ablation experiments also suggest the effectiveness of our designs. The codes can be publicly available from https://github.com/zylbuaa/TFormer.git.
+            </p>
+            <pre xml:space="preserve" id="XieCBM2023Bib" class="bibtex" style="display: none;">
+@article{ZHANG2023106712,
+title = {TFormer: A throughout fusion transformer for multi-modal skin lesion diagnosis},
+journal = {Computers in Biology and Medicine},
+volume = {157},
+pages = {106712},
+year = {2023},
+issn = {0010-4825},
+doi = {https://doi.org/10.1016/j.compbiomed.2023.106712},
+url = {https://www.sciencedirect.com/science/article/pii/S0010482523001774},
+author = {Yilan Zhang and Fengying Xie and Jianqi Chen},
+keywords = {Skin lesion classification, Multi-modal learning, Transformer, Attention mechanism, Multi-label classification},
+abstract = {Multi-modal skin lesion diagnosis (MSLD) has achieved remarkable success by modern computer-aided diagnosis (CAD) technology based on deep convolutions. However, the information aggregation across modalities in MSLD remains challenging due to severity unaligned spatial resolution (e.g., dermoscopic image and clinical image) and heterogeneous data (e.g., dermoscopic image and patients’ meta-data). Limited by the intrinsic local attention, most recent MSLD pipelines using pure convolutions struggle to capture representative features in shallow layers, thus the fusion across different modalities is usually done at the end of the pipelines, even at the last layer, leading to an insufficient information aggregation. To tackle the issue, we introduce a pure transformer-based method, which we refer to as “Throughout Fusion Transformer (TFormer)”, for sufficient information integration in MSLD. Different from the existing approaches with convolutions, the proposed network leverages transformer as feature extraction backbone, bringing more representative shallow features. We then carefully design a stack of dual-branch hierarchical multi-modal transformer (HMT) blocks to fuse information across different image modalities in a stage-by-stage way. With the aggregated information of image modalities, a multi-modal transformer post-fusion (MTP) block is designed to integrate features across image and non-image data. Such a strategy that information of the image modalities is firstly fused then the heterogeneous ones enables us to better divide and conquer the two major challenges while ensuring inter-modality dynamics are effectively modeled. Experiments conducted on the public Derm7pt dataset validate the superiority of the proposed method. Our TFormer achieves an average accuracy of 77.99% and diagnostic accuracy of 80.03% , which outperforms other state-of-the-art methods. Ablation experiments also suggest the effectiveness of our designs. The codes can be publicly available from https://github.com/zylbuaa/TFormer.git.}
+}             
             </pre>
             <script language="javascript" type="text/javascript" xml:space="preserve">
               hideblock('ZhangRS2023Abs');
