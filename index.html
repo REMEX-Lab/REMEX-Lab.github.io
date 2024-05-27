@@ -80,7 +80,7 @@
               </p>
               
               <div class="block-image">
-                <img src="images/photo/Team2023.jpg" alt="Team photo">
+                <img src="images/photo/Team2024.jpg" alt="Team photo">
               </div>
              <hr/>
              <h3 align="middle"> <font color="FF0000">【New】</font><a href="html\cn\index.html">REMEX Lab summer Camp 暑期夏令营 2024 </a></h3>
@@ -89,6 +89,43 @@
               <div class="block-text">
             <table><tbody>
 
+            <tr> <!-- An Paper -->
+                <p>
+                    <b>Addressing Sample Inconsistency for Semisupervised Object Detection in Remote Sensing Images</b> <a href="https://ieeexplore.ieee.org/document/10463140" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <br>
+                    <font size="3pt" face="Georgia"><i>
+                        Yuhao Wang, Lifan Yao, Gang Meng, Xinyue Zhang, Jiayun Song, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>
+                    </i></font>
+                    <br>
+                    IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2024
+                    <br>
+                    <!-- <i class="fa fa-file-pdf-o"></i> <a href="https://zhengyushan.github.io" target="_blank">PDF</a> -->
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangJSTARS2024Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangJSTARS2024Bib')">BibTeX</a> &nbsp;
+                    <!--                    <i class="fa fa-github"></i> <a href="https://github.com/hudingyi/FGCR" target="_blank">Code</a>-->
+                </p>
+                <p id="ZhangJSTARS2024Abs" class="abstract" style="display: none;">
+                    The emergence of semisupervised object detection (SSOD) techniques has greatly enhanced object detection performance. SSOD leverages a limited amount of labeled data along with a large quantity of unlabeled data. However, there exists a problem of sample inconsistency in remote sensing images, which manifests in two ways. First, remote sensing images are diverse and complex. Conventional random initialization methods for labeled data are insufficient for training teacher networks to generate high-quality pseudolabels. Finally, remote sensing images typically exhibit a long-tailed distribution, where some categories have a significant number of instances, while others have very few. This distribution poses significant challenges during model training. In this article, we propose the utilization of SSOD networks for remote sensing images characterized by a long-tailed distribution. To address the issue of sample inconsistency between labeled and unlabeled data, we employ a labeled data iterative selection strategy based on the active learning approach. We iteratively filter out high-value samples through the designed selection criteria. The selected samples are labeled and used as data for supervised training. This method filters out valuable labeled data, thereby improving the quality of pseudolabels. Inspired by transfer learning, we decouple the model training into the training of the backbone and the detector. We tackle the problem of sample inconsistency in long-tail distribution data by training the detector using balanced data across categories. Our approach exhibits an approximate 1% improvement over the current state-of-the-art models on both the DOTAv1.0 and DIOR datasets.
+                </p>
+                <pre xml:space="preserve" id="ZhangJSTARS2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10463140,
+  author={Wang, Yuhao and Yao, Lifan and Meng, Gang and Zhang, Xinye and Song, Jiayun and Zhang, Haopeng},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  title={Addressing Sample Inconsistency for Semisupervised Object Detection in Remote Sensing Images},
+  year={2024},
+  volume={17},
+  number={},
+  pages={6933-6944},
+  keywords={Training;Remote sensing;Object detection;Measurement;Detectors;Tail;Labeling;Active learning;long-tailed distribution;remote sensing;semisupervised object detection (SSOD)},
+  doi={10.1109/JSTARS.2024.3374820}
+}
+                </pre>
+                <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('ZhangJSTARS2024Abs');
+                  hideblock('ZhangJSTARS2024Bib');
+                </script>
+                </td>
+            </tr> <!-- Paper End Here -->
 
             <tr> <!-- An Paper -->
                 <p>
@@ -132,38 +169,28 @@ abstract = {Large-scale digital whole slide image (WSI) datasets analysis have g
 
             <tr> <!-- An Paper -->
                 <p>
-                    <b>High-Resolution Feature Generator for Small-Ship Detection in Optical Remote Sensing Images</b> <a href="https://ieeexplore.ieee.org/document/10473137" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <b>Satellite Video Super-Resolution via Unidirectional Recurrent Network and Various Degradation Modeling</b> <a href="" target="_blank"><i class="fa fa-external-link"></i></a>
                     <br>
                     <font size="3pt" face="Georgia"><i>
-                        <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Sizhe Wen, Zhaoxiang Wei, Zhuoyi Chen
+                        Xiaoyuan Wei, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Zhiguo Jiang
                     </i></font>
                     <br>
-                    IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024
+                    IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2024
                     <br>
                     <!-- <i class="fa fa-file-pdf-o"></i> <a href="https://zhengyushan.github.io" target="_blank">PDF</a> -->
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangTGRS2024Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangTGRS2024Bib')">BibTeX</a> &nbsp;
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangIGARSS2024Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangIGARSS2024Bib')">BibTeX</a> &nbsp;
                     <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
                 </p>
                 <p id="ZhangTGRS2024Abs" class="abstract" style="display: none;">
-                    Ship detection in optical remote sensing (RS) images remains a persistent challenge in current research. While prevailing methods achieve satisfactory outcomes in detecting large ship objects within RS images, the identification of small-ship objects poses greater difficulty due to their limited pixel information. To address this challenge, the utilization of generative adversarial network-based (GAN-based) super-resolution (SR) techniques proves effective. Therefore, in this article, we present a high-resolution feature generator (HRFG) specifically tailored for small-ship detection. Different from previous GAN-based methods that rely on image-level SR or feature sharing between SR and detection, we design a new architecture that uses an additional network branch, that is, high-resolution feature extractor (HRFE), to extract real high-resolution (HR) feature as a feature-level supervisory signal. The intuition is that real HR features may guide the generator network to extract HR features from low-resolution (LR) images directly. Consequently, the feature for detection is extracted and enhanced at the same time so that a large amount of calculation brought by image-level SR is avoided. Additionally, we introduce a background degradation strategy within the HRFE to improve the performance of small object recognition. Extensive experiments on a self-assembled ship dataset and two other public datasets show the superiority of the proposed method in small-ship detection tasks.
+                    Satellite video images contain temporal contextual information that is unavailable in single-frame images. Therefore, using a sequence of frames for super-resolution can significantly enhance the reconstruction effect. However, most existing satellite Video Super-Resolution (VSR) methods focus on improving the network’s presentation ability, overlooking the complex degradation processes present in real-world satellite videos which appear as a blind SR problem. In this paper, we propose an effective satellite VSR method based on a unidirectional recurrent network named URD-VSR. Simultaneously, a network independent of the SR structure is utilized to model the degradation process. Experiments on real satellite video datasets and integration with object detection demonstrate the effectiveness of the proposed method.
                 </p>
                 <pre xml:space="preserve" id="ZhangTGRS2024Bib" class="bibtex" style="display: none;">
-@ARTICLE{10473137,
-author={Zhang, Haopeng and Wen, Sizhe and Wei, Zhaoxiang and Chen, Zhuoyi},
-journal={IEEE Transactions on Geoscience and Remote Sensing},
-title={High-Resolution Feature Generator for Small-Ship Detection in Optical Remote Sensing Images},
-year={2024},
-volume={62},
-number={},
-pages={1-11},
-keywords={Feature extraction;Marine vehicles;Detectors;Superresolution;Optical imaging;Remote sensing;Generators;Generative adversarial network (GAN);optical image;remote sensing (RS);ship detection},
-doi={10.1109/TGRS.2024.3377999}
-}
+Coming Soon
                 </pre>
                 <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('ZhangTGRS2024Abs');
-                  hideblock('ZhangTGRS2024Bib');
+                  hideblock('ZhangIGARSS2024Abs');
+                  hideblock('ZhangIGARSS2024Bib');
                 </script>
                 </td>
             </tr> <!-- Paper End Here -->
@@ -244,55 +271,7 @@ doi={10.1109/TMI.2023.3264781}}
                 </td>
             </tr> <!-- Paper End Here -->
 
-            <tr> <!-- An Paper -->
-                <p>
-                    <b>Position-Aware Masked Autoencoder for Histopathology WSI Representation Learning</b> <a href="https://link.springer.com/chapter/10.1007/978-3-031-43987-2_69" target="_blank"><i class="fa fa-external-link"></i></a>
-                    <br>
-                    <font size="3pt" face="Georgia"><i>
-                        Kun Wu, <a href="https://zhengyushan.github.io/" target="_blank">Yushan Zheng*</a>, Jun Shi*, Fengying Xie and Zhiguo Jiang
-                    </i></font>
-                    <br>
-                    Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023
-                    <br>
-<!--                    <i class="fa fa-file-pdf-o"></i> <a href="./source/pdf/article_zhang_remotesensing_2022.pdf" target="_blank">PDF</a>-->
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengMICCAI2023Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengMICCAI2023Bib')">BibTeX</a> &nbsp;
-                    <i class="fa fa-github"></i> <a href="https://github.com/WkEEn/PAMA" target="_blank">Code</a>
-                </p>
-                <p id="ZhengMICCAI2023Abs" class="abstract" style="display: none;">
-                    Transformer-based multiple instance learning (MIL) framework has been proven advanced for whole slide image (WSI) analysis. However, existing spatial embedding strategies in Transformer can only represent fixed structural information, which are hard to tackle the scale-varying and isotropic characteristics of WSIs. Moreover, the current MIL cannot take advantage of a large number of unlabeled WSIs for training. In this paper, we propose a novel self-supervised whole slide image representation learning framework named position-aware masked autoencoder (PAMA), which can make full use of abundant unlabeled WSIs to improve the discrimination of slide features. Moreover, we propose a position-aware cross-attention (PACA) module with a kernel reorientation (KRO) strategy, which makes PAMA able to maintain spatial integrity and semantic enrichment during the training. We evaluated the proposed method on a public TCGA-Lung dataset with 3,064 WSIs and an in-house Endometrial dataset with 3,654 WSIs, and compared it with 6 state-of-the-art methods. The results of experiments show our PAMA is superior to SOTA MIL methods and SSL methods. The code will be available at https://github.com/WkEEn/PAMA.
-                </p>
-                <pre xml:space="preserve" id="ZhengMICCAI2023Bib" class="bibtex" style="display: none;">
-@InProceedings{10.1007/978-3-031-43987-2_69,
-author="Wu, Kun
-and Zheng, Yushan
-and Shi, Jun
-and Xie, Fengying
-and Jiang, Zhiguo",
-editor="Greenspan, Hayit
-and Madabhushi, Anant
-and Mousavi, Parvin
-and Salcudean, Septimiu
-and Duncan, James
-and Syeda-Mahmood, Tanveer
-and Taylor, Russell",
-title="Position-Aware Masked Autoencoder for Histopathology WSI Representation Learning",
-booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2023",
-year="2023",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="714--724",
-abstract="Transformer-based multiple instance learning (MIL) framework has been proven advanced for whole slide image (WSI) analysis. However, existing spatial embedding strategies in Transformer can only represent fixed structural information, which are hard to tackle the scale-varying and isotropic characteristics of WSIs. Moreover, the current MIL cannot take advantage of a large number of unlabeled WSIs for training. In this paper, we propose a novel self-supervised whole slide image representation learning framework named position-aware masked autoencoder (PAMA), which can make full use of abundant unlabeled WSIs to improve the discrimination of slide features. Moreover, we propose a position-aware cross-attention (PACA) module with a kernel reorientation (KRO) strategy, which makes PAMA able to maintain spatial integrity and semantic enrichment during the training. We evaluated the proposed method on a public TCGA-Lung dataset with 3,064 WSIs and an in-house Endometrial dataset with 3,654 WSIs, and compared it with 6 state-of-the-art methods. The results of experiments show our PAMA is superior to SOTA MIL methods and SSL methods. The code will be available at https://github.com/WkEEn/PAMA.",
-isbn="978-3-031-43987-2"
-}
-                </pre>
-                <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('ZhengMICCAI2023Abs');
-                  hideblock('ZhengMICCAI2023Bib');
-                </script>
-                </td>
-            </tr> <!-- Paper End Here -->
-              
+
                 </tbody></table>
               </div>
               <div class="get-more" align="right"><a href="publications.html"> More </a></div>
