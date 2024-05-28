@@ -80,200 +80,198 @@
               </p>
               
               <div class="block-image">
-                <img src="images/photo/Team2023.jpg" alt="Team photo">
+                <img src="images/photo/Team2024.jpg" alt="Team photo">
               </div>
              <hr/>
-             <h3 align="middle"> <font color="FF0000">【New】</font><a href="html\cn\index.html">REMEX Lab summer Camp 暑期夏令营 2023 </a></h3>
+             <h3 align="middle"> <font color="FF0000">【New】</font><a href="html\cn\index.html">REMEX Lab summer Camp 暑期夏令营 2024 </a></h3>
               <hr/>
               <h3 align="left">Recently Published</h3><br />
               <div class="block-text">
             <table><tbody>
 
-
             <tr> <!-- An Paper -->
                 <p>
-                    <b>Kernel Attention Transformer (KAT) for Histopathology Whole Slide Image Classification</b> <a href="" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <b>Addressing Sample Inconsistency for Semisupervised Object Detection in Remote Sensing Images</b> <a href="https://ieeexplore.ieee.org/document/10463140" target="_blank"><i class="fa fa-external-link"></i></a>
                     <br>
                     <font size="3pt" face="Georgia"><i>
-                        <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng*</a>, Jun Li, Jun Shi, Fengying Xie, Zhiguo Jiang
+                        Yuhao Wang, Lifan Yao, Gang Meng, Xinyue Zhang, Jiayun Song, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>
                     </i></font>
                     <br>
-                    Medical Image Computing and Computer Assisted Intervention (MICCAI), 2022
+                    IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2024
                     <br>
                     <!-- <i class="fa fa-file-pdf-o"></i> <a href="https://zhengyushan.github.io" target="_blank">PDF</a> -->
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengMICCAI2022Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengMICCAI2022Bib')">BibTeX</a> &nbsp;
-                    <i class="fa fa-github"></i> <a href="https://github.com/zhengyushan/kat" target="_blank">Code</a>
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangJSTARS2024Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangJSTARS2024Bib')">BibTeX</a> &nbsp;
+                    <!--                    <i class="fa fa-github"></i> <a href="https://github.com/hudingyi/FGCR" target="_blank">Code</a>-->
                 </p>
-                <p id="ZhengMICCAI2022Abs" class="abstract" style="display: none;">
-                  Transformer has been widely used in histopathology whole slide image (WSI) classification for the purpose of tumor grading, prognosis analysis, etc. However, the design of token-wise self-attention and positional embedding strategy in the common Transformer limits the effectiveness and efficiency in the application to gigapixel histopathology images. In this paper, we propose a kernel attention Transformer (KAT) for histopathology WSI classification. The information transmission of the tokens is achieved by cross-attention between the tokens and a set of kernels related to a set of positional anchors on the WSI. Compared to the common Transformer structure, the proposed KAT can better describe the hierarchical context information of the local regions of the WSI and meanwhile maintains a lower computational complexity. The proposed method was evaluated on a gastric dataset with 2040 WSIs and an endometrial dataset with 2560 WSIs, and was compared with 5 state-of-the-art methods. The experimental results have demonstrated the proposed KAT is effective and efficient in the task of histopathology WSI classification and is superior to the state-of-the-art methods.
+                <p id="ZhangJSTARS2024Abs" class="abstract" style="display: none;">
+                    The emergence of semisupervised object detection (SSOD) techniques has greatly enhanced object detection performance. SSOD leverages a limited amount of labeled data along with a large quantity of unlabeled data. However, there exists a problem of sample inconsistency in remote sensing images, which manifests in two ways. First, remote sensing images are diverse and complex. Conventional random initialization methods for labeled data are insufficient for training teacher networks to generate high-quality pseudolabels. Finally, remote sensing images typically exhibit a long-tailed distribution, where some categories have a significant number of instances, while others have very few. This distribution poses significant challenges during model training. In this article, we propose the utilization of SSOD networks for remote sensing images characterized by a long-tailed distribution. To address the issue of sample inconsistency between labeled and unlabeled data, we employ a labeled data iterative selection strategy based on the active learning approach. We iteratively filter out high-value samples through the designed selection criteria. The selected samples are labeled and used as data for supervised training. This method filters out valuable labeled data, thereby improving the quality of pseudolabels. Inspired by transfer learning, we decouple the model training into the training of the backbone and the detector. We tackle the problem of sample inconsistency in long-tail distribution data by training the detector using balanced data across categories. Our approach exhibits an approximate 1% improvement over the current state-of-the-art models on both the DOTAv1.0 and DIOR datasets.
                 </p>
-                <pre xml:space="preserve" id="ZhengMICCAI2022Bib" class="bibtex" style="display: none;">
-  @inproceedings{zheng2022kernel,
-    author    = {Yushan Zheng, Jun Li, Jun Shi, Fengying Xie, Zhiguo Jiang},
-    title     = {Kernel Attention Transformer (KAT) for Histopathology Whole Slide Image Classification},
-    booktitle = {Medical Image Computing and Computer Assisted Intervention 
-                -- MICCAI 2022},
-    year      = {2022}
-  }
+                <pre xml:space="preserve" id="ZhangJSTARS2024Bib" class="bibtex" style="display: none;">
+@ARTICLE{10463140,
+  author={Wang, Yuhao and Yao, Lifan and Meng, Gang and Zhang, Xinye and Song, Jiayun and Zhang, Haopeng},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  title={Addressing Sample Inconsistency for Semisupervised Object Detection in Remote Sensing Images},
+  year={2024},
+  volume={17},
+  number={},
+  pages={6933-6944},
+  keywords={Training;Remote sensing;Object detection;Measurement;Detectors;Tail;Labeling;Active learning;long-tailed distribution;remote sensing;semisupervised object detection (SSOD)},
+  doi={10.1109/JSTARS.2024.3374820}
+}
                 </pre>
                 <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('ZhengMICCAI2022Abs');
-                  hideblock('ZhengMICCAI2022Bib');
+                  hideblock('ZhangJSTARS2024Abs');
+                  hideblock('ZhangJSTARS2024Bib');
                 </script>
                 </td>
             </tr> <!-- Paper End Here -->
 
             <tr> <!-- An Paper -->
                 <p>
-                    <b>Lesion-Aware Contrastive Representation Learning For Histopathology Whole Slide Images Analysis</b> <a href="" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <b>Histopathology language-image representation learning for fine-grained digital pathology cross-modal retrieval</b> <a href="https://www.sciencedirect.com/science/article/pii/S1361841524000884" target="_blank"><i class="fa fa-external-link"></i></a>
                     <br>
                     <font size="3pt" face="Georgia"><i>
-                        Jun Li, <a href="https://zhengyushan.github.io" target="_blank">Yushan Zheng*</a>, Kun Wu, Jun Shi*, Fengying Xie, Zhiguo Jiang
+                        Dingyi Hu, Zhiguo Jiang, Jun Shi, Fengying Xie, Kun Wu, Kunming Tang, Ming Cao, Jianguo Huai and <a href="https://zhengyushan.github.io/" target="_blank">Yushan Zheng *</a>
                     </i></font>
                     <br>
-                     Medical Image Computing and Computer Assisted Intervention (MICCAI), 2022
+                    Medical Image Analysis, 2024
                     <br>
                     <!-- <i class="fa fa-file-pdf-o"></i> <a href="https://zhengyushan.github.io" target="_blank">PDF</a> -->
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('LiMICCAI2022Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('LiMICCAI2022Bib')">BibTeX</a> &nbsp;
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengMIA2024Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengMIA2024Bib')">BibTeX</a> &nbsp;
+                    <i class="fa fa-github"></i> <a href="https://github.com/hudingyi/FGCR" target="_blank">Code</a>
+                </p>
+                <p id="ZhengMIA2024Abs" class="abstract" style="display: none;">
+                    Large-scale digital whole slide image (WSI) datasets analysis have gained significant attention in computer-aided cancer diagnosis. Content-based histopathological image retrieval (CBHIR) is a technique that searches a large database for data samples matching input objects in both details and semantics, offering relevant diagnostic information to pathologists. However, the current methods are limited by the difficulty of gigapixels, the variable size of WSIs, and the dependence on manual annotations. In this work, we propose a novel histopathology language-image representation learning framework for fine-grained digital pathology cross-modal retrieval, which utilizes paired diagnosis reports to learn fine-grained semantics from the WSI. An anchor-based WSI encoder is built to extract hierarchical region features and a prompt-based text encoder is introduced to learn fine-grained semantics from the diagnosis reports. The proposed framework is trained with a multivariate cross-modal loss function to learn semantic information from the diagnosis report at both the instance level and region level. After training, it can perform four types of retrieval tasks based on the multi-modal database to support diagnostic requirements. We conducted experiments on an in-house dataset and a public dataset to evaluate the proposed method. Extensive experiments have demonstrated the effectiveness of the proposed method and its advantages to the present histopathology retrieval methods. The code is available at https://github.com/hudingyi/FGCR.
+                </p>
+                <pre xml:space="preserve" id="ZhengMIA2024Bib" class="bibtex" style="display: none;">
+@article{HU2024103163,
+title = {Histopathology language-image representation learning for fine-grained digital pathology cross-modal retrieval},
+journal = {Medical Image Analysis},
+volume = {95},
+pages = {103163},
+year = {2024},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2024.103163},
+url = {https://www.sciencedirect.com/science/article/pii/S1361841524000884},
+author = {Dingyi Hu and Zhiguo Jiang and Jun Shi and Fengying Xie and Kun Wu and Kunming Tang and Ming Cao and Jianguo Huai and Yushan Zheng},
+keywords = {CBHIR, Cross-modal, Diagnosis reports, Digital pathology},
+abstract = {Large-scale digital whole slide image (WSI) datasets analysis have gained significant attention in computer-aided cancer diagnosis. Content-based histopathological image retrieval (CBHIR) is a technique that searches a large database for data samples matching input objects in both details and semantics, offering relevant diagnostic information to pathologists. However, the current methods are limited by the difficulty of gigapixels, the variable size of WSIs, and the dependence on manual annotations. In this work, we propose a novel histopathology language-image representation learning framework for fine-grained digital pathology cross-modal retrieval, which utilizes paired diagnosis reports to learn fine-grained semantics from the WSI. An anchor-based WSI encoder is built to extract hierarchical region features and a prompt-based text encoder is introduced to learn fine-grained semantics from the diagnosis reports. The proposed framework is trained with a multivariate cross-modal loss function to learn semantic information from the diagnosis report at both the instance level and region level. After training, it can perform four types of retrieval tasks based on the multi-modal database to support diagnostic requirements. We conducted experiments on an in-house dataset and a public dataset to evaluate the proposed method. Extensive experiments have demonstrated the effectiveness of the proposed method and its advantages to the present histopathology retrieval methods. The code is available at https://github.com/hudingyi/FGCR.}
+}
+                </pre>
+                <script language="javascript" type="text/javascript" xml:space="preserve">
+                  hideblock('ZhengMIA2024Abs');
+                  hideblock('ZhengMIA2024Bib');
+                </script>
+                </td>
+            </tr> <!-- Paper End Here -->
+
+            <tr> <!-- An Paper -->
+                <p>
+                    <b>Satellite Video Super-Resolution via Unidirectional Recurrent Network and Various Degradation Modeling</b> <a href="" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <br>
+                    <font size="3pt" face="Georgia"><i>
+                        Xiaoyuan Wei, <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Zhiguo Jiang
+                    </i></font>
+                    <br>
+                    IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2024
+                    <br>
+                    <!-- <i class="fa fa-file-pdf-o"></i> <a href="https://zhengyushan.github.io" target="_blank">PDF</a> -->
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangIGARSS2024Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangIGARSS2024Bib')">BibTeX</a> &nbsp;
                     <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
                 </p>
-                <p id="LiMICCAI2022Abs" class="abstract" style="display: none;">
-                    Local representation learning has been a key challenge to promote the performance of the histopathological whole slide images analysis. The previous representation learning methods almost follow the supervised learning paradigm. However, manual annotation for large-scale WSIs is time-consuming and labor-intensive. Hence, the self-supervised contrastive learning has recently attracted intensive attention. Contrastive learning on the design of informative of the positive and negative pairs, but common contrastive learning methods treat each sample as a single class, which leads to the class collision problems, especially in the domain of histopathology image analysis. In this paper, we proposed a novel contrastive representation learning framework called Lesion-Aware Contrastive Learning (LACL) for histopathology whole slide image analysis. We built a module called lesion queue based on the memory bank structure to store the representations of different classes of WSIs, which allowed the model to selectively sample the negative pairs during the training. Moreover, We designed a queue refinement strategy to purify the representations stored in the lesion queue. The experimental results demonstrate that LACL achieves the best performance in histopathology image representation learning on different datasets, and outperforms state-of-the-art methods under different WSI classification benchmarks.
+                <p id="ZhangIGARSS2024Abs" class="abstract" style="display: none;">
+                    Satellite video images contain temporal contextual information that is unavailable in single-frame images. Therefore, using a sequence of frames for super-resolution can significantly enhance the reconstruction effect. However, most existing satellite Video Super-Resolution (VSR) methods focus on improving the network’s presentation ability, overlooking the complex degradation processes present in real-world satellite videos which appear as a blind SR problem. In this paper, we propose an effective satellite VSR method based on a unidirectional recurrent network named URD-VSR. Simultaneously, a network independent of the SR structure is utilized to model the degradation process. Experiments on real satellite video datasets and integration with object detection demonstrate the effectiveness of the proposed method.
                 </p>
-                <pre xml:space="preserve" id="LiMICCAI2022Bib" class="bibtex" style="display: none;">
-  @inproceedings{li2022lesion,
-    author    = {Jun Li, Yushan Zheng*, Kun Wu, Jun Shi, Fengying Xie, Zhiguo Jiang},
-    title     = {Lesion-Aware Contrastive Representation Learning For Histopathology Whole Slide Images Analysis},
-    booktitle = {Medical Image Computing and Computer Assisted Intervention 
-                 -- MICCAI 2022},
-    year      = {2022}
-  }
+                <pre xml:space="preserve" id="ZhangIGARSS2024Bib" class="bibtex" style="display: none;">
+Coming Soon
                 </pre>
                 <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('LiMICCAI2022Abs');
-                  hideblock('LiMICCAI2022Bib');
+                  hideblock('ZhangIGARSS2024Abs');
+                  hideblock('ZhangIGARSS2024Bib');
                 </script>
                 </td>
             </tr> <!-- Paper End Here -->
 
             <tr> <!-- An Paper -->
                 <p>
-                    <b>Multi-Frame Super-Resolution With Raw Images Via Modified Deformable Convolution</b> <a href="https://ieeexplore.ieee.org/abstract/document/9747407" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <b>A Closed-Loop Network for Single Infrared Remote Sensing Image Super-Resolution in Real World</b> <a href="https://www.mdpi.com/2072-4292/15/4/882" target="_blank"><i class="fa fa-external-link"></i></a>
                     <br>
                     <font size="3pt" face="Georgia"><i>
-                        Gongzhe Li, Linwei Qiu, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>, Fengying Xie, Zhiguo Jiang
+                        <a href="https://haopzhang.github.io/" target="_blank">Haopeng Zhang*</a>, Cong Zhang, Fengying Xie, Zhiguo Jiang
                     </i></font>
                     <br>
-                    IEEE ICASSP, 2022
+                    Remote Sensing, 2023
                     <br>
                     <!-- <i class="fa fa-file-pdf-o"></i> <a href="" target="_blank">PDF</a> -->
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangICASSP2022Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangICASSP2022Bib')">BibTeX</a> &nbsp;
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangRS2023Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangRS2023Bib')">BibTeX</a> &nbsp;
                     <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
                 </p>
-                <p id="ZhangICASSP2022Abs" class="abstract" style="display: none;">
-                  In this paper we propose a novel model towards multi-frame super-resolution, which leverages multiple RAW images and yields a super-resolved RGB image. To facilitate the pixel misalignment in burst photography, we apply a refined Pyramid Cascading and Deformable Convolution (PCD) feature alignment module. A new 3D deformable convolution fusion module is proposed subsequently to merge the information from all frames adaptively. In addition, we employ an encoder-decoder network to restore color and details in sRGB space after super-resolving images in linear space. Extensive experiments demonstrate the superiority of our architecture and the strength of multi-frame super-resolution with RAW images.
+                <p id="ZhangRS2023Abs" class="abstract" style="display: none;">
+                    Single image super-resolution (SISR) is to reconstruct a high-resolution (HR) image from a corresponding low-resolution (LR) input. It is an effective way to solve the problem that infrared remote sensing images are usually suffering low resolution due to hardware limitations. Most previous learning-based SISR methods just use synthetic HR-LR image pairs (obtained by bicubic kernels) to learn the mapping from LR images to HR images. However, the underlying degradation in the real world is often different from the synthetic method, i.e., the real LR images are obtained through a more complex degradation kernel, which leads to the adaptation problem and poor SR performance. To handle this problem, we propose a novel closed-loop framework that can not only make full use of the learning ability of the channel attention module but also introduce the information of real images as much as possible through a closed-loop structure. Our network includes two independent generative networks for down-sampling and super-resolution, respectively, and they are connected to each other to get more information from real images. We make a comprehensive analysis of the training data, resolution level and imaging spectrum to validate the performance of our network for infrared remote sensing image super-resolution. Experiments on real infrared remote sensing images show that our method achieves superior performance in various training strategies of supervised learning, weakly supervised learning and unsupervised learning. Especially, our peak signal-to-noise ratio (PSNR) is 0.9 dB better than the second-best unsupervised super-resolution model on PROBA-V dataset.
                 </p>
-                <pre xml:space="preserve" id="ZhangICASSP2022Bib" class="bibtex" style="display: none;">
-  @inproceedings{li2022multi,
-      author={Li, Gongzhe and Qiu, Linwei and Zhang, Haopeng and Xie, Fengying and Jiang, Zhiguo},
-      booktitle={ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-      title={Multi-Frame Super-Resolution With Raw Images Via Modified Deformable Convolution}, 
-      year={2022},
-      pages={2155-2159},
-      doi={10.1109/ICASSP43922.2022.9747407}
-  }
+                <pre xml:space="preserve" id="ZhangRS2023Bib" class="bibtex" style="display: none;">
+@Article{rs15040882,
+AUTHOR = {Zhang, Haopeng and Zhang, Cong and Xie, Fengying and Jiang, Zhiguo},
+TITLE = {A Closed-Loop Network for Single Infrared Remote Sensing Image Super-Resolution in Real World},
+JOURNAL = {Remote Sensing},
+VOLUME = {15},
+YEAR = {2023},
+NUMBER = {4},
+ARTICLE-NUMBER = {882},
+URL = {https://www.mdpi.com/2072-4292/15/4/882},
+ISSN = {2072-4292},
+DOI = {10.3390/rs15040882}
+}
                 </pre>
                 <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('ZhangICASSP2022Abs');
-                  hideblock('ZhangICASSP2022Bib');
+                  hideblock('ZhangRS2023Abs');
+                  hideblock('ZhangRS2023Bib');
                 </script>
                 </td>
             </tr> <!-- Paper End Here -->
 
             <tr> <!-- An Paper -->
                 <p>
-                    <b>A Two-Stage Shake-Shake Network for Long-tailed Recognition of SAR Aerial View Objects</b> <a href="https://openaccess.thecvf.com/content/CVPR2022W/PBVS/papers/Li_A_Two-Stage_Shake-Shake_Network_for_Long-Tailed_Recognition_of_SAR_Aerial_CVPRW_2022_paper.pdf" target="_blank"><i class="fa fa-external-link"></i></a>
+                    <b>Kernel Attention Transformer for Histopathology Whole Slide Image Analysis and Assistant Cancer Diagnosis</b> <a href="https://ieeexplore.ieee.org/document/10093771" target="_blank"><i class="fa fa-external-link"></i></a>
                     <br>
                     <font size="3pt" face="Georgia"><i>
-                      Gongzhe Li, Linpeng Pan, Linwei Qiu, Zhiwen Tan, Fengying Xie, <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>*
+                        Yushan Zheng, Jun Li, Jun Shi, Fengying Xie, Jianguo Huai, Ming Cao and Zhiguo Jiang*
                     </i></font>
                     <br>
-                     18th IEEE Workshop on Perception Beyond the Visible Spectrum (PBVS Workshop 2022) in conjunction with CVPR 2022
+                    IEEE Transactions on Medical Imaging(TMI), 2023
                     <br>
-                    <i class="fa fa-file-pdf-o"></i> <a href="https://openaccess.thecvf.com/content/CVPR2022W/PBVS/papers/Li_A_Two-Stage_Shake-Shake_Network_for_Long-Tailed_Recognition_of_SAR_Aerial_CVPRW_2022_paper.pdf" target="_blank">PDF</a>
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangPBVS2022Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangPBVS2022Bib')">BibTeX</a> &nbsp;
-                    <i class="fa fa-github"></i> <a href="https://github.com/LinpengPan/PBVS2022-Multi-modal-AVOC-Challenge-Track1" target="_blank">Code</a>
+<!--                    <i class="fa fa-file-pdf-o"></i> <a href="https://openaccess.thecvf.com/content/CVPR2022W/PBVS/papers/Li_A_Two-Stage_Shake-Shake_Network_for_Long-Tailed_Recognition_of_SAR_Aerial_CVPRW_2022_paper.pdf" target="_blank">PDF</a>-->
+                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhengTMI2023Abs')">Abstract</a> &nbsp;
+                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhengTMI2023Bib')">BibTeX</a> &nbsp;
+<!--                    <i class="fa fa-github"></i> <a href="https://github.com/LinpengPan/PBVS2022-Multi-modal-AVOC-Challenge-Track1" target="_blank">Code</a>-->
                 </p>
-                <p id="ZhangPBVS2022Abs" class="abstract" style="display: none;">
-                  Synthetic Aperture Radar (SAR) has received more attention due to its complementary superiority on capturing
-                    significant information in the remote sensing area. However, for an Aerial View Object Classification (AVOC) task,
-                    SAR images still suffer from the long-tailed distribution of
-                    the aerial view objects. This disparity limit the performance
-                    of classification methods, especially for the data-sensitive
-                    deep learning models. In this paper, we propose a twostage shake-shake network to tackle the long-tailed learning problem. Specifically, it decouples the learning procedure into the representation learning stage and the classification learning stage. Moreover, we apply the test time
-                    augmentation (TTA) and the classification with alternating
-                    normalization (CAN) to improve the accuracy. In the PBVS
-                    1 2022 Multi-modal Aerial View Object Classification Challenge Track 1, our method achieves 21.82% and 27.97% accuracy in the development phase and testing phase respectively, which wins the top-tier among all the participants
+                <p id="ZhengTMI2023Abs" class="abstract" style="display: none;">
+                    Transformer has been widely used in histopathology whole slide image analysis. However, the design of token-wise self-attention and positional embedding strategy in the common Transformer limits its effectiveness and efficiency when applied to gigapixel histopathology images. In this paper, we propose a novel kernel attention Transformer (KAT) for histopathology WSI analysis and assistant cancer diagnosis. The information transmission in KAT is achieved by cross-attention between the patch features and a set of kernels related to the spatial relationship of the patches on the whole slide images. Compared to the common Transformer structure, KAT can extract the hierarchical context information of the local regions of the WSI and provide diversified diagnosis information. Meanwhile, the kernel-based cross-attention paradigm significantly reduces the computational amount. The proposed method was evaluated on three large-scale datasets and was compared with 8 state-of-the-art methods. The experimental results have demonstrated the proposed KAT is effective and efficient in the task of histopathology WSI analysis and is superior to the state-of-the-art methods.
                 </p>
-                <pre xml:space="preserve" id="ZhangPBVS2022Bib" class="bibtex" style="display: none;">
-@inproceedings{
-  author={Gongzhe Li, Linpeng Pan, Linwei Qiu, Zhiwen Tan, Fengying Xie, Haopeng Zhang},
-  booktitle={18th IEEE Workshop on Perception Beyond the Visible Spectrum (PBVS Workshop 2022) in conjunction with CVPR 2022}, 
-  title={A Two-Stage Shake-Shake Network for Long-tailed Recognition of SAR Aerial View Objects}, 
-  year={2022},
-  pages={245-256},
-}
+                <pre xml:space="preserve" id="ZhengTMI2023Bib" class="bibtex" style="display: none;">
+@ARTICLE{10093771,
+author={Zheng, Yushan and Li, Jun and Shi, Jun and Xie, Fengying and Huai, Jianguo and Cao, Ming and Jiang, Zhiguo},
+journal={IEEE Transactions on Medical Imaging},
+title={Kernel Attention Transformer for Histopathology Whole Slide Image Analysis and Assistant Cancer Diagnosis},
+year={2023},
+volume={42},
+number={9},
+pages={2726-2739},
+keywords={Transformers;Histopathology;Feature extraction;Kernel;Cancer;Task analysis;Training;WSI;transformer;cross-attention;gastric cancer;endometrial cancer},
+doi={10.1109/TMI.2023.3264781}}
                 </pre>
                 <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('ZhangPBVS2022Abs');
-                  hideblock('ZhangPBVS2022Bib');
+                  hideblock('ZhengTMI2023Abs');
+                  hideblock('ZhengTMI2023Bib');
                 </script>
                 </td>
             </tr> <!-- Paper End Here -->
 
-            <tr> <!-- An Paper -->
-                <p>
-                    <b>Few-Shot Multi-Class Ship Detection in Remote Sensing Images Using Attention Feature Map and Multi-Relation Detector</b> <a href="https://www.mdpi.com/2072-4292/14/12/2790" target="_blank"><i class="fa fa-external-link"></i></a>
-                    <br>
-                    <font size="3pt" face="Georgia"><i>
-                        <a href="https://haopzhang.github.io" target="_blank">Haopeng Zhang</a>*, Xingyu Zhang, Gang Meng, Chen Guo, Zhiguo Jiang
-                    </i></font>
-                    <br>
-                     Remote Sensing, 2022
-                    <br>
-                    <i class="fa fa-file-pdf-o"></i> <a href="./source/pdf/article_zhang_remotesensing_2022.pdf" target="_blank">PDF</a>
-                    <i class="fa fa-bookmark-o"></i> <a href="javascript:toggleblock('ZhangRS2022Abs')">Abstract</a> &nbsp;
-                    <i class="fa fa-quote-left"></i> <a href="javascript:toggleblock('ZhangRS2022Bib')">BibTeX</a> &nbsp;
-                    <!-- <i class="fa fa-github"></i> <a href="" target="_blank">Code</a> -->
-                </p>
-                <p id="ZhangRS2022Abs" class="abstract" style="display: none;">
-                    Monitoring and identification of ships in remote sensing images is of great significance for port management, marine traffic, marine security, etc. However, due to small size and complex background, ship detection in remote sensing images is still a challenging task. Currently, deep-learning-based detection models need a lot of data and manual annotation, while training data containing ships in remote sensing images may be in limited quantities. To solve this problem, in this paper, we propose a few-shot multi-class ship detection algorithm with attention feature map and multi-relation detector (AFMR) for remote sensing images. We use the basic framework of You Only Look Once (YOLO), and use the attention feature map module to enhance the features of the target. In addition, the multi-relation head module is also used to optimize the detection head of YOLO. Extensive experiments on publicly available HRSC2016 dataset and self-constructed REMEX-FSSD dataset validate that our method achieves a good detection performance.
-                </p>
-                <pre xml:space="preserve" id="ZhangRS2022Bib" class="bibtex" style="display: none;">
-@Article{zhang2022few,
-    AUTHOR = {Zhang, Haopeng and Zhang, Xingyu and Meng, Gang and Guo, Chen and Jiang, Zhiguo},
-    TITLE = {Few-Shot Multi-Class Ship Detection in Remote Sensing Images Using Attention Feature Map and Multi-Relation Detector},
-    JOURNAL = {Remote Sensing},
-    VOLUME = {14},
-    YEAR = {2022},
-    NUMBER = {12},
-    ARTICLE-NUMBER = {2790},
-    URL = {https://www.mdpi.com/2072-4292/14/12/2790},
-    ISSN = {2072-4292},
-    DOI = {10.3390/rs14122790}
-}
-                </pre>
-                <script language="javascript" type="text/javascript" xml:space="preserve">
-                  hideblock('ZhangRS2022Abs');
-                  hideblock('ZhangRS2022Bib');
-                </script>
-                </td>
-            </tr> <!-- Paper End Here -->
-              
+
                 </tbody></table>
               </div>
               <div class="get-more" align="right"><a href="publications.html"> More </a></div>
